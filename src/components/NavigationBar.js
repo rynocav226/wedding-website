@@ -22,7 +22,7 @@ class NavigationBar extends Component {
   render() {
     return (
       <div>
-        <Navbar color="light" light expand="md">
+        <Navbar fixed="top" color="light" light expand="md">
           <NavbarBrand href="/">Caveirnes</NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
