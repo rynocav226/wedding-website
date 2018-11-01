@@ -6,13 +6,19 @@ class HomePage extends Component {
     return (
       <Container>
           <Row>
-            <h2>Jorden & Ryan | 10-28-2019</h2>
+            <Col>
+              <h2 className="text-center text-monospace">Jorden & Ryan | 10-28-2019</h2>
+            </Col>
           </Row>
           <Row>
-            <img src={require("../assets/engagementPic.jpg")} alt="Engagement" />
+            <Col>
+              <img src={require("../assets/engagementPic.jpg")} className="img-fluid rounded img-thumbnail" alt="Engagement" />
+            </Col>
           </Row>
           <Row>
-            <h5>Day Block Event Center | Minneapolis, MN</h5>
+            <Col>
+              <h5 className="text-center">Day Block Event Center | Minneapolis, MN</h5>
+            </Col>
           </Row>
       </Container>
     );
