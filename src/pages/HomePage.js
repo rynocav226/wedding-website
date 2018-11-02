@@ -7,7 +7,7 @@ class HomePage extends Component {
       <Container>
           <Row>
             <Col>
-              <h2 className="text-center text-monospace">Jorden & Ryan | 10-28-2019</h2>
+              <h2 className="text-center text-monospace text-primary">Jorden & Ryan | October 28th, 2019</h2>
             </Col>
           </Row>
           <Row>
