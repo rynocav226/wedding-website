@@ -7,12 +7,12 @@ class HomePage extends Component {
       <Container>
           <Row>
             <Col>
-              <h2 className="text-center text-monospace text-primary">Jorden & Ryan | October 28th, 2019</h2>
+              <h2 className="text-center text-monospace text-primary">Ryan & Jorden | October 28th, 2019</h2>
             </Col>
           </Row>
           <Row>
             <Col>
-              <img src={require("../assets/engagementPic.jpg")} className="img-fluid rounded img-thumbnail" alt="Engagement" />
+              <img src={require("../assets/engagementImage.jpg")} className="img-fluid rounded img-thumbnail" alt="Engagement" />
             </Col>
           </Row>
           <Row>

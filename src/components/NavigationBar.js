@@ -21,34 +21,32 @@ class NavigationBar extends Component {
   /* using reacstrap */
   render() {
     return (
-      <div>
-        <Navbar fixed="top" color="light" light expand="md">
-          <NavbarBrand href="/">Caveirnes</NavbarBrand>
-          <NavbarToggler onClick={this.toggle} />
-          <Collapse isOpen={this.state.isOpen} navbar>
-            <Nav className="ml-auto" navbar>
-              <NavItem>
-                <NavLink href="/WeddingDetails/">Wedding Details</NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink href="/OurStory/">Our Story</NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink href="/Accommodations/">Accommodations</NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink href="/BreweryCrawl/">Brewery Crawl</NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink href="/Rsvp/">RSVP</NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink href="/SongRequests/">Song Requests</NavLink>
-              </NavItem>
-            </Nav>
-          </Collapse>
-        </Navbar>
-      </div>
+      <Navbar fixed="top" color="light" light expand="md">
+        <NavbarBrand href="/">R & J</NavbarBrand>
+        <NavbarToggler onClick={this.toggle} />
+        <Collapse isOpen={this.state.isOpen} navbar>
+          <Nav className="ml-auto" navbar>
+            <NavItem>
+              <NavLink href="/WeddingDetails/">Wedding Details</NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink href="/OurStory/">Our Story</NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink href="/Accommodations/">Accommodations</NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink href="/BreweryCrawl/">Brewery Crawl</NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink href="/Rsvp/">RSVP</NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink href="/SongRequests/">Song Requests</NavLink>
+            </NavItem>
+          </Nav>
+        </Collapse>
+      </Navbar>
     );
   }
 
