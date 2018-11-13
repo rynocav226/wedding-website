@@ -8,7 +8,7 @@ class WeddingDetails extends Component {
     return (
       <Container fluid>
         <Row>
-          <Col sm="6" className="mb-2">
+          <Col sm="5" className="mb-2">
             <Card color="light">
               <CardBody>
                 <CardTitle>Venue</CardTitle>
@@ -18,7 +18,7 @@ class WeddingDetails extends Component {
                       <CardText className="text-center">Day Block Event Center</CardText>
                     </Col>
                     <Col sm="12" className="mb-2">
-                      <CardImg src={require("../assets/dayBlockImage.jpg")} alt="Card image cap" className="img" />
+                      <CardImg src={require("../assets/dayBlockImage.jpg")} alt="Card image cap" />
                     </Col>
                     <Col>
                       <CardText className="text-center"><a href="https://www.google.com/maps/place/Day+Block+Event+Center/@44.975204,-93.252891,15z/data=!4m5!3m4!1s0x0:0x6510536e530a6987!8m2!3d44.975204!4d-93.252891" target="_blank" rel="noopener noreferrer">1103 S Washington Ave, Minneapolis MN 55415</a></CardText>
@@ -28,7 +28,7 @@ class WeddingDetails extends Component {
               </CardBody>
             </Card>
           </Col>
-          <Col sm="6" className="mb-2">
+          <Col sm="7" className="mb-2">
             <Card>
               <CardBody>
                 <CardTitle>Schedule</CardTitle>
