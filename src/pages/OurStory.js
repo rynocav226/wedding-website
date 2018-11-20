@@ -55,6 +55,51 @@ class OurStory extends Component {
           <Card>
             <CardImg src={require("../assets/rainbowConnectionImage.jpg")} alt="Card image cap" />
           </Card>
+          <Card>
+            <CardBody>
+              <CardTitle>Move to Miami</CardTitle>
+              <CardSubtitle>Living it up in Paridise</CardSubtitle>
+              <CardText>
+                We exchanged the frigid North for the sun and the beach.
+              </CardText>
+            </CardBody>
+          </Card>
+          <Card>
+            <CardImg src={require("../assets/miamiImage.jpg")} alt="Card image cap" />
+          </Card>
+          <Card>
+            <CardBody>
+              <CardTitle>Back to School</CardTitle>
+              <CardSubtitle>Becoming a Blue Devil</CardSubtitle>
+              <CardText>
+                Watching games at Cameron Indoor and traveling around the globe.
+              </CardText>
+            </CardBody>
+          </Card>
+          <Card>
+            <CardImg src={require("../assets/dukeImage.jpg")} alt="Card image cap" />
+          </Card>
+          <Card>
+            <CardBody>
+              <CardTitle>Wedding Day</CardTitle>
+              <CardSubtitle>Saying 'I Do' on the Beach of our Dreams</CardSubtitle>
+              <CardText>
+                We married each other on a beach in South Carolina in front of our parents.
+              </CardText>
+            </CardBody>
+          </Card>
+          <Card>
+            <CardImg src={require("../assets/weddingImage.jpg")} alt="Card image cap" />
+          </Card>
+          <Card>
+            <CardBody>
+              <CardTitle>Today</CardTitle>
+              <CardSubtitle>Renewing our Vows and Celebrating with Friends and Family</CardSubtitle>
+              <CardText>
+                We still wanted to celebrate with all of our family and friends in a night we will never forget.
+              </CardText>
+            </CardBody>
+          </Card>
         </CardColumns>
       </Container>
     );

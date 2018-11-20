@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Container, Row, Col } from 'reactstrap';
 import { Card, CardImg, CardText, CardBody, CardTitle } from 'reactstrap';
 import { Table } from 'reactstrap';
+import { ListGroup, ListGroupItem } from 'reactstrap';
 
 class WeddingDetails extends Component {
   render() {
@@ -63,7 +64,25 @@ class WeddingDetails extends Component {
               </CardBody>
             </Card>
           </Col>
+          <Col sm="3" className="mb-2">
+            <Card>
+              <CardBody>
+                <CardTitle>Registry</CardTitle>
+                <ListGroup>
+                  <ListGroupItem tag="a" href="https://amazon.com" target="_blank" rel="noopener noreferrer">Amazon</ListGroupItem>
+                </ListGroup>
+              </CardBody>
+            </Card>
+          </Col>
           <Col sm="6" className="mb-2">
+            <Card>
+              <CardBody>
+                <CardTitle>Child Care</CardTitle>
+                <CardText>Due to the size of the venue, we request the attendence of adults only.  If unable to make arrangements, child care will be provided in the suite of the Courtyard Marriott Hotel.</CardText>
+              </CardBody>
+            </Card>
+          </Col>
+          <Col sm="3" className="mb-2">
             <Card>
               <CardBody>
                 <CardTitle>Dress Code</CardTitle>
@@ -74,8 +93,16 @@ class WeddingDetails extends Component {
           <Col sm="6" className="mb-2">
             <Card>
               <CardBody>
-                <CardTitle>Child Care</CardTitle>
-                <CardText>Due to the size of the venue, we request the attendence of adults only.  If unable to make arrangements, child care will be provided in the suite of the Courtyard Marriott Hotel.</CardText>
+                <CardTitle>Pre-Wedding Fun</CardTitle>
+                <CardText>In lieu of a Groom's Dinner the night before the wedding, we will be doing a Brewery Crawl through the North Loop of Downtown Minneapolis on Friday night, the 27th.  All are welcome to partake for however many stops your heart desires.  The crawl will start and end near the downtown hotels so if staying at the Aloft or Courtyard Marriott, will be able to walk.  See the 'Brewery Crawl' page for the details.</CardText>
+              </CardBody>
+            </Card>
+          </Col>
+          <Col sm="6" className="mb-2">
+            <Card>
+              <CardBody>
+                <CardTitle>Parking</CardTitle>
+                <CardText>For guests not staying at the downtown hotels, we have rented out a parking lot adjacent to Day Block.  The address for the lot is ???.  Guests may park there from ?? to midnight.  Note: an open bar is provided for the duration of the event, so if using the parking lot please have a designated driver, thanks.</CardText>
               </CardBody>
             </Card>
           </Col>
