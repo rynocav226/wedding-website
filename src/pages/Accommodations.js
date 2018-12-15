@@ -3,6 +3,7 @@ import { Container, Row, Col } from 'reactstrap';
 import { Nav, NavItem, NavLink } from 'reactstrap';
 import { CardGroup, Card, CardBody, CardTitle, CardImg } from 'reactstrap';
 import { Table } from 'reactstrap';
+import { ListGroup, ListGroupItem, ListGroupItemHeading, ListGroupItemText } from 'reactstrap';
 
 class Accommodations extends Component {
   render() {
@@ -35,14 +36,14 @@ class Accommodations extends Component {
             <Card>
               <CardBody>
                 <CardTitle className="text-center">Overview</CardTitle>
-                <Table>
+                <Table small>
                   <tr>
                     <th scope="row">Adress</th>
                     <td>900 Washington Ave South</td>
                   </tr>
                   <tr>
                     <th scope="row">Phone</th>
-                    <td>(612) 455-8400</td>
+                    <td>1 (888) 627-7079</td>
                   </tr>
                   <tr>
                     <th scope="row">Room Rate</th>
@@ -54,7 +55,7 @@ class Accommodations extends Component {
                   </tr>
                   <tr>
                     <th scope="row">Must Book By</th>
-                    <td>August 29th</td>
+                    <td>August 28th</td>
                   </tr>
                   <tr>
                     <th scope="row">Distance from Venue</th>
@@ -66,6 +67,20 @@ class Accommodations extends Component {
             <Card>
               <CardBody>
                 <CardTitle>Details</CardTitle>
+                <ListGroup flush>
+                  <ListGroupItem>
+                    <ListGroupItemHeading>Location</ListGroupItemHeading>
+                    <ListGroupItemText>In downtown Mineapolis.  Closest hotel to both the venue on Saturday and the starting point of the brewery crawl on Friday.  Easiest access is via 35W.</ListGroupItemText>
+                  </ListGroupItem>
+                  <ListGroupItem>
+                    <ListGroupItemHeading>Booking Instructions</ListGroupItemHeading>
+                    <ListGroupItemText>Call the number listed and mention the Taveirne/Cavanaugh wedding block.  A credit card will be required to make the reservation.</ListGroupItemText>
+                  </ListGroupItem>
+                  <ListGroupItem>
+                    <ListGroupItemHeading>Shuttle Service</ListGroupItemHeading>
+                    <ListGroupItemText>Available Friday and Saturday on a first come, first serve basis anywhere within a 5 mile radius.</ListGroupItemText>
+                  </ListGroupItem>
+                </ListGroup>
               </CardBody>
             </Card>
           </CardGroup>
@@ -107,6 +122,14 @@ class Accommodations extends Component {
             <Card>
               <CardBody>
                 <CardTitle>Details</CardTitle>
+                <dl class="row">
+                  <dt class="col-sm-5">Location</dt>
+                  <dd class="col-sm-7">Location.</dd>
+                  <dt class="col-sm-5">Booking Instructions</dt>
+                  <dd class="col-sm-7">Location.</dd>
+                  <dt class="col-sm-5">Shuttle Service</dt>
+                  <dd class="col-sm-7">Location.</dd>
+                </dl>
               </CardBody>
             </Card>
           </CardGroup>

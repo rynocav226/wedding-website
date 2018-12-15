@@ -64,7 +64,7 @@ class WeddingDetails extends Component {
               </CardBody>
             </Card>
           </Col>
-          <Col sm="3" className="mb-2">
+          <Col sm="4" className="mb-2">
             <Card>
               <CardBody>
                 <CardTitle>Registry</CardTitle>
@@ -74,7 +74,7 @@ class WeddingDetails extends Component {
               </CardBody>
             </Card>
           </Col>
-          <Col sm="6" className="mb-2">
+          <Col sm="5" className="mb-2">
             <Card>
               <CardBody>
                 <CardTitle>Child Care</CardTitle>
