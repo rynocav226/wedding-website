@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Container, Row, Col } from 'reactstrap';
+import { Container } from 'reactstrap';
 import { Nav, NavItem, NavLink } from 'reactstrap';
 import { CardGroup, Card, CardBody, CardTitle, CardImg } from 'reactstrap';
 import { Table } from 'reactstrap';
@@ -23,43 +23,57 @@ class Accommodations extends Component {
         <div data-spy="scroll" data-target="#accommodationsNavigation" data-offset="70">
           <CardGroup id="aloftCardGroup" className="mb-2">
             <Card>
-              <Container>
-                <Row>
-                  <Col>
-                    <Card>
-                      <CardImg src={require("../assets/aloftImage.jpg")} alt="Card image cap" />
-                    </Card>
-                  </Col>
-                </Row>
-              </Container>
+              <CardBody>
+                <CardTitle>Aloft</CardTitle>
+                <CardImg className="mb-2" src={require("../assets/aloftImage.jpg")} alt="Card image cap" />
+                <div className="embed-responsive embed-responsive-16by9">
+                  <iframe title="AlotMap" className="embed-responsive-item" src="https://www.google.com/maps/d/u/0/embed?mid=12jtQUqkq1OR84um6TOV5PMzBcIVk2K3t" />
+                </div>
+              </CardBody>
             </Card>
             <Card>
               <CardBody>
                 <CardTitle className="text-center">Overview</CardTitle>
                 <Table small>
+                  <colgroup>
+                    <col style={{width: '40%'}} />
+                    <col style={{width: '60%'}} />
+                  </colgroup>
                   <tr>
-                    <th scope="row">Adress</th>
+                    <th>Adress</th>
                     <td>900 Washington Ave South</td>
                   </tr>
                   <tr>
-                    <th scope="row">Phone</th>
+                    <th>Phone</th>
                     <td>1 (888) 627-7079</td>
                   </tr>
                   <tr>
-                    <th scope="row">Room Rate</th>
+                    <th>Room Rate</th>
                     <td>$149</td>
                   </tr>
                   <tr>
-                    <th scope="row">Parking Rate</th>
-                    <td>$25 per day</td>
+                    <th>Parking Rate</th>
+                    <td>$15 per day</td>
                   </tr>
                   <tr>
-                    <th scope="row">Must Book By</th>
+                    <th>Must Book By</th>
                     <td>August 28th</td>
                   </tr>
                   <tr>
-                    <th scope="row">Distance from Venue</th>
+                    <th>Distance from Venue</th>
                     <td>0.2 miles</td>
+                  </tr>
+                  <tr>
+                    <th>Checkin Time</th>
+                    <td>3:00 PM</td>
+                  </tr>
+                  <tr>
+                    <th>Checkout Time</th>
+                    <td>12:00 PM</td>
+                  </tr>
+                  <tr>
+                    <th>Rewards Affiliation</th>
+                    <td>Marriott Rewards, Ritz-Carlton Rewards, and Starwood Preferred Guest</td>
                   </tr>
                 </Table>
               </CardBody>
@@ -74,7 +88,11 @@ class Accommodations extends Component {
                   </ListGroupItem>
                   <ListGroupItem>
                     <ListGroupItemHeading>Booking Instructions</ListGroupItemHeading>
-                    <ListGroupItemText>Call the number listed and mention the Taveirne/Cavanaugh wedding block.  A credit card will be required to make the reservation.</ListGroupItemText>
+                    <ListGroupItemText>Call the number listed and mention the Taveirne/Cavanaugh wedding block.  A credit card will be required to make the reservation.  Alternatively, the booking can be made through this <a href="https://www.marriott.com/event-reservations/reservation-link.mi?id=1544558844816&key=GRP&app=resvlink" target="_blank" rel="noopener noreferrer">website</a>.</ListGroupItemText>
+                  </ListGroupItem>
+                  <ListGroupItem>
+                    <ListGroupItemHeading>Availibility</ListGroupItemHeading>
+                    <ListGroupItemText>Room rate is valid for both Friday and Saturday night.  Do not need to book both.</ListGroupItemText>
                   </ListGroupItem>
                   <ListGroupItem>
                     <ListGroupItemHeading>Shuttle Service</ListGroupItemHeading>
@@ -86,35 +104,54 @@ class Accommodations extends Component {
           </CardGroup>
           <CardGroup id="courtyardMarriottCardGroup" className="mb-2">
             <Card>
-              <CardImg src={require("../assets/courtyardMarriottImage.jpg")} alt="Card image cap" />
+              <CardBody>
+                <CardTitle>Courtyard Marriott</CardTitle>
+                <CardImg src={require("../assets/courtyardMarriottImage.jpg")} alt="Card image cap" />
+              </CardBody>
             </Card>
             <Card>
               <CardBody>
                 <CardTitle className="text-center">Overview</CardTitle>
                 <Table>
+                  <colgroup>
+                    <col style={{width: '40%'}} />
+                    <col style={{width: '60%'}} />
+                  </colgroup>
                   <tr>
-                    <th scope="row">Adress</th>
+                    <th>Adress</th>
                     <td>1500 Washington Ave South</td>
                   </tr>
                   <tr>
-                    <th scope="row">Phone</th>
-                    <td>(612) 333-4646</td>
+                    <th>Phone</th>
+                    <td>(877) 699-3216</td>
                   </tr>
                   <tr>
-                    <th scope="row">Room Rate</th>
+                    <th>Room Rate</th>
                     <td>$144</td>
                   </tr>
                   <tr>
-                    <th scope="row">Parking Rate</th>
-                    <td>$22 per day</td>
+                    <th>Parking Rate</th>
+                    <td>$22 per day with in/out priviledges; $17 per day without in/out priviledges</td>
                   </tr>
                   <tr>
-                    <th scope="row">Must Book By</th>
-                    <td>September 7th</td>
+                    <th>Must Book By</th>
+                    <td>August 31st</td>
                   </tr>
                   <tr>
-                    <th scope="row">Distance from Venue</th>
+                    <th>Distance from Venue</th>
                     <td>0.4 miles</td>
+                  </tr>
+                  <tr>
+                    <th>Checkin Time</th>
+                    <td>3:00 PM</td>
+                  </tr>
+                  <tr>
+                    <th>Checkout Time</th>
+                    <td>12:00 PM</td>
+                  </tr>
+                  <tr>
+                    <th>Rewards Affiliation</th>
+                    <td>Marriott Rewards, Ritz-Carlton Rewards, and Starwood Preferred Guest</td>
                   </tr>
                 </Table>
               </CardBody>
@@ -122,48 +159,81 @@ class Accommodations extends Component {
             <Card>
               <CardBody>
                 <CardTitle>Details</CardTitle>
-                <dl class="row">
-                  <dt class="col-sm-5">Location</dt>
-                  <dd class="col-sm-7">Location.</dd>
-                  <dt class="col-sm-5">Booking Instructions</dt>
-                  <dd class="col-sm-7">Location.</dd>
-                  <dt class="col-sm-5">Shuttle Service</dt>
-                  <dd class="col-sm-7">Location.</dd>
-                </dl>
+                <ListGroup flush>
+                  <ListGroupItem>
+                    <ListGroupItemHeading>Location</ListGroupItemHeading>
+                    <ListGroupItemText>In downtown Mineapolis, right in the heart of Seven Corners, just off of 35W.  Wedding venue and the starting point of the brewery crawl are both walkable.</ListGroupItemText>
+                  </ListGroupItem>
+                  <ListGroupItem>
+                    <ListGroupItemHeading>Child Care</ListGroupItemHeading>
+                    <ListGroupItemText>If unable to make other arrangements, child care will be provided in the suite of this hotel during the wedding.</ListGroupItemText>
+                  </ListGroupItem>
+                  <ListGroupItem>
+                    <ListGroupItemHeading>Booking Instructions</ListGroupItemHeading>
+                    <ListGroupItemText>Call Marriott reservations at the number listed and metion the Taveirne/Cavanaugh wedding block.  Either a first night room deposit or major credit card is required to secure a reservation.</ListGroupItemText>
+                  </ListGroupItem>
+                  <ListGroupItem>
+                    <ListGroupItemHeading>Availibility</ListGroupItemHeading>
+                    <ListGroupItemText>Room rate is valid for both Friday and Saturday night.  Do not need to book both.  Rate is also available for Thursday and Sunday night, if desired, subject to room availibility.</ListGroupItemText>
+                  </ListGroupItem>
+                  <ListGroupItem>
+                    <ListGroupItemHeading>Shuttle Service</ListGroupItemHeading>
+                    <ListGroupItemText>Complimentary shuttle to and from the wedding venue until 10:45 pm; first come, fist serve.  Will need to mention you are with the Taveirne/Cavanaugh wedding group.</ListGroupItemText>
+                  </ListGroupItem>
+                </ListGroup>
               </CardBody>
             </Card>
           </CardGroup>
           <CardGroup id="doubleTreeCardGroup">
             <Card>
-              <CardImg src={require("../assets/doubleTreeImage.jpg")} alt="Card image cap" />
+              <CardBody>
+                <CardTitle>Double Tree SLP</CardTitle>
+                <CardImg src={require("../assets/doubleTreeImage.jpg")} alt="Card image cap" />
+              </CardBody>
             </Card>
             <Card>
               <CardBody>
                 <CardTitle className="text-center">Overview</CardTitle>
                 <Table>
+                  <colgroup>
+                    <col style={{width: '40%'}} />
+                    <col style={{width: '60%'}} />
+                  </colgroup>
                   <tr>
-                    <th scope="row">Adress</th>
+                    <th>Adress</th>
                     <td>1500 Park Place Blvd</td>
                   </tr>
                   <tr>
-                    <th scope="row">Phone</th>
+                    <th>Phone</th>
                     <td>(952) 542-8600</td>
                   </tr>
                   <tr>
-                    <th scope="row">Room Rate</th>
+                    <th>Room Rate</th>
                     <td>$142</td>
                   </tr>
                   <tr>
-                    <th scope="row">Parking Rate</th>
+                    <th>Parking Rate</th>
                     <td>Complimentary</td>
                   </tr>
                   <tr>
-                    <th scope="row">Must Book By</th>
-                    <td>September 7th</td>
+                    <th>Must Book By</th>
+                    <td>September 6th</td>
                   </tr>
                   <tr>
-                    <th scope="row">Distance from Venue</th>
+                    <th>Distance from Venue</th>
                     <td>6.8 miles</td>
+                  </tr>
+                  <tr>
+                    <th>Checkin Time</th>
+                    <td>3:00 PM</td>
+                  </tr>
+                  <tr>
+                    <th>Checkout Time</th>
+                    <td>11:00 AM</td>
+                  </tr>
+                  <tr>
+                    <th>Rewards Affiliation</th>
+                    <td>Hilton Honors</td>
                   </tr>
                 </Table>
               </CardBody>
@@ -171,6 +241,24 @@ class Accommodations extends Component {
             <Card>
               <CardBody>
                 <CardTitle>Details</CardTitle>
+                <ListGroup flush>
+                  <ListGroupItem>
+                    <ListGroupItemHeading>Location</ListGroupItemHeading>
+                    <ListGroupItemText>In St Louis Park, to the west of downtown Minneapolis.  Easy access via I-394 which connects with I-94 via I-494 or highway 169.  For those that do not want to deal with navigating downtown Minneapolis and to have the easiest access from Alexandria.</ListGroupItemText>
+                  </ListGroupItem>
+                  <ListGroupItem>
+                    <ListGroupItemHeading>Booking Instructions</ListGroupItemHeading>
+                    <ListGroupItemText>Reservation can be made through the hotel's <a href="https://doubletree3.hilton.com/en/hotels/minnesota/doubletree-by-hilton-hotel-minneapolis-park-place-MSPPHDT/index.html?SEO_id=GMB-DT-MSPPHDT" target="_blank" rel="noopener noreferrer">website</a> or by calling the hotel directly at the phone number listed.  When making the reservation, use the group code <strong>609</strong> to receive the discounted rate.</ListGroupItemText>
+                  </ListGroupItem>
+                  <ListGroupItem>
+                    <ListGroupItemHeading>Availibility</ListGroupItemHeading>
+                    <ListGroupItemText>Room rate is valid for both Friday and Saturday night.  Do not need to book both.</ListGroupItemText>
+                  </ListGroupItem>
+                  <ListGroupItem>
+                    <ListGroupItemHeading>Getting to the Venue</ListGroupItemHeading>
+                    <ListGroupItemText>As the wedding is open bar throughout the night, we request guests to use Uber or Lyft to get to and from the venue.  If driving is desired, a parking lot adjacent to the venue has been reserved.  Address of the parking lot is ???.</ListGroupItemText>
+                  </ListGroupItem>
+                </ListGroup>
               </CardBody>
             </Card>
           </CardGroup>

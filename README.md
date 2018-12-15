@@ -4,6 +4,9 @@ Home Page
 > make the image the full background, overlayed with the text
 > make scrolling past the image start displaying the wedding details page (maybe)
 
+Wedding Details Page
+> link the hotel metion in the child care card to the accommodations page and auto scroll to the Courtyard section
+
 Accommodations Page
 > Get the Scrollspy to adjust for the permanent navigation bar (probably get rid of, wanted to test it out)
 
