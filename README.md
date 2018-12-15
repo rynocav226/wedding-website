@@ -1,3 +1,12 @@
+Things to do/fix:
+
+Home Page
+> make the image the full background, overlayed with the text
+> make scrolling past the image start displaying the wedding details page (maybe)
+
+Accommodations Page
+> Get the Scrollspy to adjust for the permanent navigation bar (probably get rid of, wanted to test it out)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 Below you will find some information on how to perform common tasks.<br>

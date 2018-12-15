@@ -69,6 +69,18 @@ class OurStory extends Component {
           </Card>
           <Card>
             <CardBody>
+              <CardTitle>The Proposal</CardTitle>
+              <CardSubtitle>Magic at the Biltmore</CardSubtitle>
+              <CardText>
+                Committing to each other amidst a weekend of pool chilling and golfing.
+              </CardText>
+            </CardBody>
+          </Card>
+          <Card>
+            <CardImg src={require("../assets/miamiImage.jpg")} alt="Card image cap" />
+          </Card>
+          <Card>
+            <CardBody>
               <CardTitle>Back to School</CardTitle>
               <CardSubtitle>Becoming a Blue Devil</CardSubtitle>
               <CardText>
