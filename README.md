@@ -1,7 +1,7 @@
 Things to do/fix:
 
 Home Page
-> make the image the full background, overlayed with the text
+> make the image the full background, overlayed with the text - DONE
 > make scrolling past the image start displaying the wedding details page (maybe)
 
 Wedding Details Page
