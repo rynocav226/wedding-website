@@ -1,0 +1,6 @@
+.jumbotronHome {
+  background-image: url('../assets/engagementImage.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 85vh;
+}

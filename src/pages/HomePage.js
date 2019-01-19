@@ -1,25 +1,16 @@
 import React, { Component } from 'react';
-import { Container, Row, Col } from 'reactstrap';
+import { Container } from 'reactstrap';
+import { Jumbotron } from 'reactstrap';
+import "../styles/HomePage.css";
 
 class HomePage extends Component {
   render() {
     return (
       <Container>
-          <Row>
-            <Col>
-              <h2 className="text-center text-monospace text-primary">Ryan & Jorden | October 28th, 2019</h2>
-            </Col>
-          </Row>
-          <Row>
-            <Col>
-              <img src={require("../assets/engagementImage.jpg")} className="img-fluid rounded img-thumbnail" alt="Engagement" />
-            </Col>
-          </Row>
-          <Row>
-            <Col>
-              <h5 className="text-center">Day Block Event Center | Minneapolis, MN</h5>
-            </Col>
-          </Row>
+        <Jumbotron className="jumbotronHome d-flex flex-column">
+          <h1 className="mb-auto text-center text-monospace text-primary font-weight-bold">Ryan & Jorden | September 28th, 2019</h1>
+          <h3 className="text-center font-weight-bold">Day Block Brewing | Minneapolis, MN</h3>
+        </Jumbotron>
       </Container>
     );
   }

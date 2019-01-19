@@ -34,47 +34,49 @@ class Accommodations extends Component {
             <Card>
               <CardBody>
                 <CardTitle className="text-center">Overview</CardTitle>
-                <Table small>
+                <Table>
                   <colgroup>
                     <col style={{width: '40%'}} />
                     <col style={{width: '60%'}} />
                   </colgroup>
-                  <tr>
-                    <th>Adress</th>
-                    <td>900 Washington Ave South</td>
-                  </tr>
-                  <tr>
-                    <th>Phone</th>
-                    <td>1 (888) 627-7079</td>
-                  </tr>
-                  <tr>
-                    <th>Room Rate</th>
-                    <td>$149</td>
-                  </tr>
-                  <tr>
-                    <th>Parking Rate</th>
-                    <td>$15 per day</td>
-                  </tr>
-                  <tr>
-                    <th>Must Book By</th>
-                    <td>August 28th</td>
-                  </tr>
-                  <tr>
-                    <th>Distance from Venue</th>
-                    <td>0.2 miles</td>
-                  </tr>
-                  <tr>
-                    <th>Checkin Time</th>
-                    <td>3:00 PM</td>
-                  </tr>
-                  <tr>
-                    <th>Checkout Time</th>
-                    <td>12:00 PM</td>
-                  </tr>
-                  <tr>
-                    <th>Rewards Affiliation</th>
-                    <td>Marriott Rewards, Ritz-Carlton Rewards, and Starwood Preferred Guest</td>
-                  </tr>
+                  <tbody>
+                    <tr>
+                      <th>Adress</th>
+                      <td>900 Washington Ave South</td>
+                    </tr>
+                    <tr>
+                      <th>Phone</th>
+                      <td>1 (888) 627-7079</td>
+                    </tr>
+                    <tr>
+                      <th>Room Rate</th>
+                      <td>$149</td>
+                    </tr>
+                    <tr>
+                      <th>Parking Rate</th>
+                      <td>$15 per day</td>
+                    </tr>
+                    <tr>
+                      <th>Must Book By</th>
+                      <td>August 28th</td>
+                    </tr>
+                    <tr>
+                      <th>Distance from Venue</th>
+                      <td>0.2 miles</td>
+                    </tr>
+                    <tr>
+                      <th>Checkin Time</th>
+                      <td>3:00 PM</td>
+                    </tr>
+                    <tr>
+                      <th>Checkout Time</th>
+                      <td>12:00 PM</td>
+                    </tr>
+                    <tr>
+                      <th>Rewards Affiliation</th>
+                      <td>Marriott Rewards, Ritz-Carlton Rewards, and Starwood Preferred Guest</td>
+                    </tr>
+                  </tbody>
                 </Table>
               </CardBody>
             </Card>
@@ -117,42 +119,44 @@ class Accommodations extends Component {
                     <col style={{width: '40%'}} />
                     <col style={{width: '60%'}} />
                   </colgroup>
-                  <tr>
-                    <th>Adress</th>
-                    <td>1500 Washington Ave South</td>
-                  </tr>
-                  <tr>
-                    <th>Phone</th>
-                    <td>(877) 699-3216</td>
-                  </tr>
-                  <tr>
-                    <th>Room Rate</th>
-                    <td>$144</td>
-                  </tr>
-                  <tr>
-                    <th>Parking Rate</th>
-                    <td>$22 per day with in/out priviledges; $17 per day without in/out priviledges</td>
-                  </tr>
-                  <tr>
-                    <th>Must Book By</th>
-                    <td>August 31st</td>
-                  </tr>
-                  <tr>
-                    <th>Distance from Venue</th>
-                    <td>0.4 miles</td>
-                  </tr>
-                  <tr>
-                    <th>Checkin Time</th>
-                    <td>3:00 PM</td>
-                  </tr>
-                  <tr>
-                    <th>Checkout Time</th>
-                    <td>12:00 PM</td>
-                  </tr>
-                  <tr>
-                    <th>Rewards Affiliation</th>
-                    <td>Marriott Rewards, Ritz-Carlton Rewards, and Starwood Preferred Guest</td>
-                  </tr>
+                  <tbody>
+                    <tr>
+                      <th>Adress</th>
+                      <td>1500 Washington Ave South</td>
+                    </tr>
+                    <tr>
+                      <th>Phone</th>
+                      <td>(877) 699-3216</td>
+                    </tr>
+                    <tr>
+                      <th>Room Rate</th>
+                      <td>$144</td>
+                    </tr>
+                    <tr>
+                      <th>Parking Rate</th>
+                      <td>$22 per day with in/out priviledges; $17 per day without in/out priviledges</td>
+                    </tr>
+                    <tr>
+                      <th>Must Book By</th>
+                      <td>August 31st</td>
+                    </tr>
+                    <tr>
+                      <th>Distance from Venue</th>
+                      <td>0.4 miles</td>
+                    </tr>
+                    <tr>
+                      <th>Checkin Time</th>
+                      <td>3:00 PM</td>
+                    </tr>
+                    <tr>
+                      <th>Checkout Time</th>
+                      <td>12:00 PM</td>
+                    </tr>
+                    <tr>
+                      <th>Rewards Affiliation</th>
+                      <td>Marriott Rewards, Ritz-Carlton Rewards, and Starwood Preferred Guest</td>
+                    </tr>
+                  </tbody>
                 </Table>
               </CardBody>
             </Card>
@@ -199,42 +203,44 @@ class Accommodations extends Component {
                     <col style={{width: '40%'}} />
                     <col style={{width: '60%'}} />
                   </colgroup>
-                  <tr>
-                    <th>Adress</th>
-                    <td>1500 Park Place Blvd</td>
-                  </tr>
-                  <tr>
-                    <th>Phone</th>
-                    <td>(952) 542-8600</td>
-                  </tr>
-                  <tr>
-                    <th>Room Rate</th>
-                    <td>$142</td>
-                  </tr>
-                  <tr>
-                    <th>Parking Rate</th>
-                    <td>Complimentary</td>
-                  </tr>
-                  <tr>
-                    <th>Must Book By</th>
-                    <td>September 6th</td>
-                  </tr>
-                  <tr>
-                    <th>Distance from Venue</th>
-                    <td>6.8 miles</td>
-                  </tr>
-                  <tr>
-                    <th>Checkin Time</th>
-                    <td>3:00 PM</td>
-                  </tr>
-                  <tr>
-                    <th>Checkout Time</th>
-                    <td>11:00 AM</td>
-                  </tr>
-                  <tr>
-                    <th>Rewards Affiliation</th>
-                    <td>Hilton Honors</td>
-                  </tr>
+                  <tbody>
+                    <tr>
+                      <th>Adress</th>
+                      <td>1500 Park Place Blvd</td>
+                    </tr>
+                    <tr>
+                      <th>Phone</th>
+                      <td>(952) 542-8600</td>
+                    </tr>
+                    <tr>
+                      <th>Room Rate</th>
+                      <td>$142</td>
+                    </tr>
+                    <tr>
+                      <th>Parking Rate</th>
+                      <td>Complimentary</td>
+                    </tr>
+                    <tr>
+                      <th>Must Book By</th>
+                      <td>September 6th</td>
+                    </tr>
+                    <tr>
+                      <th>Distance from Venue</th>
+                      <td>6.8 miles</td>
+                    </tr>
+                    <tr>
+                      <th>Checkin Time</th>
+                      <td>3:00 PM</td>
+                    </tr>
+                    <tr>
+                      <th>Checkout Time</th>
+                      <td>11:00 AM</td>
+                    </tr>
+                    <tr>
+                      <th>Rewards Affiliation</th>
+                      <td>Hilton Honors</td>
+                    </tr>
+                  </tbody>
                 </Table>
               </CardBody>
             </Card>

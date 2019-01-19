@@ -7,9 +7,7 @@ class WeddingApp extends Component {
     return (
       <div>
         <NavigationBar/>
-        <div>
-          <SiteNavigation/>
-        </div>
+        <SiteNavigation/>
       </div>
     );
   }
