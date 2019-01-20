@@ -39,10 +39,10 @@ class NavigationBar extends Component {
               <NavLink href="/BreweryCrawl/">Brewery Crawl</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="/Rsvp/">RSVP</NavLink>
-            </NavItem>
-            <NavItem>
               <NavLink href="/SongRequests/">Song Requests</NavLink>
+            </NavItem>
+            <NavItem className="bg-primary font-weight-bold">
+              <NavLink className="text-light" href="/Rsvp/">RSVP</NavLink>
             </NavItem>
           </Nav>
         </Collapse>

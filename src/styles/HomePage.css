@@ -1,8 +1,10 @@
-.jumbotronHome {
-  background-image: url('../assets/engagementImage.jpg');
-  background-size: cover;
-  background-color: inherit;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 85vh;
+.imageHome {
+  max-height: 77vh;
+  border-radius: 10%;
+  border: 5px dashed;
+  padding: 5px;
+  width: auto;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
 }

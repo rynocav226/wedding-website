@@ -3,6 +3,7 @@ import { Container, Row, Col } from 'reactstrap';
 import { Card, CardImg, CardText, CardBody, CardTitle } from 'reactstrap';
 import { Table } from 'reactstrap';
 import { ListGroup, ListGroupItem } from 'reactstrap';
+import '../styles/WeddingDetails.css';
 
 class WeddingDetails extends Component {
   render() {
@@ -15,11 +16,16 @@ class WeddingDetails extends Component {
                 <CardTitle>Venue</CardTitle>
                 <Container>
                   <Row>
+                    {/*
                     <Col className="mb-2">
                       <CardText className="text-center">Day Block Brewing</CardText>
                     </Col>
+                    */}
                     <Col sm="12" className="mb-2">
+                    <div className="venueCombo">
                       <CardImg src={require("../assets/dayBlockImage.jpg")} alt="Card image cap" />
+                      <div className="venueText text-center text-primary font-weight-bold">Day Block Brewing</div>
+                      </div>
                     </Col>
                     <Col>
                       <CardText className="text-center"><a href="https://www.google.com/maps/place/Day+Block+Event+Center/@44.975204,-93.252891,15z/data=!4m5!3m4!1s0x0:0x6510536e530a6987!8m2!3d44.975204!4d-93.252891" target="_blank" rel="noopener noreferrer">1103 S Washington Ave, Minneapolis MN 55415</a></CardText>
@@ -52,7 +58,7 @@ class WeddingDetails extends Component {
                       <td>5:30 PM</td>
                     </tr>
                     <tr>
-                      <th scope="row">Live Band</th>
+                      <th scope="row">Live Band & Dance</th>
                       <td>7:00 PM</td>
                     </tr>
                     <tr>
@@ -64,7 +70,7 @@ class WeddingDetails extends Component {
               </CardBody>
             </Card>
           </Col>
-          <Col sm="4" className="mb-2">
+          <Col sm="2" className="mb-2">
             <Card>
               <CardBody>
                 <CardTitle>Registry</CardTitle>
@@ -78,15 +84,15 @@ class WeddingDetails extends Component {
             <Card>
               <CardBody>
                 <CardTitle>Child Care</CardTitle>
-                <CardText>Due to the size of the venue, we request the attendence of adults only.  If unable to make arrangements, child care will be provided in the suite of the Courtyard Marriott Hotel.</CardText>
+                <CardText>Due to the size of the venue, we request the attendence of adults only.  If unable to make arrangements, child care will be provided in the suite of the <a href="../Accommodations/#courtyardMarriottCardGroup">Courtyard Marriott Hotel</a>.</CardText>
               </CardBody>
             </Card>
           </Col>
-          <Col sm="3" className="mb-2">
+          <Col sm="5" className="mb-2">
             <Card>
               <CardBody>
                 <CardTitle>Dress Code</CardTitle>
-                <CardText>Dressy Casual</CardText>
+                <CardText>Dressy Casual aka Semiformal.  For the ladies: cocktail dress, dressy skirt and top, elegant pantsuit, or cute romper.  For the men: suit, tie, dress pants, and/or blazer.  Light or dark hues, up to you.  Please no jeans or sneakers.</CardText>
               </CardBody>
             </Card>
           </Col>

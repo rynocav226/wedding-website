@@ -1,14 +1,26 @@
 Things to do/fix:
 
+Navigation Menu
+> Put RSVP all the way to the right and make a different style to stand out - DONE
+> Make NavbarBrand into an image of our save the date sticker
+
 Home Page
 > make the image the full background, overlayed with the text - DONE
-> make scrolling past the image start displaying the wedding details page (maybe)
+> split up text lines on small screen size
+> make scrolling past the image start displaying the wedding details page (maybe) - DONE
 
 Wedding Details Page
-> link the hotel metion in the child care card to the accommodations page and auto scroll to the Courtyard section
+> link the hotel metion in the child care card to the accommodations page and auto scroll to the Courtyard section - DONE
+> explain dressy casual - DONE
+> overlay Day Block Brewing text on image of venue - DONE
+> add electronics section; don't get in photographer's way trying to take own photos, will share photos with peeps
 
 Accommodations Page
-> Get the Scrollspy to adjust for the permanent navigation bar (probably get rid of, wanted to test it out)
+> Get the Scrollspy to adjust for the permanent navigation bar (probably get rid of, wanted to test it out) - DONE
+
+Additional Pages
+> Bridal Party page - pictures and how became friends
+> Wedding Photos - share more photos from wedding; or could be modal slideshow popup from Our Story page
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
