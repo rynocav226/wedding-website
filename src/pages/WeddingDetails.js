@@ -16,7 +16,7 @@ class WeddingDetails extends Component {
                 <Container>
                   <Row>
                     <Col className="mb-2">
-                      <CardText className="text-center">Day Block Event Center</CardText>
+                      <CardText className="text-center">Day Block Brewing</CardText>
                     </Col>
                     <Col sm="12" className="mb-2">
                       <CardImg src={require("../assets/dayBlockImage.jpg")} alt="Card image cap" />
@@ -102,7 +102,7 @@ class WeddingDetails extends Component {
             <Card>
               <CardBody>
                 <CardTitle>Parking</CardTitle>
-                <CardText>For guests not staying at the downtown hotels, we have rented out a parking lot adjacent to Day Block.  The address for the lot is ???.  Guests may park there from ?? to midnight.  Note: an open bar is provided for the duration of the event, so if using the parking lot please have a designated driver, thanks.</CardText>
+                <CardText>For guests not staying at the downtown hotels, we have rented out a parking lot adjacent to Day Block.  The address for the lot is ???.  Guests may park there from ?? to midnight.  <b>Note:</b> an open bar is provided for the duration of the event, so if using the parking lot please have a designated driver, thanks.</CardText>
               </CardBody>
             </Card>
           </Col>

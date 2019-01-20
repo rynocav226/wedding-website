@@ -21,7 +21,7 @@ class NavigationBar extends Component {
   /* using reacstrap */
   render() {
     return (
-      <Navbar fixed="top" color="light" light expand="md">
+      <Navbar className="fixed-top" color="light" light expand="md">
         <NavbarBrand href="/">R & J</NavbarBrand>
         <NavbarToggler onClick={this.toggle} />
         <Collapse isOpen={this.state.isOpen} navbar>

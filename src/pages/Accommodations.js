@@ -4,12 +4,13 @@ import { Nav, NavItem, NavLink } from 'reactstrap';
 import { CardGroup, Card, CardBody, CardTitle, CardImg } from 'reactstrap';
 import { Table } from 'reactstrap';
 import { ListGroup, ListGroupItem, ListGroupItemHeading, ListGroupItemText } from 'reactstrap';
+import '../styles/Accommodations.css';
 
 class Accommodations extends Component {
   render() {
     return (
       <Container fluid>
-        <Nav id="accommodationsNavigation" className="justify-content-center">
+        <Nav id="accommodationsNavigation" style={{zIndex: '2'}} className="hotelNav bg-secondary justify-content-center">
           <NavItem>
             <NavLink href="#aloftCardGroup">Aloft</NavLink>
           </NavItem>
@@ -20,7 +21,7 @@ class Accommodations extends Component {
             <NavLink href="#doubleTreeCardGroup">DoubleTree SLP</NavLink>
           </NavItem>
         </Nav>
-        <div data-spy="scroll" data-target="#accommodationsNavigation" data-offset="70">
+        <div style={{paddingTop: '25px', zIndex: '1'}}>
           <CardGroup id="aloftCardGroup" className="mb-2">
             <Card>
               <CardBody>
@@ -108,7 +109,10 @@ class Accommodations extends Component {
             <Card>
               <CardBody>
                 <CardTitle>Courtyard Marriott</CardTitle>
-                <CardImg src={require("../assets/courtyardMarriottImage.jpg")} alt="Card image cap" />
+                <CardImg className="mb-2" src={require("../assets/courtyardMarriottImage.jpg")} alt="Card image cap" />
+                <div className="embed-responsive embed-responsive-16by9">
+                  <iframe title="CourtyardMarriottMap" className="embed-responsive-item" src="https://www.google.com/maps/d/u/0/embed?mid=10UrKekqIgg9_V2iNT1Rc6VALznYY0cIj" />
+                </div>
               </CardBody>
             </Card>
             <Card>
@@ -191,8 +195,11 @@ class Accommodations extends Component {
           <CardGroup id="doubleTreeCardGroup">
             <Card>
               <CardBody>
-                <CardTitle>Double Tree SLP</CardTitle>
-                <CardImg src={require("../assets/doubleTreeImage.jpg")} alt="Card image cap" />
+                <CardTitle>DoubleTree SLP</CardTitle>
+                <CardImg className="mb-2" src={require("../assets/doubleTreeImage.jpg")} alt="Card image cap" />
+                <div className="embed-responsive embed-responsive-16by9">
+                  <iframe title="DoubleTreeSLPMap" className="embed-responsive-item" src="https://www.google.com/maps/d/u/0/embed?mid=1V8kshmuxVP6t-6acS80W6lhy1NHwN0yY" />
+                </div>
               </CardBody>
             </Card>
             <Card>
