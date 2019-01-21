@@ -261,7 +261,7 @@ class Accommodations extends Component {
                   </ListGroupItem>
                   <ListGroupItem>
                     <ListGroupItemHeading>Booking Instructions</ListGroupItemHeading>
-                    <ListGroupItemText>Reservation can be made through the hotel's <a href="https://doubletree3.hilton.com/en/hotels/minnesota/doubletree-by-hilton-hotel-minneapolis-park-place-MSPPHDT/index.html?SEO_id=GMB-DT-MSPPHDT" target="_blank" rel="noopener noreferrer">website</a> or by calling the hotel directly at the phone number listed.  When making the reservation, use the group code <strong>609</strong> to receive the discounted rate.</ListGroupItemText>
+                    <ListGroupItemText>Reservation can be made through the <a href="https://doubletree3.hilton.com/en/hotels/minnesota/doubletree-by-hilton-hotel-minneapolis-park-place-MSPPHDT/index.html?SEO_id=GMB-DT-MSPPHDT" target="_blank" rel="noopener noreferrer">hotel's website</a> or by calling the hotel directly at the phone number listed.  When making the reservation, use the group code <strong>609</strong> to receive the discounted rate.</ListGroupItemText>
                   </ListGroupItem>
                   <ListGroupItem>
                     <ListGroupItemHeading>Availibility</ListGroupItemHeading>

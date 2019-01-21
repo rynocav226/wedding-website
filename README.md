@@ -6,7 +6,7 @@ Navigation Menu
 
 Home Page
 > make the image the full background, overlayed with the text - DONE
-> split up text lines on small screen size
+> split up text lines on x-small screen size - DONE
 > make scrolling past the image start displaying the wedding details page (maybe) - DONE
 
 Wedding Details Page
@@ -21,6 +21,8 @@ Accommodations Page
 Additional Pages
 > Bridal Party page - pictures and how became friends
 > Wedding Photos - share more photos from wedding; or could be modal slideshow popup from Our Story page
+
+----------------------------------------------------------------------------------------------------
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

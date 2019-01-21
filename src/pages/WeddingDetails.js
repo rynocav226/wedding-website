@@ -3,7 +3,6 @@ import { Container, Row, Col } from 'reactstrap';
 import { Card, CardImg, CardText, CardBody, CardTitle } from 'reactstrap';
 import { Table } from 'reactstrap';
 import { ListGroup, ListGroupItem } from 'reactstrap';
-import '../styles/WeddingDetails.css';
 
 class WeddingDetails extends Component {
   render() {
@@ -16,16 +15,11 @@ class WeddingDetails extends Component {
                 <CardTitle>Venue</CardTitle>
                 <Container>
                   <Row>
-                    {/*
                     <Col className="mb-2">
-                      <CardText className="text-center">Day Block Brewing</CardText>
+                      <CardText className="text-center font-weight-bold">Day Block Brewing</CardText>
                     </Col>
-                    */}
                     <Col sm="12" className="mb-2">
-                    <div className="venueCombo">
                       <CardImg src={require("../assets/dayBlockImage.jpg")} alt="Card image cap" />
-                      <div className="venueText text-center text-primary font-weight-bold">Day Block Brewing</div>
-                      </div>
                     </Col>
                     <Col>
                       <CardText className="text-center"><a href="https://www.google.com/maps/place/Day+Block+Event+Center/@44.975204,-93.252891,15z/data=!4m5!3m4!1s0x0:0x6510536e530a6987!8m2!3d44.975204!4d-93.252891" target="_blank" rel="noopener noreferrer">1103 S Washington Ave, Minneapolis MN 55415</a></CardText>
@@ -70,7 +64,7 @@ class WeddingDetails extends Component {
               </CardBody>
             </Card>
           </Col>
-          <Col sm="2" className="mb-2">
+          <Col sm="3" className="mb-2">
             <Card>
               <CardBody>
                 <CardTitle>Registry</CardTitle>
@@ -80,7 +74,7 @@ class WeddingDetails extends Component {
               </CardBody>
             </Card>
           </Col>
-          <Col sm="5" className="mb-2">
+          <Col sm="4" className="mb-2">
             <Card>
               <CardBody>
                 <CardTitle>Child Care</CardTitle>
@@ -100,7 +94,7 @@ class WeddingDetails extends Component {
             <Card>
               <CardBody>
                 <CardTitle>Pre-Wedding Fun</CardTitle>
-                <CardText>In lieu of a Groom's Dinner the night before the wedding, we will be doing a Brewery Crawl through the North Loop of Downtown Minneapolis on Friday night, the 27th.  All are welcome to partake for however many stops your heart desires.  The crawl will start and end near the downtown hotels so if staying at the Aloft or Courtyard Marriott, will be able to walk.  See the 'Brewery Crawl' page for the details.</CardText>
+                <CardText>In lieu of a Groom's Dinner the night before the wedding, we will be doing a Brewery Crawl through the North Loop of Downtown Minneapolis on Friday night, the 27th.  All are welcome to partake for however many stops your heart desires.  The crawl will start and end near the downtown hotels so if staying at the Aloft or Courtyard Marriott, will be able to walk.  See the <a href="../BreweryCrawl">'Brewery Crawl'</a> page for the details.</CardText>
               </CardBody>
             </Card>
           </Col>
