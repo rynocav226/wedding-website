@@ -1,8 +1,13 @@
 Things to do/fix:
 
+General
+> Change title and icon - DONE
+> change favorite title - DONE
+
 Navigation Menu
 > Put RSVP all the way to the right and make a different style to stand out - DONE
 > Make NavbarBrand into an image of our save the date sticker
+> Put some pages in a dropdown so navbar doesn't collapse until xs screen size
 
 Home Page
 > make the image the full background, overlayed with the text - DONE
