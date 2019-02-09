@@ -26,7 +26,7 @@ class Accommodations extends Component {
             <Card>
               <CardBody>
                 <CardTitle>Aloft</CardTitle>
-                <CardImg className="mb-2" src={require("../assets/aloftImage.jpg")} alt="Card image cap" />
+                <CardImg className="mb-2" src={require("../assets/aloftImage.jpg")} alt="Aloft" />
                 <div className="embed-responsive embed-responsive-16by9">
                   <iframe title="AlotMap" className="embed-responsive-item" src="https://www.google.com/maps/d/u/0/embed?mid=12jtQUqkq1OR84um6TOV5PMzBcIVk2K3t" />
                 </div>
@@ -109,7 +109,7 @@ class Accommodations extends Component {
             <Card>
               <CardBody>
                 <CardTitle>Courtyard Marriott</CardTitle>
-                <CardImg className="mb-2" src={require("../assets/courtyardMarriottImage.jpg")} alt="Card image cap" />
+                <CardImg className="mb-2" src={require("../assets/courtyardMarriottImage.jpg")} alt="CourtyardMarriott" />
                 <div className="embed-responsive embed-responsive-16by9">
                   <iframe title="CourtyardMarriottMap" className="embed-responsive-item" src="https://www.google.com/maps/d/u/0/embed?mid=10UrKekqIgg9_V2iNT1Rc6VALznYY0cIj" />
                 </div>
@@ -196,7 +196,7 @@ class Accommodations extends Component {
             <Card>
               <CardBody>
                 <CardTitle>DoubleTree SLP</CardTitle>
-                <CardImg className="mb-2" src={require("../assets/doubleTreeImage.jpg")} alt="Card image cap" />
+                <CardImg className="mb-2" src={require("../assets/doubleTreeImage.jpg")} alt="DoubleTree" />
                 <div className="embed-responsive embed-responsive-16by9">
                   <iframe title="DoubleTreeSLPMap" className="embed-responsive-item" src="https://www.google.com/maps/d/u/0/embed?mid=1V8kshmuxVP6t-6acS80W6lhy1NHwN0yY" />
                 </div>

@@ -33,7 +33,7 @@ class HomePage extends Component {
         </Jumbotron>
         */}
       </Container>
-      <WeddingDetails />
+      <WeddingDetails/>
       </div>
     );
   }

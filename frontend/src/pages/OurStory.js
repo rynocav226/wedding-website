@@ -95,7 +95,7 @@ class OurStory extends Component {
             <ModalBody>
               <Row>
                 <Col sm="4" className="d-none d-sm-block">
-                  <img src={require("../assets/gophersImage2.jpg")} className="img-fluid" alt="Gopher pic" />
+                  <img src={require("../assets/gophersImage2.jpg")} className="img-fluid" alt="Gopher2" />
                 </Col>
                 <Col sm="8">
                   <p>We met at the University of Minnesota and grew our friendship on the softball field.</p>
@@ -107,7 +107,7 @@ class OurStory extends Component {
             </ModalFooter>
           </Modal>
           <Card>
-            <CardImg src={require("../assets/gophersImage.jpg")} alt="Card image cap" />
+            <CardImg src={require("../assets/gophersImage.jpg")} alt="Gopher" />
           </Card>
           <Card onClick={this.toggleCountry} className="cardModal">
             <CardBody>
@@ -123,7 +123,7 @@ class OurStory extends Component {
             <ModalBody>
               <Row>
                 <Col sm="4" className="d-none d-sm-block">
-                  <img src={require("../assets/weFestImage2.jpg")} className="img-fluid" alt="Country pic" />
+                  <img src={require("../assets/weFestImage2.jpg")} className="img-fluid" alt="Country2" />
                 </Col>
                 <Col sm="8">
                   <p>From city concerts to WE Fest, we heard them all.</p>
@@ -135,7 +135,7 @@ class OurStory extends Component {
             </ModalFooter>
           </Modal>
           <Card>
-            <CardImg src={require("../assets/weFestImage.jpg")} alt="Card image cap" />
+            <CardImg src={require("../assets/weFestImage.jpg")} alt="Country" />
           </Card>
           <Card onClick={this.toggleDecker} className="cardModal">
             <CardBody>
@@ -151,7 +151,7 @@ class OurStory extends Component {
             <ModalBody>
               <Row>
                 <Col sm="4" className="d-none d-sm-block">
-                  <img src={require("../assets/deckerImage2.jpg")} className="img-fluid" alt="Decker pic" />
+                  <img src={require("../assets/deckerImage2.jpg")} className="img-fluid" alt="Decker2" />
                 </Col>
                 <Col sm="8">
                   <p>Once we moved in together, Jorden let us get a dog.</p>
@@ -163,7 +163,7 @@ class OurStory extends Component {
             </ModalFooter>
           </Modal>
           <Card>
-            <CardImg src={require("../assets/deckerImage.jpg")} alt="Card image cap" />
+            <CardImg src={require("../assets/deckerImage.jpg")} alt="Decker" />
           </Card>
           <Card onClick={this.toggleRainbow} className="cardModal">
             <CardBody>
@@ -179,7 +179,7 @@ class OurStory extends Component {
             <ModalBody>
               <Row>
                 <Col sm="4" className="d-none d-sm-block">
-                  <img src={require("../assets/rainbowConnectionImage2.jpg")} className="img-fluid" alt="Rainbow pic" />
+                  <img src={require("../assets/rainbowConnectionImage2.jpg")} className="img-fluid" alt="Rainbow2" />
                 </Col>
                 <Col sm="8">
                   <p>Together we founded the greatest team ever to play at the Law School Fields.</p>
@@ -191,7 +191,7 @@ class OurStory extends Component {
             </ModalFooter>
           </Modal>
           <Card>
-            <CardImg src={require("../assets/rainbowConnectionImage.jpg")} alt="Card image cap" />
+            <CardImg src={require("../assets/rainbowConnectionImage.jpg")} alt="Rainbow" />
           </Card>
           <Card onClick={this.toggleMiami} className="cardModal">
             <CardBody>
@@ -207,7 +207,7 @@ class OurStory extends Component {
             <ModalBody>
               <Row>
                 <Col sm="4" className="d-none d-sm-block">
-                  <img src={require("../assets/miamiImage2.jpg")} className="img-fluid" alt="Miami pic" />
+                  <img src={require("../assets/miamiImage2.jpg")} className="img-fluid" alt="Miami2" />
                 </Col>
                 <Col sm="8">
                   <p>We exchanged the frigid North for the sun and the beach.</p>
@@ -219,7 +219,7 @@ class OurStory extends Component {
             </ModalFooter>
           </Modal>
           <Card>
-            <CardImg src={require("../assets/miamiImage.jpg")} alt="Card image cap" />
+            <CardImg src={require("../assets/miamiImage.jpg")} alt="Miami" />
           </Card>
           <Card onClick={this.toggleProposal} className="cardModal">
             <CardBody>
@@ -235,7 +235,7 @@ class OurStory extends Component {
             <ModalBody>
               <Row>
                 <Col sm="4" className="d-none d-sm-block">
-                  <img src={require("../assets/proposalImage2.jpg")} className="img-fluid" alt="Engagement pic" />
+                  <img src={require("../assets/proposalImage2.jpg")} className="img-fluid" alt="Proposal2" />
                 </Col>
                 <Col sm="8">
                   <p>Committing to each other amidst a weekend of pool chilling and golfing.</p>
@@ -247,7 +247,7 @@ class OurStory extends Component {
             </ModalFooter>
           </Modal>
           <Card>
-            <CardImg src={require("../assets/proposalImage.jpg")} alt="Card image cap" />
+            <CardImg src={require("../assets/proposalImage.jpg")} alt="Proposal" />
           </Card>
           <Card onClick={this.toggleDuke} className="cardModal">
             <CardBody>
@@ -263,7 +263,7 @@ class OurStory extends Component {
             <ModalBody>
               <Row>
                 <Col sm="4" className="d-none d-sm-block">
-                  <img src={require("../assets/dukeImage2.jpg")} className="img-fluid" alt="Duke pic" />
+                  <img src={require("../assets/dukeImage2.jpg")} className="img-fluid" alt="Duke2" />
                 </Col>
                 <Col sm="8">
                   <p>Watching games at Cameron Indoor and traveling around the globe.</p>
@@ -275,7 +275,7 @@ class OurStory extends Component {
             </ModalFooter>
           </Modal>
           <Card>
-            <CardImg src={require("../assets/dukeImage.jpg")} alt="Card image cap" />
+            <CardImg src={require("../assets/dukeImage.jpg")} alt="Duke" />
           </Card>
           <Card onClick={this.toggleWedding} className="cardModal">
             <CardBody>
@@ -291,7 +291,7 @@ class OurStory extends Component {
             <ModalBody>
               <Row>
                 <Col sm="4" className="d-none d-sm-block">
-                  <img src={require("../assets/weddingImage2.jpg")} className="img-fluid" alt="Wedding pic" />
+                  <img src={require("../assets/weddingImage2.jpg")} className="img-fluid" alt="Wedding2" />
                 </Col>
                 <Col sm="8">
                   <p>We married each other on a beach in South Carolina in front of our parents.</p>
@@ -303,7 +303,7 @@ class OurStory extends Component {
             </ModalFooter>
           </Modal>
           <Card>
-            <CardImg src={require("../assets/weddingImage.jpg")} alt="Card image cap" />
+            <CardImg src={require("../assets/weddingImage.jpg")} alt="Wedding" />
           </Card>
           <Card>
             <CardBody>

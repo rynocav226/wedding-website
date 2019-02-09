@@ -18,7 +18,13 @@ Wedding Details Page
 > link the hotel metion in the child care card to the accommodations page and auto scroll to the Courtyard section - DONE
 > explain dressy casual - DONE
 > overlay Day Block Brewing text on image of venue - DONE
-> add electronics section; don't get in photographer's way trying to take own photos, will share photos with peeps
+> add electronics section; don't get in photographer's way trying to take own photos, will share photos with peeps - DONE
+> add section about bar being hosted all night
+> add links to two other registeries
+
+Our Story
+> Add card for honeymoon
+> write out modals for each life phase
 
 Accommodations Page
 > Get the Scrollspy to adjust for the permanent navigation bar (probably get rid of, wanted to test it out) - DONE

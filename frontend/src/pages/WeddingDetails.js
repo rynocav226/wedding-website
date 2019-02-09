@@ -19,7 +19,7 @@ class WeddingDetails extends Component {
                       <CardText className="text-center font-weight-bold">Day Block Brewing</CardText>
                     </Col>
                     <Col sm="12" className="mb-2">
-                      <CardImg src={require("../assets/dayBlockImage.jpg")} alt="Card image cap" />
+                      <CardImg src={require("../assets/dayBlockImage.jpg")} alt="DayBlock" />
                     </Col>
                     <Col>
                       <CardText className="text-center"><a href="https://www.google.com/maps/place/Day+Block+Event+Center/@44.975204,-93.252891,15z/data=!4m5!3m4!1s0x0:0x6510536e530a6987!8m2!3d44.975204!4d-93.252891" target="_blank" rel="noopener noreferrer">1103 S Washington Ave, Minneapolis MN 55415</a></CardText>
@@ -64,6 +64,22 @@ class WeddingDetails extends Component {
               </CardBody>
             </Card>
           </Col>
+          <Col sm="6" className="mb-2">
+            <Card>
+              <CardBody>
+                <CardTitle>Child Care</CardTitle>
+                <CardText>Due to the size of the venue, we request the attendence of adults only.  If unable to make arrangements, child care will be provided in the suite of the <a href="../Accommodations/#courtyardMarriottCardGroup">Courtyard Marriott Hotel</a>.</CardText>
+              </CardBody>
+            </Card>
+          </Col>
+          <Col sm="6" className="mb-2">
+            <Card>
+              <CardBody>
+                <CardTitle>Dress Code</CardTitle>
+                <CardText>Dressy Casual aka Semiformal.  For the ladies: cocktail dress, dressy skirt and top, elegant pantsuit, or cute romper.  For the men: suit, tie, dress pants, and/or blazer.  Light or dark hues, up to you.  Please no jeans or sneakers.</CardText>
+              </CardBody>
+            </Card>
+          </Col>
           <Col sm="3" className="mb-2">
             <Card>
               <CardBody>
@@ -74,23 +90,7 @@ class WeddingDetails extends Component {
               </CardBody>
             </Card>
           </Col>
-          <Col sm="4" className="mb-2">
-            <Card>
-              <CardBody>
-                <CardTitle>Child Care</CardTitle>
-                <CardText>Due to the size of the venue, we request the attendence of adults only.  If unable to make arrangements, child care will be provided in the suite of the <a href="../Accommodations/#courtyardMarriottCardGroup">Courtyard Marriott Hotel</a>.</CardText>
-              </CardBody>
-            </Card>
-          </Col>
-          <Col sm="5" className="mb-2">
-            <Card>
-              <CardBody>
-                <CardTitle>Dress Code</CardTitle>
-                <CardText>Dressy Casual aka Semiformal.  For the ladies: cocktail dress, dressy skirt and top, elegant pantsuit, or cute romper.  For the men: suit, tie, dress pants, and/or blazer.  Light or dark hues, up to you.  Please no jeans or sneakers.</CardText>
-              </CardBody>
-            </Card>
-          </Col>
-          <Col sm="6" className="mb-2">
+          <Col sm="9" className="mb-2">
             <Card>
               <CardBody>
                 <CardTitle>Pre-Wedding Fun</CardTitle>
@@ -98,11 +98,19 @@ class WeddingDetails extends Component {
               </CardBody>
             </Card>
           </Col>
-          <Col sm="6" className="mb-2">
+          <Col sm="5" className="mb-2">
             <Card>
               <CardBody>
                 <CardTitle>Parking</CardTitle>
                 <CardText>For guests not staying at the downtown hotels, we have rented out a parking lot adjacent to Day Block.  The address for the lot is ???.  Guests may park there from ?? to midnight.  <b>Note:</b> an open bar is provided for the duration of the event, so if using the parking lot please have a designated driver, thanks.</CardText>
+              </CardBody>
+            </Card>
+          </Col>
+          <Col sm="7" className="mb-2">
+            <Card>
+              <CardBody>
+                <CardTitle>Electronics Request</CardTitle>
+                <CardText>We kindly request that during the "big" moments of the night all phones and tablets remain in pockets, purses, and clutches so that all guests can share fully in the moment and our photographer has uninterupted viewpoints to capture the moments.  If y'all promise to do this, we promise to share some photos on this website in the week that follows.  For the rest of the time, take as many photos you like; save them, post them, delete them, and if you do post them, please use #caveirneact2</CardText>
               </CardBody>
             </Card>
           </Col>
