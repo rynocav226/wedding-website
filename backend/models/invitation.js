@@ -1,5 +1,4 @@
 const mongoose = require("mongoose");
-const bcrypt = require("bcrypt");
 
 const invitationSchema = new mongoose.Schema({
   code: {
@@ -9,24 +8,23 @@ const invitationSchema = new mongoose.Schema({
   },
   guests: [
     {
-      surname: {
-        type: String,
-        required: true
-      },
-      firstname: {
-        type: String,
-        required: true
-      },
-      attending: {
-        type: Boolean
-      },
-      isChild: {
-        type: Boolean
-      }
+      type: mongoose.Schema.Types.ObjectId,
+      ref: "Guest"
     }
   ]
 });
 
-const Invitation = mongoose.model("Invitation", invitationSchema);
+invitationSchema.pre("remove", async function(next) {
+  try {
+    const Guest = require("./guest");
+    for (const guest of this.guests) {
+      let foundGuest = await Guest.findById(guest);
+      await foundGuest.remove();
+    }
+    return next();
+  } catch (err) {
+    return next(err);
+  }
+});
 
-module.exports = Invitation;
+module.exports = mongoose.model("Invitation", invitationSchema);

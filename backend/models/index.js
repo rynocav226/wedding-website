@@ -3,5 +3,9 @@ mongoose.set("debug", true);
 mongoose.Promise = Promise;
 mongoose.connect("mongodb://localhost/wedding", {
   keepAlive: true,
-  useMongoClient: true
+  useNewUrlParser: true,
+  useCreateIndex: true
 });
+
+module.exports.Invitation = require("./invitation");
+module.exports.Guest = require("./guest");
