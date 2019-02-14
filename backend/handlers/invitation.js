@@ -8,7 +8,7 @@ exports.createInvitation = async function(req, res, next) {
     return res.status(200).json(invitation);
   } catch (err) {
     if (err.code === 11000) {
-      err.message = "Sorry, that Invitation Code is taken.";
+      err.message = "Invitation Code is taken.";
     }
     return next({
       status: 400,
@@ -57,9 +57,16 @@ exports.deleteInvitation = async function(req, res, next) {
 
 exports.updateInvitation = async function(req, res, next) {
   try {
-    let updateInvitation = await db.Invitation.findOneAndUpdate(req.params.invitation_id, {
-      code: req.body.code,
-      guests: req.body.guests
+    let updateInvitation = await db.Invitation.findByIdAndUpdate(req.params.invitation_id, {
+      "responded": req.body.responded
+    }, { new: true });
+    for (const guest of req.body.guests) {
+      let updateGuest = await db.Guest.findByIdAndUpdate(guest._id, {
+        "attending": guest.attending
+      }, { new: true });
+    }
+    updateInvitation = await db.Invitation.findById(req.params.invitation_id).populate("guests", {
+      attending: true
     });
     return res.status(200).json(updateInvitation);
   } catch (err) {

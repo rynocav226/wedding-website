@@ -7,6 +7,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="theme-color" content="#000000">
     <title>Ryan & Jorden | 9.28.2019</title>
+    <!-- Firebase App is always required and must be first -->
+    <script src="https://www.gstatic.com/firebasejs/5.8.2/firebase-app.js"></script>
+
+    <!-- Add additional services that you want to use -->
+    <!--<script src="https://www.gstatic.com/firebasejs/5.8.2/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.8.2/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.8.2/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.8.2/firebase-messaging.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.8.2/firebase-functions.js"></script>-->
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyDC_lBl6hMvM4alO8jYExfysOtzvp0YO7k",
+        authDomain: "wedding-website-521e4.firebaseapp.com",
+        databaseURL: "https://wedding-website-521e4.firebaseio.com",
+        projectId: "wedding-website-521e4",
+        storageBucket: "wedding-website-521e4.appspot.com",
+        messagingSenderId: "801088762116"
+      };
+      firebase.initializeApp(config);
+    </script>
   </head>
   <body style="padding-top: 70px">
     <noscript>
