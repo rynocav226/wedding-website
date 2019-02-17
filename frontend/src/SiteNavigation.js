@@ -11,12 +11,12 @@ import SongRequests from './pages/SongRequests';
 const SiteNavigation = () => (
   <Switch>
     <Route exact path="/" component={HomePage}/>
-    <Route exact path="/WeddingDetails" component={WeddingDetails}/>
-    <Route exact path="/OurStory" component={OurStory}/>
-    <Route exact path="/Accommodations" component={Accommodations}/>
-    <Route exact path="/BreweryCrawl" component={BreweryCrawl}/>
-    <Route exact path="/Rsvp" component={Rsvp}/>
-    <Route exact path="/SongRequests" component={SongRequests}/>
+    <Route path="/WeddingDetails" component={WeddingDetails}/>
+    <Route path="/OurStory" component={OurStory}/>
+    <Route path="/Accommodations" component={Accommodations}/>
+    <Route path="/BreweryCrawl" component={BreweryCrawl}/>
+    <Route path="/Rsvp" component={Rsvp}/>
+    <Route path="/SongRequests" component={SongRequests}/>
   </Switch>
 );
 
