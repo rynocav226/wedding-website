@@ -7,7 +7,7 @@ General
 Navigation Menu
 > Put RSVP all the way to the right and make a different style to stand out - DONE
 > Make NavbarBrand into an image of our save the date sticker
-> Put some pages in a dropdown so navbar doesn't collapse until xs screen size
+> Put some pages in a dropdown so navbar doesn't collapse until xs screen size - DONE
 
 Home Page
 > make the image the full background, overlayed with the text - DONE
@@ -19,11 +19,11 @@ Wedding Details Page
 > explain dressy casual - DONE
 > overlay Day Block Brewing text on image of venue - DONE
 > add electronics section; don't get in photographer's way trying to take own photos, will share photos with peeps - DONE
-> add section about bar being hosted all night
-> add links to two other registeries
+> add section about bar being hosted all night - DONE
+> add links to two other registeries - DONE
 
 Our Story
-> Add card for honeymoon
+> Add card for honeymoon - DONE
 > write out modals for each life phase
 
 Accommodations Page

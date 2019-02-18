@@ -16,7 +16,8 @@ class OurStory extends Component {
       modalMiami: false,
       modalProposal: false,
       modalDuke: false,
-      modalWedding: false
+      modalWedding: false,
+      modalHoneymoon: false
     };
 
     this.toggleGopher = this.toggleGopher.bind(this);
@@ -27,6 +28,7 @@ class OurStory extends Component {
     this.toggleProposal = this.toggleProposal.bind(this);
     this.toggleDuke = this.toggleDuke.bind(this);
     this.toggleWedding = this.toggleWedding.bind(this);
+    this.toggleHoneymoon = this.toggleHoneymoon.bind(this);
   }
 
   toggleGopher() {
@@ -74,6 +76,12 @@ class OurStory extends Component {
   toggleWedding() {
     this.setState({
       modalWedding: !this.state.modalWedding
+    });
+  }
+
+  toggleHoneymoon() {
+    this.setState({
+      modalHoneymoon: !this.state.modalHoneymoon
     });
   }
 
@@ -282,7 +290,7 @@ class OurStory extends Component {
               <CardTitle>Wedding Day</CardTitle>
               <CardSubtitle>Saying 'I Do' on the Beach of our Dreams</CardSubtitle>
               <CardText>
-                We married each other on a beach in South Carolina in front of our parents.<br /><br />Click to read more...
+                We married each other on a beach in South Carolina  To see photos from the big day, head to the <a href="../WeddingPhotos/">'Wedding Photos'</a> page.<br /><br />Click to read more...
               </CardText>
             </CardBody>
           </Card>
@@ -294,7 +302,7 @@ class OurStory extends Component {
                   <img src={require("../assets/weddingImage2.jpg")} className="img-fluid" alt="Wedding2" />
                 </Col>
                 <Col sm="8">
-                  <p>We married each other on a beach in South Carolina in front of our parents.</p>
+                  <p>We married each other on a beach in South Carolina.</p>
                 </Col>
               </Row>
             </ModalBody>
@@ -304,6 +312,34 @@ class OurStory extends Component {
           </Modal>
           <Card>
             <CardImg src={require("../assets/weddingImage.jpg")} alt="Wedding" />
+          </Card>
+          <Card onClick={this.toggleHoneymoon} className="cardModal">
+            <CardBody>
+              <CardTitle>Honeymoon</CardTitle>
+              <CardSubtitle>Exploring a New Continent Together</CardSubtitle>
+              <CardText>
+                For three weeks, we swapped the winter cold for the summer heat of Australia and New Zealand.<br /><br />Click to read more...
+              </CardText>
+            </CardBody>
+          </Card>
+          <Modal centered autoFocus size="lg" isOpen={this.state.modalHoneymoon} toggle={this.toggleHoneymoon}>
+            <ModalHeader toggle={this.toggleHoneymoon}>Honeymoon</ModalHeader>
+            <ModalBody>
+              <Row>
+                <Col sm="4" className="d-none d-sm-block">
+                  <img src={require("../assets/honeymoonImage2.jpg")} className="img-fluid" alt="Honeymoon2" />
+                </Col>
+                <Col sm="8">
+                  <p>For three weeks, we swapped the winter cold for the summer heat of Australia and New Zealand.</p>
+                </Col>
+              </Row>
+            </ModalBody>
+            <ModalFooter>
+              <Button className="mr-auto ml-auto" color="secondary" onClick={this.toggleHoneymoon}>Close</Button>
+            </ModalFooter>
+          </Modal>
+          <Card>
+            <CardImg src={require("../assets/honeymoonImage.jpg")} alt="Honeymoon" />
           </Card>
           <Card>
             <CardBody>

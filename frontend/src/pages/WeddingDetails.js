@@ -9,7 +9,7 @@ class WeddingDetails extends Component {
     return (
       <Container fluid>
         <Row>
-          <Col sm="5" className="mb-2">
+          <Col md="6" lg="5" xl="4" className="mb-2">
             <Card color="light">
               <CardBody>
                 <CardTitle>Venue</CardTitle>
@@ -29,7 +29,7 @@ class WeddingDetails extends Component {
               </CardBody>
             </Card>
           </Col>
-          <Col sm="7" className="mb-2">
+          <Col md="6" lg="7" xl="8" className="mb-2">
             <Card>
               <CardBody>
                 <CardTitle>Schedule</CardTitle>
@@ -64,7 +64,7 @@ class WeddingDetails extends Component {
               </CardBody>
             </Card>
           </Col>
-          <Col sm="6" className="mb-2">
+          <Col md="6" className="mb-2">
             <Card>
               <CardBody>
                 <CardTitle>Child Care</CardTitle>
@@ -72,7 +72,7 @@ class WeddingDetails extends Component {
               </CardBody>
             </Card>
           </Col>
-          <Col sm="6" className="mb-2">
+          <Col md="6" className="mb-2">
             <Card>
               <CardBody>
                 <CardTitle>Dress Code</CardTitle>
@@ -80,33 +80,43 @@ class WeddingDetails extends Component {
               </CardBody>
             </Card>
           </Col>
-          <Col sm="3" className="mb-2">
+          <Col md="4" lg="3" xl="2" className="mb-2">
             <Card>
               <CardBody>
                 <CardTitle>Registry</CardTitle>
-                <ListGroup>
-                  <ListGroupItem tag="a" href="https://amazon.com" target="_blank" rel="noopener noreferrer">Amazon</ListGroupItem>
+                <ListGroup flush>
+                  <ListGroupItem className="list-group-item-action text-primary" tag="a" href="https://amazon.com" target="_blank" rel="noopener noreferrer">Amazon</ListGroupItem>
+                  <ListGroupItem className="list-group-item-action text-primary" tag="a" href="https://www.target.com/gift-registry/dashboard?registryId=0f58270090e2432f81c982c93c5492ca&lnk=reg_invite_accept" target="_blank" rel="noopener noreferrer">Target</ListGroupItem>
+                  <ListGroupItem className="list-group-item-action text-primary" tag="a" href="https://www.crateandbarrel.com/gift-registry/jorden-taveirne-and-ryan-cavanaugh/r5948856" target="_blank" rel="noopener noreferrer">Crate&Barrel</ListGroupItem>
                 </ListGroup>
               </CardBody>
             </Card>
           </Col>
-          <Col sm="9" className="mb-2">
+          <Col md="8" lg="5" xl="6" className="mb-2">
             <Card>
               <CardBody>
                 <CardTitle>Pre-Wedding Fun</CardTitle>
-                <CardText>In lieu of a Groom's Dinner the night before the wedding, we will be doing a Brewery Crawl through the North Loop of Downtown Minneapolis on Friday night, the 27th.  All are welcome to partake for however many stops your heart desires.  The crawl will start and end near the downtown hotels so if staying at the Aloft or Courtyard Marriott, will be able to walk.  See the <a href="../BreweryCrawl">'Brewery Crawl'</a> page for the details.</CardText>
+                <CardText>In lieu of a Groom's Dinner the night before the wedding, we will be doing a Brewery Crawl through the North Loop of Downtown Minneapolis on Friday night, the 27th.  All are welcome to partake for however many stops your heart desires.  The crawl will start and end near the downtown hotels so if staying at the Aloft or Courtyard Marriott, will be able to walk.  See the <a href="../BreweryCrawl/">'Brewery Crawl'</a> page for the details.</CardText>
               </CardBody>
             </Card>
           </Col>
-          <Col sm="5" className="mb-2">
+          <Col md="6" lg="4" className="mb-2">
+            <Card>
+              <CardBody>
+                <CardTitle>Transport</CardTitle>
+                <CardText>As alcohol will be provided throughout the night, please arrange for safe travel to the venue and back.  The ride sharing apps Uber and Lyft are available throughout Minneapolis and can be downloaded to your smart phone.  And please bring cash to tip the bartenders.</CardText>
+              </CardBody>
+            </Card>
+          </Col>
+          <Col md="6" lg="4" className="mb-2">
             <Card>
               <CardBody>
                 <CardTitle>Parking</CardTitle>
-                <CardText>For guests not staying at the downtown hotels, we have rented out a parking lot adjacent to Day Block.  The address for the lot is ???.  Guests may park there from ?? to midnight.  <b>Note:</b> an open bar is provided for the duration of the event, so if using the parking lot please have a designated driver, thanks.</CardText>
+                <CardText>For guests not staying at the downtown hotels, we have rented out a parking lot adjacent to Day Block.  The address for the lot is ???.  Guests may park there from ?? to midnight.  If using the parking lot, please have a designated driver.</CardText>
               </CardBody>
             </Card>
           </Col>
-          <Col sm="7" className="mb-2">
+          <Col md="12" lg="8" className="mb-2">
             <Card>
               <CardBody>
                 <CardTitle>Electronics Request</CardTitle>

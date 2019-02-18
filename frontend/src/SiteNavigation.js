@@ -5,8 +5,10 @@ import WeddingDetails from './pages/WeddingDetails';
 import OurStory from './pages/OurStory';
 import Accommodations from './pages/Accommodations';
 import BreweryCrawl from './pages/BreweryCrawl';
-import Rsvp from './pages/Rsvp';
 import SongRequests from './pages/SongRequests';
+import BridalParty from './pages/BridalParty';
+import WeddingPhotos from './pages/WeddingPhotos';
+import Rsvp from './pages/Rsvp';
 
 const SiteNavigation = () => (
   <Switch>
@@ -15,8 +17,10 @@ const SiteNavigation = () => (
     <Route path="/OurStory" component={OurStory}/>
     <Route path="/Accommodations" component={Accommodations}/>
     <Route path="/BreweryCrawl" component={BreweryCrawl}/>
-    <Route path="/Rsvp" component={Rsvp}/>
     <Route path="/SongRequests" component={SongRequests}/>
+    <Route path="/BridalParty" component={BridalParty}/>
+    <Route path="/WeddingPhotos" component={WeddingPhotos}/>
+    <Route path="/Rsvp" component={Rsvp}/>
   </Switch>
 );
 

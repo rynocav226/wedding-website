@@ -11,9 +11,9 @@ class HomePage extends Component {
       <Container>
         <Row className="mb-2">
           <Col>
-            <h3 className="text-center d-none d-sm-block text-monospace text-primary">Ryan & Jorden | September 28th, 2019</h3>
-            <h3 className="text-center d-sm-none text-monospace text-primary">Ryan & Jorden</h3>
-            <h3 className="text-center d-sm-none text-monospace text-primary">September 28th, 2019</h3>
+            <h3 className="text-center d-none d-md-block text-monospace text-primary">Ryan & Jorden | September 28th, 2019</h3>
+            <h3 className="text-center d-md-none text-monospace text-primary">Ryan & Jorden</h3>
+            <h3 className="text-center d-md-none text-monospace text-primary">September 28th, 2019</h3>
           </Col>
         </Row>
         <Row className="mb-2">

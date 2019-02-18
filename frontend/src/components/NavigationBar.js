@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-//import { NavLink } from 'react-router-dom';
 import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink } from 'reactstrap';
+import { UncontrolledButtonDropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap';
 
 class NavigationBar extends Component {
   constructor(props) {
@@ -18,10 +18,9 @@ class NavigationBar extends Component {
     });
   }
 
-  /* using reacstrap */
   render() {
     return (
-      <Navbar className="fixed-top" color="light" light expand="md">
+      <Navbar className="fixed-top" color="light" light expand="sm">
         <NavbarBrand href="/">R & J</NavbarBrand>
         <NavbarToggler onClick={this.toggle} />
         <Collapse isOpen={this.state.isOpen} navbar>
@@ -35,13 +34,39 @@ class NavigationBar extends Component {
             <NavItem>
               <NavLink href="/Accommodations/">Accommodations</NavLink>
             </NavItem>
-            <NavItem>
+            <NavItem className="d-sm-none">
               <NavLink href="/BreweryCrawl/">Brewery Crawl</NavLink>
             </NavItem>
-            <NavItem>
+            <NavItem className="d-sm-none">
               <NavLink href="/SongRequests/">Song Requests</NavLink>
             </NavItem>
-            <NavItem className="bg-primary font-weight-bold">
+            <NavItem className="d-sm-none">
+              <NavLink href="/BridalParty/">Bridal Party</NavLink>
+            </NavItem>
+            <NavItem className="d-sm-none">
+              <NavLink href="/WeddingPhotos/">Wedding Photos</NavLink>
+            </NavItem>
+            <NavItem className="bg-primary font-weight-bold d-sm-none">
+              <NavLink className="text-light ml-2" href="/Rsvp/">RSVP</NavLink>
+            </NavItem>
+            <UncontrolledButtonDropdown nav inNavbar className="d-none d-sm-block">
+              <DropdownToggle nav caret>More</DropdownToggle>
+              <DropdownMenu right>
+                <DropdownItem>
+                  <NavLink href="/BreweryCrawl/">Brewery Crawl</NavLink>
+                </DropdownItem>
+                <DropdownItem>
+                  <NavLink href="/SongRequests/">Song Requests</NavLink>
+                </DropdownItem>
+                <DropdownItem>
+                  <NavLink href="/BridalParty/">Bridal Party</NavLink>
+                </DropdownItem>
+                <DropdownItem>
+                  <NavLink href="/WeddingPhotos/">Wedding Photos</NavLink>
+                </DropdownItem>
+              </DropdownMenu>
+            </UncontrolledButtonDropdown>
+            <NavItem className="bg-primary font-weight-bold ml-1 d-none d-sm-block">
               <NavLink className="text-light" href="/Rsvp/">RSVP</NavLink>
             </NavItem>
           </Nav>
@@ -49,31 +74,21 @@ class NavigationBar extends Component {
       </Navbar>
     );
   }
-
-  /* using normal bootstrap
-  render() {
-    return (
-      <nav className="navbar navbar-default">
-        <div className="container-fluid">
-          <div className="navbar-header">
-            <button type="button" className="navbar-toggle collapsed" data-toggle="collapse" data-target="#site-navigation" aria-expanded="false">
-              <span className="sr-only">Toggle navigation</span>
-              <span className="icon-bar"></span>
-              <span className="icon-bar"></span>
-              <span className="icon-bar"></span>
-            </button>
-          </div>
-          <div className="collapse navbar-collapse" id="site-navigation">
-            <ul className="nav navbar-nav">
-              <li className="active"><NavLink exact to="/">Home <span className="sr-only">(current)</span></NavLink></li>
-              <li><NavLink exact to="/WeddingDetails">Wedding Details</NavLink></li>
-              <li><NavLink exact to="/OurStory">Our Story</NavLink></li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    )
-  }*/
 }
 
 export default NavigationBar;
+
+/*
+            <NavItem>
+              <NavLink href="/BreweryCrawl/">Brewery Crawl</NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink href="/SongRequests/">Song Requests</NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink href="/BridalParty/">Bridal Party</NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink href="/WeddingPhotos/">Wedding Photos</NavLink>
+            </NavItem>
+*/

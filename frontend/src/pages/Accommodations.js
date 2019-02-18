@@ -25,13 +25,14 @@ class Accommodations extends Component {
           <CardGroup id="aloftCardGroup" className="mb-2">
             <Card>
               <CardBody>
-                <CardTitle>Aloft</CardTitle>
+                <CardTitle className="text-center">Aloft</CardTitle>
                 <CardImg className="mb-2" src={require("../assets/aloftImage.jpg")} alt="Aloft" />
                 <div className="embed-responsive embed-responsive-16by9">
                   <iframe title="AlotMap" className="embed-responsive-item" src="https://www.google.com/maps/d/u/0/embed?mid=12jtQUqkq1OR84um6TOV5PMzBcIVk2K3t" />
                 </div>
               </CardBody>
             </Card>
+            <div className="w-100 d-none d-sm-block d-md-none" />
             <Card>
               <CardBody>
                 <CardTitle className="text-center">Overview</CardTitle>
@@ -81,9 +82,10 @@ class Accommodations extends Component {
                 </Table>
               </CardBody>
             </Card>
+            <div className="w-100 d-none d-sm-block d-xl-none" />
             <Card>
               <CardBody>
-                <CardTitle>Details</CardTitle>
+                <CardTitle className="text-center">Details</CardTitle>
                 <ListGroup flush>
                   <ListGroupItem>
                     <ListGroupItemHeading>Location</ListGroupItemHeading>
@@ -108,13 +110,14 @@ class Accommodations extends Component {
           <CardGroup id="courtyardMarriottCardGroup" className="mb-2">
             <Card>
               <CardBody>
-                <CardTitle>Courtyard Marriott</CardTitle>
+                <CardTitle className="text-center">Courtyard Marriott</CardTitle>
                 <CardImg className="mb-2" src={require("../assets/courtyardMarriottImage.jpg")} alt="CourtyardMarriott" />
                 <div className="embed-responsive embed-responsive-16by9">
                   <iframe title="CourtyardMarriottMap" className="embed-responsive-item" src="https://www.google.com/maps/d/u/0/embed?mid=10UrKekqIgg9_V2iNT1Rc6VALznYY0cIj" />
                 </div>
               </CardBody>
             </Card>
+            <div className="w-100 d-none d-sm-block d-md-none" />
             <Card>
               <CardBody>
                 <CardTitle className="text-center">Overview</CardTitle>
@@ -164,9 +167,10 @@ class Accommodations extends Component {
                 </Table>
               </CardBody>
             </Card>
+            <div className="w-100 d-none d-sm-block d-xl-none" />
             <Card>
               <CardBody>
-                <CardTitle>Details</CardTitle>
+                <CardTitle className="text-center">Details</CardTitle>
                 <ListGroup flush>
                   <ListGroupItem>
                     <ListGroupItemHeading>Location</ListGroupItemHeading>
@@ -195,13 +199,14 @@ class Accommodations extends Component {
           <CardGroup id="doubleTreeCardGroup">
             <Card>
               <CardBody>
-                <CardTitle>DoubleTree SLP</CardTitle>
+                <CardTitle className="text-center">DoubleTree SLP</CardTitle>
                 <CardImg className="mb-2" src={require("../assets/doubleTreeImage.jpg")} alt="DoubleTree" />
                 <div className="embed-responsive embed-responsive-16by9">
                   <iframe title="DoubleTreeSLPMap" className="embed-responsive-item" src="https://www.google.com/maps/d/u/0/embed?mid=1V8kshmuxVP6t-6acS80W6lhy1NHwN0yY" />
                 </div>
               </CardBody>
             </Card>
+            <div className="w-100 d-none d-sm-block d-md-none" />
             <Card>
               <CardBody>
                 <CardTitle className="text-center">Overview</CardTitle>
@@ -251,9 +256,10 @@ class Accommodations extends Component {
                 </Table>
               </CardBody>
             </Card>
+            <div className="w-100 d-none d-sm-block d-xl-none" />
             <Card>
               <CardBody>
-                <CardTitle>Details</CardTitle>
+                <CardTitle className="text-center">Details</CardTitle>
                 <ListGroup flush>
                   <ListGroupItem>
                     <ListGroupItemHeading>Location</ListGroupItemHeading>
