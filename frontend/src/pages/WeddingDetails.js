@@ -22,7 +22,7 @@ class WeddingDetails extends Component {
                       <CardImg src={require("../assets/dayBlockImage.jpg")} alt="DayBlock" />
                     </Col>
                     <Col>
-                      <CardText className="text-center"><a href="https://www.google.com/maps/place/Day+Block+Event+Center/@44.975204,-93.252891,15z/data=!4m5!3m4!1s0x0:0x6510536e530a6987!8m2!3d44.975204!4d-93.252891" target="_blank" rel="noopener noreferrer">1103 S Washington Ave, Minneapolis MN 55415</a></CardText>
+                      <CardText className="text-center"><a href="geo:0,0?q=aloft+minneapolis" target="_blank" rel="noopener noreferrer">1103 S Washington Ave, Minneapolis MN 55415</a></CardText>
                     </Col>
                   </Row>
                 </Container>

@@ -3,6 +3,7 @@ Things to do/fix:
 General
 > Change title and icon - DONE
 > change favorite title - DONE
+> Have addresses open in map apps on phone
 
 Navigation Menu
 > Put RSVP all the way to the right and make a different style to stand out - DONE
@@ -28,6 +29,9 @@ Our Story
 
 Accommodations Page
 > Get the Scrollspy to adjust for the permanent navigation bar (probably get rid of, wanted to test it out) - DONE
+> add addresses for the hotel details - DONE
+> fix submenu on small mobile - DONE - need to test
+> doubletree pic on ios
 
 Additional Pages
 > Bridal Party page - pictures and how became friends

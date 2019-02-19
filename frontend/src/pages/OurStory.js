@@ -102,11 +102,11 @@ class OurStory extends Component {
             <ModalHeader toggle={this.toggleGopher}>For the Love of the Game</ModalHeader>
             <ModalBody>
               <Row>
-                <Col sm="4" className="d-none d-sm-block">
+                <Col md="4" lg="2" className="d-none d-md-block">
                   <img src={require("../assets/gophersImage2.jpg")} className="img-fluid" alt="Gopher2" />
                 </Col>
-                <Col sm="8">
-                  <p>We met at the University of Minnesota and grew our friendship on the softball field.</p>
+                <Col md="8" lg="10">
+                  <p>We met at the University of Minnesota in Minneapolis through some mutal friends.  We would see each other every now and then at a house party on the weekends but it was not until we started playing on the same intramural coed softball team that we started to spend some quality one on one time together.  Since college we have stayed have stayed true to the maroon and gold, going to various sporting events together to cheer on the Gophers.</p>
                 </Col>
               </Row>
             </ModalBody>
@@ -130,11 +130,11 @@ class OurStory extends Component {
             <ModalHeader toggle={this.toggleCountry}>Country Music</ModalHeader>
             <ModalBody>
               <Row>
-                <Col sm="4" className="d-none d-sm-block">
+                <Col md="5" lg="2" className="d-none d-md-block">
                   <img src={require("../assets/weFestImage2.jpg")} className="img-fluid" alt="Country2" />
                 </Col>
-                <Col sm="8">
-                  <p>From city concerts to WE Fest, we heard them all.</p>
+                <Col md="7" lg="10">
+                  <p>Before we even started dating we were going to country music concerts and spending nights catching local bands at Toby Keith's Bar in St Louis Park.  Each summer in Minneapolis we would go with friends to Detroit Lakes for WE Fest and spend the week camping out, hanging with friends, and listening to country music.  Our love for country music moved with us to Florida where we went to Tortuga Music Festival and listened to songs on the sand.</p>
                 </Col>
               </Row>
             </ModalBody>
@@ -158,11 +158,11 @@ class OurStory extends Component {
             <ModalHeader toggle={this.toggleDecker}>Decker Caveirne</ModalHeader>
             <ModalBody>
               <Row>
-                <Col sm="4" className="d-none d-sm-block">
+                <Col md="4" lg="2" className="d-none d-md-block">
                   <img src={require("../assets/deckerImage2.jpg")} className="img-fluid" alt="Decker2" />
                 </Col>
-                <Col sm="8">
-                  <p>Once we moved in together, Jorden let us get a dog.</p>
+                <Col md="8" lg="10">
+                  <p>After a year and a half of dating, we decided to move in together.  One stipulation was the new place had to be dog friendly so we could get a puppy.  A few months later we had a mini goldendoodle we named Decker running around the townhouse.  Since then, our life together has been filled with constant noise, long walks, dog parks, and puppy licks.</p>
                 </Col>
               </Row>
             </ModalBody>
@@ -186,11 +186,11 @@ class OurStory extends Component {
             <ModalHeader toggle={this.toggleRainbow}>Rainbow Connection</ModalHeader>
             <ModalBody>
               <Row>
-                <Col sm="4" className="d-none d-sm-block">
+                <Col md="5" lg="4" className="d-none d-md-block">
                   <img src={require("../assets/rainbowConnectionImage2.jpg")} className="img-fluid" alt="Rainbow2" />
                 </Col>
-                <Col sm="8">
-                  <p>Together we founded the greatest team ever to play at the Law School Fields.</p>
+                <Col md="7" lg="8">
+                  <p>After our intramural softball playing days, we wanted to keep lacing up the cleats so we got our friends together to form our own team.  After the first summer of feeling each other out, we formed the Rainbow Connection and started playing every Tuesday night at the Law School Fields.  While we came for the games, the best memories were made post game at the Corner Bar.  Except of course for the championships won which Rainbow Connection now holds two!</p>
                 </Col>
               </Row>
             </ModalBody>
@@ -214,11 +214,11 @@ class OurStory extends Component {
             <ModalHeader toggle={this.toggleMiami}>Move to Miami</ModalHeader>
             <ModalBody>
               <Row>
-                <Col sm="4" className="d-none d-sm-block">
+                <Col md="4" lg="2" className="d-none d-md-block">
                   <img src={require("../assets/miamiImage2.jpg")} className="img-fluid" alt="Miami2" />
                 </Col>
-                <Col sm="8">
-                  <p>We exchanged the frigid North for the sun and the beach.</p>
+                <Col md="8" lg="10">
+                  <p>In the summer of 2015, Jorden got an opportunity through work to relocate to Miami and work out of the Latin America office.  She got the chance to speak Spanish every day and we got the chance to explore a new city together and travel to new places.  We loved experiencing the culture, eating fresh seafood, and playing softball year round.  Our favorite trips were to the Florida Keys and Walt Disney World.</p>
                 </Col>
               </Row>
             </ModalBody>
@@ -234,7 +234,7 @@ class OurStory extends Component {
               <CardTitle>The Proposal</CardTitle>
               <CardSubtitle>Magic at the Biltmore</CardSubtitle>
               <CardText>
-                Committing to each other amidst a weekend of pool chilling and golfing.<br /><br />Click to read more...
+                Committing to each other amidst a weekend of pool side chilling and golfing.<br /><br />Click to read more...
               </CardText>
             </CardBody>
           </Card>
@@ -242,11 +242,11 @@ class OurStory extends Component {
             <ModalHeader toggle={this.toggleProposal}>The Proposal</ModalHeader>
             <ModalBody>
               <Row>
-                <Col sm="4" className="d-none d-sm-block">
+                <Col md="4" lg="2" className="d-none d-md-block">
                   <img src={require("../assets/proposalImage2.jpg")} className="img-fluid" alt="Proposal2" />
                 </Col>
-                <Col sm="8">
-                  <p>Committing to each other amidst a weekend of pool chilling and golfing.</p>
+                <Col md="8" lg="10">
+                  <p>For our fifth anniversary while we were down in Miami, we celebrated with a week at the Biltmore Hotel and Golf Course in Coral Gables.  After a day of relaxing poolside and a dinner at the hotel's restaurant, we went on a walk around the gardens.  In front of a fountain, Ryan stumbled through a proposal, got down on one knee, and Jorden said YES!  The next morning we played a round of golf for the first time as fiances.</p>
                 </Col>
               </Row>
             </ModalBody>
@@ -270,11 +270,11 @@ class OurStory extends Component {
             <ModalHeader toggle={this.toggleDuke}>Back to School</ModalHeader>
             <ModalBody>
               <Row>
-                <Col sm="4" className="d-none d-sm-block">
+                <Col md="3" lg="4" className="d-none d-md-block">
                   <img src={require("../assets/dukeImage2.jpg")} className="img-fluid" alt="Duke2" />
                 </Col>
-                <Col sm="8">
-                  <p>Watching games at Cameron Indoor and traveling around the globe.</p>
+                <Col md="9" lg="8">
+                  <p>In the summer of 2017 we moved again.  This time to Durham to become Blue Devils as Jorden went back to school to get her MBA at Duke.  Though busy with classes, we had plenty of time to explore.  Whether hiking through the mountains or swimming in the ocean we have experienced all North Carolina has to offer.  Not to mention all the breaks one gets from being back in school which we used to attend the Grand Ole Opry in Nashville, ski in the Alps, and climb to the top of the Eiffel Tower.  Our favorite part about being at Duke, was becoming Cameron Crazies and cheering on the basketball team; we even got into the game against UNC.</p>
                 </Col>
               </Row>
             </ModalBody>

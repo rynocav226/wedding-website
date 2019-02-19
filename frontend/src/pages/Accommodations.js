@@ -44,7 +44,7 @@ class Accommodations extends Component {
                   <tbody>
                     <tr>
                       <th>Adress</th>
-                      <td>900 Washington Ave South</td>
+                      <td><a href="https://goo.gl/maps/h1j9vEQiQ5G2" target="_blank" rel="noopener noreferrer">900 Washington Ave South</a></td>
                     </tr>
                     <tr>
                       <th>Phone</th>
@@ -129,7 +129,7 @@ class Accommodations extends Component {
                   <tbody>
                     <tr>
                       <th>Adress</th>
-                      <td>1500 Washington Ave South</td>
+                      <td><a href="https://goo.gl/maps/sf9Vi4s2KCE2" target="_blank" rel="noopener noreferrer">1500 Washington Ave South</a></td>
                     </tr>
                     <tr>
                       <th>Phone</th>
@@ -218,7 +218,7 @@ class Accommodations extends Component {
                   <tbody>
                     <tr>
                       <th>Adress</th>
-                      <td>1500 Park Place Blvd</td>
+                      <td><a href="https://goo.gl/maps/sQwBaNQysAv" target="_blank" rel="noopener noreferrer">1500 Park Place Blvd</a></td>
                     </tr>
                     <tr>
                       <th>Phone</th>
