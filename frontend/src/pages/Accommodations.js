@@ -141,7 +141,7 @@ class Accommodations extends Component {
                     </tr>
                     <tr>
                       <th>Parking Rate</th>
-                      <td>$22 per day with in/out priviledges; $17 per day without in/out priviledges</td>
+                      <td>$22 per day with in/out privileges; $17 per day without in/out privileges</td>
                     </tr>
                     <tr>
                       <th>Must Book By</th>
@@ -263,7 +263,7 @@ class Accommodations extends Component {
                 <ListGroup flush>
                   <ListGroupItem>
                     <ListGroupItemHeading>Location</ListGroupItemHeading>
-                    <ListGroupItemText>In St Louis Park, to the west of downtown Minneapolis.  Easy access via I-394 which connects with I-94 via I-494 or highway 169.  For those that do not want to deal with navigating downtown Minneapolis and to have the easiest access from Alexandria.</ListGroupItemText>
+                    <ListGroupItemText>In St Louis Park, to the west of downtown Minneapolis.  Easy access via I-394 which connects with I-94 via I-494 or highway 169.  For those that do not want to deal with navigating downtown Minneapolis and for easiest access from Alexandria.</ListGroupItemText>
                   </ListGroupItem>
                   <ListGroupItem>
                     <ListGroupItemHeading>Booking Instructions</ListGroupItemHeading>
@@ -275,7 +275,7 @@ class Accommodations extends Component {
                   </ListGroupItem>
                   <ListGroupItem>
                     <ListGroupItemHeading>Getting to the Venue</ListGroupItemHeading>
-                    <ListGroupItemText>As the wedding is open bar throughout the night, we request guests to use Uber or Lyft to get to and from the venue.  If driving is desired, a parking lot adjacent to the venue has been reserved.  Address of the parking lot is ???.</ListGroupItemText>
+                    <ListGroupItemText>As alcohol is provided throughout the night, we request guests use Uber or Lyft to get to and from the venue.  If driving is desired, a parking lot adjacent to the venue has been reserved.  Address of the parking lot is ???.</ListGroupItemText>
                   </ListGroupItem>
                 </ListGroup>
               </CardBody>

@@ -106,7 +106,7 @@ class OurStory extends Component {
                   <img src={require("../assets/gophersImage2.jpg")} className="img-fluid" alt="Gopher2" />
                 </Col>
                 <Col md="8" lg="10">
-                  <p>We met at the University of Minnesota in Minneapolis through some mutal friends.  We would see each other every now and then at a house party on the weekends but it was not until we started playing on the same intramural coed softball team that we started to spend some quality one on one time together.  Since college we have stayed have stayed true to the maroon and gold, going to various sporting events together to cheer on the Gophers.</p>
+                  <p>We met at the University of Minnesota in Minneapolis through some mutal friends.  We would see each other every now and then at a house party on the weekends but it was not until we started playing on the same intramural coed softball team that we started to spend some quality one on one time together.  Since college, we have stayed true to the maroon and gold, attending various sporting events together to cheer on the Gophers.</p>
                 </Col>
               </Row>
             </ModalBody>
@@ -134,7 +134,7 @@ class OurStory extends Component {
                   <img src={require("../assets/weFestImage2.jpg")} className="img-fluid" alt="Country2" />
                 </Col>
                 <Col md="7" lg="10">
-                  <p>Before we even started dating we were going to country music concerts and spending nights catching local bands at Toby Keith's Bar in St Louis Park.  Each summer in Minneapolis we would go with friends to Detroit Lakes for WE Fest and spend the week camping out, hanging with friends, and listening to country music.  Our love for country music moved with us to Florida where we went to Tortuga Music Festival and listened to songs on the sand.</p>
+                  <p>Before we even started dating we were going to country music concerts and spending nights catching local bands at Toby Keith's Bar in St Louis Park.  Each summer in Minneapolis, we would go with friends to Detroit Lakes for WE Fest and spend the week camping out, hanging with friends, and listening to country music.  Our love for country music moved with us to Florida where we went to Tortuga Music Festival and listened to songs on the sand.</p>
                 </Col>
               </Row>
             </ModalBody>
@@ -246,7 +246,7 @@ class OurStory extends Component {
                   <img src={require("../assets/proposalImage2.jpg")} className="img-fluid" alt="Proposal2" />
                 </Col>
                 <Col md="8" lg="10">
-                  <p>For our fifth anniversary while we were down in Miami, we celebrated with a week at the Biltmore Hotel and Golf Course in Coral Gables.  After a day of relaxing poolside and a dinner at the hotel's restaurant, we went on a walk around the gardens.  In front of a fountain, Ryan stumbled through a proposal, got down on one knee, and Jorden said YES!  The next morning we played a round of golf for the first time as fiances.</p>
+                  <p>For our fifth anniversary while we were down in Miami, we celebrated with a weekend at the Biltmore Hotel and Golf Course in Coral Gables.  After a day of relaxing poolside and a dinner at the hotel's restaurant, we went on a walk around the gardens.  In front of a fountain, Ryan stumbled through a proposal, got down on one knee, and Jorden said YES!  The next morning we played a round of golf for the first time as fiances.</p>
                 </Col>
               </Row>
             </ModalBody>
@@ -274,7 +274,7 @@ class OurStory extends Component {
                   <img src={require("../assets/dukeImage2.jpg")} className="img-fluid" alt="Duke2" />
                 </Col>
                 <Col md="9" lg="8">
-                  <p>In the summer of 2017 we moved again.  This time to Durham to become Blue Devils as Jorden went back to school to get her MBA at Duke.  Though busy with classes, we had plenty of time to explore.  Whether hiking through the mountains or swimming in the ocean we have experienced all North Carolina has to offer.  Not to mention all the breaks one gets from being back in school which we used to attend the Grand Ole Opry in Nashville, ski in the Alps, and climb to the top of the Eiffel Tower.  Our favorite part about being at Duke, was becoming Cameron Crazies and cheering on the basketball team; we even got into the game against UNC.</p>
+                  <p>In the summer of 2017 we moved again.  This time to Durham to become Blue Devils as Jorden went back to school to get her MBA at Duke.  Though busy with classes, we had plenty of time to explore.  Whether hiking through the mountains or swimming in the ocean, we have experienced all North Carolina has to offer.  Not to mention all the breaks one gets from being back in school which we used to attend the Grand Ole Opry in Nashville, ski in the Alps, and climb to the top of the Eiffel Tower.  Our favorite part about being at Duke was becoming Cameron Crazies and cheering on the basketball team; we even got into the game against UNC.</p>
                 </Col>
               </Row>
             </ModalBody>
@@ -290,7 +290,7 @@ class OurStory extends Component {
               <CardTitle>Wedding Day</CardTitle>
               <CardSubtitle>Saying 'I Do' on the Beach of our Dreams</CardSubtitle>
               <CardText>
-                We married each other on a beach in South Carolina  To see photos from the big day, head to the <a href="../WeddingPhotos/">'Wedding Photos'</a> page.<br /><br />Click to read more...
+                We married each other on a beach in South Carolina.  To see photos from the big day, head to the <a href="../WeddingPhotos/">'Wedding Photos'</a> page.<br /><br />Click to read more...
               </CardText>
             </CardBody>
           </Card>
@@ -298,11 +298,11 @@ class OurStory extends Component {
             <ModalHeader toggle={this.toggleWedding}>Wedding Day</ModalHeader>
             <ModalBody>
               <Row>
-                <Col sm="4" className="d-none d-sm-block">
+                <Col md="4" lg="2" className="d-none d-md-block">
                   <img src={require("../assets/weddingImage2.jpg")} className="img-fluid" alt="Wedding2" />
                 </Col>
-                <Col sm="8">
-                  <p>We married each other on a beach in South Carolina.</p>
+                <Col md="8" lg="10">
+                  <p>Ever since Ryan was a little boy, he wanted to get married on a beach.  Being in North Carolina, we had a whole bunch of coastline to choose from and settled on Seabrook Island in South Carolina.  Next was figuring out the date and we came up with the idea of combining all of our birthdays: 9 for Decker, 26 for Ryan, and 18 for Jorden.  Our parents came down for the week, we rented out a villa on the beach, and were married by Ryan's dad in a private ceremony on the beach on September 26th, 2018.  It was a day we will never forget!</p>
                 </Col>
               </Row>
             </ModalBody>
@@ -326,11 +326,11 @@ class OurStory extends Component {
             <ModalHeader toggle={this.toggleHoneymoon}>Honeymoon</ModalHeader>
             <ModalBody>
               <Row>
-                <Col sm="4" className="d-none d-sm-block">
+                <Col md="4" lg="3" className="d-none d-md-block">
                   <img src={require("../assets/honeymoonImage2.jpg")} className="img-fluid" alt="Honeymoon2" />
                 </Col>
-                <Col sm="8">
-                  <p>For three weeks, we swapped the winter cold for the summer heat of Australia and New Zealand.</p>
+                <Col md="8" lg="9">
+                  <p>This past winter, we took advantage of Jorden's winter break and headed to the other hemisphere.  For three weeks, we traveled around Australia and New Zealand taking in the sights and soaking up new experiences.  Ryan's favorite part of the trip was the Tongariro Alpine Crossing in the North Island of New Zealand, a 12 mile hike that passes over an active volcano and goes past Mount Doom from Lord of the Rings.  Jorden's favorite part was a heli-hike of the Fox Glacier in the South Island of New Zealand where we were lead on a 3 hour hike atop a glacier.</p>
                 </Col>
               </Row>
             </ModalBody>
@@ -344,9 +344,8 @@ class OurStory extends Component {
           <Card>
             <CardBody>
               <CardTitle>Today</CardTitle>
-              <CardSubtitle>Renewing our Vows and Celebrating with Friends and Family</CardSubtitle>
               <CardText>
-                We still wanted to celebrate with all of our family and friends in a night we will never forget.
+                We still wanted to celebrate with all of our family and friends in Minneapolis; the city where we met and started our lives together.  The day will also serve as our one year vow renewal where we will recreate the magic on the beach for y'all.  We look forward to having a blast and to making it a night we will never forget.
               </CardText>
             </CardBody>
           </Card>

@@ -25,7 +25,7 @@ Wedding Details Page
 
 Our Story
 > Add card for honeymoon - DONE
-> write out modals for each life phase
+> write out modals for each life phase - DONE
 
 Accommodations Page
 > Get the Scrollspy to adjust for the permanent navigation bar (probably get rid of, wanted to test it out) - DONE

@@ -36,16 +36,16 @@ class WeddingDetails extends Component {
                 <Table>
                   <tbody>
                     <tr>
-                      <th scope="row">Social Hour</th>
-                      <td>4:00 PM</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">Bridal Entrance</th>
+                      <th scope="row">Welcom Social</th>
                       <td>4:30 PM</td>
                     </tr>
                     <tr>
-                      <th scope="row">Vow Renewal</th>
+                      <th scope="row">Bridal Entrance</th>
                       <td>5:00 PM</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Vow Renewal</th>
+                      <td>5:15 PM</td>
                     </tr>
                     <tr>
                       <th scope="row">Seated Dinner</th>
@@ -56,7 +56,7 @@ class WeddingDetails extends Component {
                       <td>7:00 PM</td>
                     </tr>
                     <tr>
-                      <th scope="row">Social Hour Part 2</th>
+                      <th scope="row">Closing Social Hour</th>
                       <td>11:00 PM</td>
                     </tr>
                   </tbody>
@@ -68,7 +68,7 @@ class WeddingDetails extends Component {
             <Card>
               <CardBody>
                 <CardTitle>Child Care</CardTitle>
-                <CardText>Due to the size of the venue, we request the attendence of adults only.  If unable to make arrangements, child care will be provided in the suite of the <a href="../Accommodations/#courtyardMarriottCardGroup">Courtyard Marriott Hotel</a>.</CardText>
+                <CardText>Due to the size of the venue, we request the attendence of adults only.  If unable to make arrangements, child care will be provided in the suite of the <a href="../Accommodations/#courtyardMarriottCardGroup">Courtyard Marriott Hotel</a> and can be indicated on the <a href="../Rsvp">RSVP</a>.</CardText>
               </CardBody>
             </Card>
           </Col>
@@ -96,7 +96,7 @@ class WeddingDetails extends Component {
             <Card>
               <CardBody>
                 <CardTitle>Pre-Wedding Fun</CardTitle>
-                <CardText>In lieu of a Groom's Dinner the night before the wedding, we will be doing a Brewery Crawl through the North Loop of Downtown Minneapolis on Friday night, the 27th.  All are welcome to partake for however many stops your heart desires.  The crawl will start and end near the downtown hotels so if staying at the Aloft or Courtyard Marriott, will be able to walk.  See the <a href="../BreweryCrawl/">'Brewery Crawl'</a> page for the details.</CardText>
+                <CardText>In lieu of a Groom's Dinner, we will be doing a Brewery Crawl through the North Loop of Downtown Minneapolis on Friday night, September 27th.  All are welcome to partake for however many stops your heart desires.  The crawl will start and end near the downtown hotels so if staying at the <a href="../Accommodations/#aloftCardGroup">Aloft</a> or <a href="../Accommodations/#courtyardMarriottCardGroup">Courtyard Marriott</a>, will be able to walk.  See the <a href="../BreweryCrawl/">'Brewery Crawl'</a> page for the details.</CardText>
               </CardBody>
             </Card>
           </Col>
@@ -104,7 +104,7 @@ class WeddingDetails extends Component {
             <Card>
               <CardBody>
                 <CardTitle>Transport</CardTitle>
-                <CardText>As alcohol will be provided throughout the night, please arrange for safe travel to the venue and back.  The ride sharing apps Uber and Lyft are available throughout Minneapolis and can be downloaded to your smart phone.  And please bring cash to tip the bartenders.</CardText>
+                <CardText>As alcohol will be provided throughout the night, please arrange for safe travel to the venue and back.  The ride sharing apps Uber and Lyft are available throughout Minneapolis and can be downloaded to your smart phone.  Also, please bring cash to tip the bartenders.</CardText>
               </CardBody>
             </Card>
           </Col>
@@ -120,7 +120,7 @@ class WeddingDetails extends Component {
             <Card>
               <CardBody>
                 <CardTitle>Electronics Request</CardTitle>
-                <CardText>We kindly request that during the "big" moments of the night all phones and tablets remain in pockets, purses, and clutches so that all guests can share fully in the moment and our photographer has uninterupted viewpoints to capture the moments.  If y'all promise to do this, we promise to share some photos on this website in the week that follows.  For the rest of the time, take as many photos you like; save them, post them, delete them, and if you do post them, please use #caveirneact2</CardText>
+                <CardText>We kindly request that during the "big" moments of the night all phones and tablets remain in pockets, purses, and clutches so that all guests can share fully in the moment and our photographer has uninterupted viewpoints to capture the moments.  If y'all promise to do this, we promise to share some photos on this website in the week that follows.  For the rest of the time, take as many photos as you like; save them, post them, delete them, and if you do post them, please use #caveirneact2</CardText>
               </CardBody>
             </Card>
           </Col>
