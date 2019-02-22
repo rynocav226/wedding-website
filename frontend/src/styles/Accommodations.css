@@ -10,7 +10,7 @@
 }
 
 @media (max-width: 575px) {
-  .hotelNav {
-    font-size: 15px;
+  .hotelNav .nav-link {
+    font-size: 0.85rem;
   }
 }

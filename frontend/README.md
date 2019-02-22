@@ -30,7 +30,7 @@ Our Story
 Accommodations Page
 > Get the Scrollspy to adjust for the permanent navigation bar (probably get rid of, wanted to test it out) - DONE
 > add addresses for the hotel details - DONE
-> fix submenu on small mobile - DONE - need to test
+> fix submenu on small mobile - DONE
 > doubletree pic on ios
 
 Additional Pages
