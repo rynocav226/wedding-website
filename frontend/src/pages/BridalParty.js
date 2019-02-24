@@ -1,11 +1,9 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-class BridalParty extends Component {
-  render() {
-    return (
-      <div>Bridal Party</div>
-    );
-  }
-}
+const BridalParty = () => {
+  return (
+    <div>Bridal Party</div>
+  );
+};
 
 export default BridalParty;

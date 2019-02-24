@@ -1,11 +1,9 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-class SongRequests extends Component {
-  render() {
-    return (
-      <div>SONG REQUESTS</div>
-    );
-  }
-}
+const SongRequests = ({ invitationCode }) => {
+  return (
+    <div>SONG REQUESTS</div>
+  );
+};
 
 export default SongRequests;

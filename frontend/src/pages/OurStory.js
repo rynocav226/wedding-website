@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from "react-router-dom";
 import { Container, Row, Col } from 'reactstrap';
 import { CardColumns, Card, CardBody, CardImg, CardTitle, CardSubtitle, CardText } from 'reactstrap';
 import { Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
@@ -290,7 +291,7 @@ class OurStory extends Component {
               <CardTitle>Wedding Day</CardTitle>
               <CardSubtitle>Saying 'I Do' on the Beach of our Dreams</CardSubtitle>
               <CardText>
-                We married each other on a beach in South Carolina.  To see photos from the big day, head to the <a href="../WeddingPhotos/">'Wedding Photos'</a> page.<br /><br />Click to read more...
+                We married each other on a beach in South Carolina.  To see photos from the big day, head to the <Link to="../WeddingPhotos/">'Wedding Photos'</Link> page.<br /><br />Click to read more...
               </CardText>
             </CardBody>
           </Card>

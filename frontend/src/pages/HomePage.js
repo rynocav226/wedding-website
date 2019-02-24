@@ -1,13 +1,12 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { Container, Row, Col } from 'reactstrap';
 import './WeddingDetails';
 import "../styles/HomePage.css";
 import WeddingDetails from './WeddingDetails';
 
-class HomePage extends Component {
-  render() {
-    return (
-      <div>
+const HomePage = () => {
+  return (
+    <div>
       <Container>
         <Row className="mb-2">
           <Col>
@@ -28,9 +27,8 @@ class HomePage extends Component {
         </Row>
       </Container>
       <WeddingDetails/>
-      </div>
-    );
-  }
-}
+    </div>
+  );
+};
 
 export default HomePage;
