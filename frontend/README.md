@@ -4,6 +4,7 @@ General
 > Change title and icon - DONE
 > change favorite title - DONE
 > Have addresses open in map apps on phone
+> initial page load shows unstyled navbar for a quick sec
 
 Navigation Menu
 > Put RSVP all the way to the right and make a different style to stand out - DONE

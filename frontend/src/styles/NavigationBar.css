@@ -3,3 +3,7 @@
     font-size: 0.95rem;
   }
 }
+
+.buttonHover:hover {
+  cursor: pointer;
+}

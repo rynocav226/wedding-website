@@ -1,5 +1,5 @@
 import React from 'react';
-import { Switch, Route } from 'react-router-dom';
+import { Switch, Route, withRouter } from 'react-router-dom';
 import HomePage from './pages/HomePage';
 import WeddingDetails from './pages/WeddingDetails';
 import OurStory from './pages/OurStory';
@@ -25,4 +25,4 @@ const SiteNavigation = props => {
   );
 };
 
-export default SiteNavigation;
+export default withRouter(SiteNavigation);

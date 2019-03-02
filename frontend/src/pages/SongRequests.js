@@ -1,8 +1,13 @@
 import React from 'react';
 
 const SongRequests = ({ invitationCode }) => {
+  if (invitationCode) {
+    return (
+      <div>SONG REQUESTS</div>
+    );
+  }
   return (
-    <div>SONG REQUESTS</div>
+    <div>No code entered yet</div>
   );
 };
 
