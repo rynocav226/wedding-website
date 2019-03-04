@@ -57,16 +57,19 @@ exports.deleteInvitation = async function(req, res, next) {
 
 exports.updateInvitation = async function(req, res, next) {
   try {
-    let updateInvitation = await db.Invitation.findByIdAndUpdate(req.params.invitation_id, {
-      "responded": req.body.responded
-    }, { new: true });
     for (const guest of req.body.guests) {
-      let updateGuest = await db.Guest.findByIdAndUpdate(guest._id, {
+      await db.Guest.findByIdAndUpdate(guest._id, {
         "attending": guest.attending
       }, { new: true });
     }
-    updateInvitation = await db.Invitation.findById(req.params.invitation_id).populate("guests", {
-      attending: true
+    await db.Invitation.findByIdAndUpdate(req.params.invitation_id, {
+      "responded": true
+    }, { new: true });
+    let updateInvitation = await db.Invitation.findById(req.params.invitation_id).populate("guests", {
+      lastName: true,
+      firstName: true,
+      attending: true,
+      isChild: true
     });
     return res.status(200).json(updateInvitation);
   } catch (err) {

@@ -80,7 +80,7 @@ const WeddingDetails = () => {
             </CardBody>
           </Card>
         </Col>
-        <Col md="4" lg="3" xl="2" className="mb-2">
+        <Col md="4" lg="3" xl="3" className="mb-2">
           <Card>
             <CardBody>
               <CardTitle>Registry</CardTitle>
@@ -92,7 +92,7 @@ const WeddingDetails = () => {
             </CardBody>
           </Card>
         </Col>
-        <Col md="8" lg="5" xl="6" className="mb-2">
+        <Col md="8" lg="5" xl="5" className="mb-2">
           <Card>
             <CardBody>
               <CardTitle>Pre-Wedding Fun</CardTitle>

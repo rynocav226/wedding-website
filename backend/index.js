@@ -17,7 +17,7 @@ app.use("/api/invitation", invitationRoutes);
 app.use("/api/invitation/:id/guest", guestRoutes);
 
 app.use(function(req, res, next) {
-  let err = new Error("Not Found");
+  let err = new Error("Route Not Found.");
   err.status = 404;
   next(err);
 });

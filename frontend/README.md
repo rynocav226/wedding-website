@@ -23,7 +23,7 @@ Wedding Details Page
 > add electronics section; don't get in photographer's way trying to take own photos, will share photos with peeps - DONE
 > add section about bar being hosted all night - DONE
 > add links to two other registeries - DONE
-> fix RSVP link to fire the modal
+> fix RSVP link fire the modal
 
 Our Story
 > Add card for honeymoon - DONE
@@ -34,6 +34,11 @@ Accommodations Page
 > add addresses for the hotel details - DONE
 > fix submenu on small mobile - DONE
 > doubletree pic on ios
+
+RSVP
+> add address to form? - show on summary page before submit - add to backend
+> do responsive test with longest name
+> test tooltip on Mobile - may have to switch to popover
 
 Additional Pages
 > Bridal Party page - pictures and how became friends
