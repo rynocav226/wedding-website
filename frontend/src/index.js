@@ -4,7 +4,7 @@ import './styles/index.css';
 import WeddingApp from './WeddingApp';
 import * as serviceWorker from './serviceWorker';
 
-ReactDOM.render(<WeddingApp/>, document.getElementById('root'));
+ReactDOM.render(<WeddingApp />, document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.

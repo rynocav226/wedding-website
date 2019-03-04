@@ -9,18 +9,17 @@ import SongRequests from './pages/SongRequests';
 import BridalParty from './pages/BridalParty';
 import WeddingPhotos from './pages/WeddingPhotos';
 
-const SiteNavigation = props => {
-  const { invitationCode } = props;
+const SiteNavigation = () => {
   return (
       <Switch>
-        <Route exact path="/" component={HomePage}/>
-        <Route exact path="/WeddingDetails" component={WeddingDetails}/>
-        <Route exact path="/OurStory" component={OurStory}/>
-        <Route exact path="/Accommodations" component={Accommodations}/>
-        <Route exact path="/BreweryCrawl" component={BreweryCrawl}/>
-        <Route exact path="/SongRequests" render={props => <SongRequests invitationCode={invitationCode} {...props} />}/>
-        <Route exact path="/BridalParty" component={BridalParty}/>
-        <Route exact path="/WeddingPhotos" component={WeddingPhotos}/>
+        <Route exact path="/" component={HomePage} />
+        <Route exact path="/WeddingDetails" component={WeddingDetails} />
+        <Route exact path="/OurStory" component={OurStory} />
+        <Route exact path="/Accommodations" component={Accommodations} />
+        <Route exact path="/BreweryCrawl" component={BreweryCrawl} />
+        <Route exact path="/SongRequests" component={SongRequests} />
+        <Route exact path="/BridalParty" component={BridalParty} />
+        <Route exact path="/WeddingPhotos" component={WeddingPhotos} />
       </Switch>
   );
 };
