@@ -1,14 +1,25 @@
-import React from 'react';
+import React, { Component } from 'react';
 
-const SongRequests = ({ invitationCode }) => {
-  if (invitationCode) {
-    return (
-      <div>SONG REQUESTS</div>
-    );
+class SongRequests extends Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      //
+    };
   }
-  return (
-    <div>No code entered yet</div>
-  );
+
+  componentDidMount() {
+    if (!this.props.invitation) {
+      this.props.toggleCode();
+    }
+  }
+
+  render() {
+    return (
+      <div>{(this.props.invitation) ? "SONG REQUESTS" : "No Code Yet"}</div>
+    )
+  }
 };
 
 export default SongRequests;

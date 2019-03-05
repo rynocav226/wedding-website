@@ -24,7 +24,7 @@ Wedding Details Page
 > add electronics section; don't get in photographer's way trying to take own photos, will share photos with peeps - DONE
 > add section about bar being hosted all night - DONE
 > add links to two other registeries - DONE
-> fix RSVP link fire the modal
+> fix RSVP link fire the modal - DONE
 
 Our Story
 > Add card for honeymoon - DONE

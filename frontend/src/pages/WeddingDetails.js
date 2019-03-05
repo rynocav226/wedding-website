@@ -4,8 +4,9 @@ import { Container, Row, Col } from 'reactstrap';
 import { Card, CardImg, CardText, CardBody, CardTitle } from 'reactstrap';
 import { Table } from 'reactstrap';
 import { ListGroup, ListGroupItem } from 'reactstrap';
+import '../styles/WeddingDetails.css';
 
-const WeddingDetails = () => {
+const WeddingDetails = (props) => {
   return (
     <Container fluid>
       <Row>
@@ -68,7 +69,7 @@ const WeddingDetails = () => {
           <Card>
             <CardBody>
               <CardTitle>Child Care</CardTitle>
-              <CardText>Due to the size of the venue, we request the attendence of adults only.  If unable to make arrangements, child care will be provided in the suite of the <Link to="../Accommodations/#courtyardMarriottCardGroup">Courtyard Marriott Hotel</Link> and can be indicated on the <Link to="../Rsvp">RSVP</Link>.</CardText>
+              <CardText>Due to the size of the venue, we request the attendence of adults only.  If unable to make arrangements, child care will be provided in the suite of the <Link to="../Accommodations/#courtyardMarriottCardGroup">Courtyard Marriott Hotel</Link> and can be indicated on the <span className="text-primary spanHover" onClick={props.toggleCode}>RSVP</span>.</CardText>
             </CardBody>
           </Card>
         </Col>

@@ -2,11 +2,13 @@ import React, { Component } from 'react';
 import { BrowserRouter as Router } from 'react-router-dom';
 import { Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
 import { Form, FormGroup, FormFeedback } from 'reactstrap';
-import { InputGroup, InputGroupAddon, Input, Button } from 'reactstrap';
+import { InputGroup, InputGroupAddon, Input } from 'reactstrap';
+import { Button } from 'reactstrap';
 import ScrollToTop from './components/ScrollToTop';
 import NavigationBar from './components/NavigationBar';
 import SubmitAlert from './components/SubmitAlert';
 import SiteNavigation from './SiteNavigation';
+import RsvpModals from './components/RsvpModals';
 import { apiCall } from './services/api';
 
 class WeddingApp extends Component {
@@ -17,6 +19,7 @@ class WeddingApp extends Component {
       invitation: null,
       invitationCode: null,
       modalCode: false,
+      toggleCodeFromRsvp: false,
       invitationCodeInvalid: false,
       invitationCodeError: ''
     };
@@ -53,6 +56,24 @@ class WeddingApp extends Component {
     });
   }
 
+  toggleCodeFromNav() {
+    if (this.state.invitation) {
+      this.refs.RsvpModals.toggleRsvp();
+    } else {
+      this.setState({
+        toggleCodeFromNav: true
+      });
+      this.toggleCode();
+    }
+  }
+
+  toggleCodeFromSongRequests() {
+    this.setState({
+      toggleCodeFromNav: false
+    });
+    this.toggleCode();
+  }
+
   codeNext() {
     if(/^[0-9]{3}$/.test(this.state.invitationCode)) {
       this.getInvitation();
@@ -82,7 +103,9 @@ class WeddingApp extends Component {
         });
         this.codeErrorClear();
         this.toggleCode();
-        this.refs.NavigationBar.toggleRsvp();
+        if(this.state.toggleCodeFromNav) {
+          this.refs.RsvpModals.toggleRsvp();
+        }
       })
       .catch(error => {
         if (error.status === 500) {
@@ -105,44 +128,70 @@ class WeddingApp extends Component {
         this.refs.SubmitAlert.showAlert("danger", "Submit failed, try again. If problem persists, send this message to rynocav@gmail.com: " + error.data.error.message, false);
       });
     if (fromRsvp) {
-      this.refs.NavigationBar.toggleRsvp();
+      this.refs.RsvpModals.toggleRsvp();
     } else {
-      this.refs.NavigationBar.toggleChildren();
+      this.refs.Modals.toggleChildren();
     }
   }
 
+  updateAttendence(guest, attendence) {
+    guest.attending = attendence;    
+  }
+
   render() {
+    const adults = [];
+    const children = [];
+    if(this.state.invitation) {
+      this.state.invitation.guests.forEach(guest => {
+        if (guest.isChild) {
+          children.push(guest);
+        } else {
+          adults.push(guest);
+        }
+      });
+    }
+
     return (
       <Router>
         <ScrollToTop>
-        <div>
-          <NavigationBar ref="NavigationBar" 
-            toggleCode={this.toggleCode.bind(this)}
-            invitation={this.state.invitation}
-            clearInvitation={this.clearInvitation.bind(this)}
-            submitInvitationFromRsvp={this.submitInvitation.bind(this, true)}
-            submitInvitationFromChildren={this.submitInvitation.bind(this, false)}
-          />
-          <SubmitAlert ref="SubmitAlert" />
-          <SiteNavigation />
-          <Modal centered autoFocus={false} isOpen={this.state.modalCode} backdrop={"static"}>
-            <ModalHeader toggle={this.codeCancel}>Enter Invitation Code</ModalHeader>
-            <ModalBody>
-              <Form onSubmit={this.codeEnter}>
-                <FormGroup>
-                  <InputGroup>
-                    <InputGroupAddon addonType="prepend">#</InputGroupAddon>
-                    <Input className={(this.state.invitationCodeInvalid ? "is-invalid": "")} id="code" name="code" autoFocus={true} onChange={e => this.setState({ invitationCode: e.target.value })} autoComplete="off" />
-                    <FormFeedback>{this.state.invitationCodeError}</FormFeedback>
-                  </InputGroup>
-                </FormGroup>
-              </Form>
-            </ModalBody>
-            <ModalFooter>
-              <Button size="lg" className="mr-auto ml-auto" color="secondary" onClick={this.codeNext}>Next</Button>
-            </ModalFooter>
-          </Modal>
-        </div>
+          <div>
+            <NavigationBar 
+              toggleCode={this.toggleCodeFromNav.bind(this)}
+            />
+            <SubmitAlert ref="SubmitAlert" />
+            <SiteNavigation
+              toggleCodeFromNav={this.toggleCodeFromNav.bind(this)}
+              toggleCodeFromSongRequests={this.toggleCodeFromSongRequests.bind(this)}
+              invitation={this.state.invitation}
+            />
+            <Modal centered autoFocus={false} isOpen={this.state.modalCode} backdrop={"static"}>
+              <ModalHeader toggle={this.codeCancel}>Enter Invitation Code</ModalHeader>
+              <ModalBody>
+                <Form onSubmit={this.codeEnter}>
+                  <FormGroup>
+                    <InputGroup>
+                      <InputGroupAddon addonType="prepend">#</InputGroupAddon>
+                      <Input className={(this.state.invitationCodeInvalid ? "is-invalid": "")} id="code" name="code" autoFocus={true} onChange={e => this.setState({ invitationCode: e.target.value })} autoComplete="off" />
+                      <FormFeedback>{this.state.invitationCodeError}</FormFeedback>
+                    </InputGroup>
+                  </FormGroup>
+                </Form>
+              </ModalBody>
+              <ModalFooter>
+                <Button size="lg" className="mr-auto ml-auto" color="secondary" onClick={this.codeNext}>Next</Button>
+              </ModalFooter>
+            </Modal>
+            <RsvpModals ref="RsvpModals"
+              toggleCode={this.toggleCode}
+              invitation={this.state.invitation}
+              clearInvitation={this.clearInvitation.bind(this)}
+              submitInvitationFromRsvp={this.submitInvitation.bind(this, true)}
+              submitInvitationFromChildren={this.submitInvitation.bind(this, false)}
+              adults={adults}
+              children={children}
+              updateAttendence={this.updateAttendence.bind(this)}
+            />
+          </div>
         </ScrollToTop>
       </Router>
     );

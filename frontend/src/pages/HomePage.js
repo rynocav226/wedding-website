@@ -4,7 +4,7 @@ import './WeddingDetails';
 import "../styles/HomePage.css";
 import WeddingDetails from './WeddingDetails';
 
-const HomePage = () => {
+const HomePage = (props) => {
   return (
     <div>
       <Container>
@@ -26,7 +26,7 @@ const HomePage = () => {
           </Col>
         </Row>
       </Container>
-      <WeddingDetails/>
+      <WeddingDetails {...props} />
     </div>
   );
 };
