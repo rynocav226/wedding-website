@@ -4,6 +4,7 @@ const handlers = require("../handlers/invitation");
 
 router.route("/")
   .post(handlers.createInvitation)
+  .delete(handlers.deleteInvitations)
   .get(handlers.getInvitations);
 
 router.route("/:invitation_id")

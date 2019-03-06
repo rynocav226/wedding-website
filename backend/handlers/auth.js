@@ -4,11 +4,6 @@ exports.login = async function(req, res, next) {
   try {
     let invitation = await db.Invitation.findOne({
       code: req.body.code
-    }).populate("guests", {
-      lastName: true,
-      firstName: true,
-      attending: true,
-      isChild: true
     });
     if (invitation) {
       return res.status(200).json(invitation);

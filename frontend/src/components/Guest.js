@@ -17,9 +17,9 @@ class Guest extends Component {
       rSelected: rSelected
     });
     if (rSelected === 1) {
-      this.props.updateYes();
+      this.props.updateAttendence("yes");
     } else {
-      this.props.updateNo();
+      this.props.updateAttendence("no");
     }
   }
 

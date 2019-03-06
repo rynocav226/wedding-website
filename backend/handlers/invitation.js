@@ -39,11 +39,23 @@ exports.getInvitation = async function(req, res, next) {
       attending: true,
       isChild: true
     });
-    return res.status(200).json(invitation);    
+    return res.status(200).json(invitation);
   } catch (err) {
     return next(err);
   }
 };
+
+exports.deleteInvitations = async function(req, res, next) {
+  try {
+    let invitations = await db.Invitation.find();
+    for (const invitation of invitations) {
+      await invitation.remove();
+    }
+    return res.status(200).json({"message" : "All invitations deleted."});
+  } catch (err) {
+    return next(err);
+  }
+}
 
 exports.deleteInvitation = async function(req, res, next) {
   try {
@@ -57,20 +69,7 @@ exports.deleteInvitation = async function(req, res, next) {
 
 exports.updateInvitation = async function(req, res, next) {
   try {
-    for (const guest of req.body.guests) {
-      await db.Guest.findByIdAndUpdate(guest._id, {
-        "attending": guest.attending
-      }, { new: true });
-    }
-    await db.Invitation.findByIdAndUpdate(req.params.invitation_id, {
-      "responded": true
-    }, { new: true });
-    let updateInvitation = await db.Invitation.findById(req.params.invitation_id).populate("guests", {
-      lastName: true,
-      firstName: true,
-      attending: true,
-      isChild: true
-    });
+    let updateInvitation = await db.Invitation.findByIdAndUpdate(req.params.invitation_id, req.body, { new: true });
     return res.status(200).json(updateInvitation);
   } catch (err) {
     return next(err);

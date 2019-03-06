@@ -36,7 +36,7 @@ class SubmitAlert extends Component {
   render() {
     return (
       <Alert
-          className="col-11 col-sm-10 col-md-8 col-lg-6 col-xl-4 mr-auto ml-auto text-center"
+          className="col-11 col-sm-10 col-md-8 col-lg-6 col-xl-5 mr-auto ml-auto text-center"
           color={this.state.alertColor}
           isOpen={this.state.alertVisible}
           toggle={this.dismissAlert}>

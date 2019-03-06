@@ -4,12 +4,14 @@ import { ListGroup, ListGroupItem } from 'reactstrap';
 import { Button } from 'reactstrap';
 import { Alert, UncontrolledTooltip } from 'reactstrap';
 import Guest from '../components/Guest';
+import { apiCall } from '../services/api';
 
 class RsvpModals extends Component {
   constructor(props) {
     super(props);
 
     this.state = {
+      guests: null,
       modalRsvp: false,
       modalChildren: false,
       rsvpNeedReply: false,
@@ -20,6 +22,7 @@ class RsvpModals extends Component {
     this.toggleRsvp = this.toggleRsvp.bind(this);
     this.toggleChildren = this.toggleChildren.bind(this);
     this.toggleTooltip = this.toggleTooltip.bind(this);
+    this.toggleRsvpCheck = this.toggleRsvpCheck.bind(this);
     this.rsvpClick = this.rsvpClick.bind(this);
     this.rsvpCancel = this.rsvpCancel.bind(this);
     this.rsvpBack = this.rsvpBack.bind(this);
@@ -37,6 +40,12 @@ class RsvpModals extends Component {
   toggleChildren() {
     this.setState({
       modalChildren: !this.state.modalChildren
+    });
+  }
+
+  clearGuests() {
+    this.setState({
+      guests: null
     });
   }
 
@@ -70,19 +79,26 @@ class RsvpModals extends Component {
     });
   }
 
+  toggleRsvpCheck() {
+    if(!this.state.guests) {
+      this.getGuests();
+    }
+    this.toggleRsvp();
+  }
+
   rsvpCancel() {
     this.rsvpErrorClear();
     this.toggleRsvp();
   }
 
-  rsvpClick(areChildren) {
-    if (this.checkReplies(this.props.adults)) {
+  rsvpClick(areChildren, adults) {
+    if (this.checkReplies(adults)) {
       this.rsvpErrorClear();
       if (areChildren) {
         this.toggleRsvp();
         this.toggleChildren();
       } else {
-        this.props.submitInvitationFromRsvp();
+        this.submitGuests(true);
       }
     } else {
       this.rsvpErrorShow();
@@ -90,6 +106,7 @@ class RsvpModals extends Component {
   }
 
   rsvpBack() {
+    this.clearGuests();
     this.rsvpCancel();
     this.props.clearInvitation();
     this.props.toggleCode();
@@ -100,10 +117,10 @@ class RsvpModals extends Component {
     this.toggleChildren();
   }
 
-  childrenSubmit() {
-    if (this.checkReplies(this.props.children)) {
+  childrenSubmit(children) {
+    if (this.checkReplies(children)) {
       this.childrenErrorClear();
-      this.submitInvitationFromChildren();
+      this.submitGuests(false);
     } else {
       this.childrenErrorShow();
     }
@@ -124,15 +141,60 @@ class RsvpModals extends Component {
     return allReplied;
   }
 
+  getGuests() {
+    apiCall("get", `/api/invitation/` + this.props.invitation + `/guest/`)
+      .then(data => {
+        this.setState({
+          guests: data
+        });
+      })
+      .catch(error => {
+        this.props.showAlert("danger", "Unabled to retrieve guest list from the database.  If problem persists, send this message to rynocav@gmail.com: " + error.data.error.message, false);
+      })
+  }
+
+  submitGuests(fromRsvp) {
+    apiCall("put", `/api/invitation/` + this.props.invitation + `/guest`, this.state.guests)
+      .then(data => {
+        this.setState({
+          guests:data.guests
+        });
+        this.props.showAlert("success", "Submit was successful, thanks for the RSVP!", true);
+      })
+      .catch(error => {
+        this.props.showAlert("danger", "Submit failed, try again. If problem persists, send this message to rynocav@gmail.com: " + error.data.error.message, false);
+      });
+      if (fromRsvp) {
+        this.toggleRsvp();
+      } else {
+        this.toggleChildren();
+      }
+  }
+
+  updateAttendence(guest, attendence) {
+    guest.attending = attendence;    
+  }
+
   render() {
-    const adultGuests = this.props.adults.map((adult) => (
-      <ListGroupItem key={adult._id}><Guest {...adult} updateYes={() => this.props.updateAttendence(adult, "yes")} updateNo={() => this.props.updateAttendence(adult, "no")} /></ListGroupItem>
+    const adults = [];
+    const children = [];
+    if (this.state.guests) {
+      this.state.guests.forEach(guest => {
+        if (guest.isChild) {
+          children.push(guest);
+        } else {
+          adults.push(guest);
+        }
+      });
+    }
+
+    const adultGuests = adults.map((adult) => (
+      <ListGroupItem key={adult._id}><Guest {...adult} updateAttendence={(attendence) => this.updateAttendence(adult, attendence)} /></ListGroupItem>
     ));
-    const areChildren = Array.isArray(this.props.children) && this.props.children.length;
     var childGuests = [];
-    if (areChildren) {
-      childGuests = this.props.children.map((child) => (
-        <ListGroupItem key={child._id}><Guest {...child} updateYes={() => this.props.updateAttendence(child, "yes")} updateNo={() => this.props.updateAttendence(child, "no")} /></ListGroupItem>
+    if (children.length) {
+      childGuests = children.map((child) => (
+        <ListGroupItem key={child._id}><Guest {...child} updateAttendence={(attendence) => this.updateAttendence(child, attendence)} /></ListGroupItem>
       ));
     }
 
@@ -146,8 +208,8 @@ class RsvpModals extends Component {
           </ModalBody>
           <ModalFooter>
             <Button size="lg" className="ml-auto" color="secondary" onClick={this.rsvpBack}>Back</Button>
-            <Button size="lg" className="mr-auto" color="secondary" onClick={() => this.rsvpClick(areChildren)}>
-              {areChildren ? "Next" : "Submit"}
+            <Button size="lg" className="mr-auto" color="secondary" onClick={() => this.rsvpClick(children.length, adults)}>
+              {children.length ? "Next" : "Submit"}
             </Button>
             <span style={{textDecoration: "underline"}} className="text-info" id="tooltipRsvp">Not You?</span>
             <UncontrolledTooltip placement="top-end" target="tooltipRsvp">If invitation code was entered incorrectly, click the 'Back' button to reenter the code. If problem persists, email rynocav@gmail.com</UncontrolledTooltip>
@@ -161,7 +223,7 @@ class RsvpModals extends Component {
           </ModalBody>
           <ModalFooter>
             <Button size="lg" className="ml-auto" color="secondary" onClick={this.childrenBack}>Back</Button>
-            <Button size="lg" className="mr-auto" color="secondary" onClick={this.childrenSubmit}>Submit</Button>
+            <Button size="lg" className="mr-auto" color="secondary" onClick={() => this.childrenSubmit(children)}>Submit</Button>
           </ModalFooter>
         </Modal>
       </div>

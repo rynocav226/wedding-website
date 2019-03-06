@@ -6,6 +6,7 @@ General
 > Have addresses open in map apps on phone
 > initial page load shows unstyled navbar for a quick sec
 > once hosted, test when backend is not running and database is not running
+> can prevent users form accessing backend routes?
 
 Navigation Menu
 > Put RSVP all the way to the right and make a different style to stand out - DONE

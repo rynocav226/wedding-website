@@ -6,10 +6,6 @@ const invitationSchema = new mongoose.Schema({
     required: true,
     unique: true
   },
-  responded: {
-    type: Boolean,
-    default: false
-  },
   guests: [
     {
       type: mongoose.Schema.Types.ObjectId,

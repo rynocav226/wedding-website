@@ -23,10 +23,7 @@ exports.createGuest = async function(req, res, next) {
 
 exports.getGuests = async function(req, res, next) {
   try {
-    let guests = await db.Guest.find().populate("invitation", {
-      code: true,
-      responded: true
-    });
+    let guests = await db.Guest.find().where("invitation").equals(req.params.id);
     return res.status(200).json(guests);
   } catch (err) {
     return next(err);
@@ -45,11 +42,37 @@ exports.getGuest = async function(req, res, next) {
   }
 };
 
+exports.deleteGuests = async function(req, res, next) {
+  try {
+    let guests = await db.Guest.find().where("invitation").equals(req.params.id);
+    for(const guest of guests) {
+      await guest.remove();
+    }
+    return res.status(200).json({"message":"All guests for invitation " + req.params.id + " deleted."});
+  } catch (err) {
+    return next(err);
+  }
+};
+
 exports.deleteGuest = async function(req, res, next) {
   try {
     let foundGuest = await db.Guest.findById(req.params.guest_id);
     await foundGuest.remove();
     return res.status(200).json(foundGuest);
+  } catch (err) {
+    return next(err);
+  }
+};
+
+exports.updateGuests = async function(req, res, next) {
+  try {
+    for (const guest of req.body) {
+      await db.Guest.findByIdAndUpdate(guest._id, {
+        "attending": guest.attending
+      }, { new: true });
+    }
+    let updatedGuests = await db.Guest.find().where("invitation").equals(req.params.id);
+    return res.status(200).json(updatedGuests);
   } catch (err) {
     return next(err);
   }

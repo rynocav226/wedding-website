@@ -4,7 +4,9 @@ const handlers = require("../handlers/guest");
 
 router.route("/")
   .post(handlers.createGuest)
-  .get(handlers.getGuests);
+  .get(handlers.getGuests)
+  .delete(handlers.deleteGuests)
+  .put(handlers.updateGuests);
 
 router.route("/:guest_id")
   .get(handlers.getGuest)

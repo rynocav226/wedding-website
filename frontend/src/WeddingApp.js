@@ -58,7 +58,7 @@ class WeddingApp extends Component {
 
   toggleCodeFromNav() {
     if (this.state.invitation) {
-      this.refs.RsvpModals.toggleRsvp();
+      this.refs.RsvpModals.toggleRsvpCheck();
     } else {
       this.setState({
         toggleCodeFromNav: true
@@ -104,7 +104,7 @@ class WeddingApp extends Component {
         this.codeErrorClear();
         this.toggleCode();
         if(this.state.toggleCodeFromNav) {
-          this.refs.RsvpModals.toggleRsvp();
+          this.refs.RsvpModals.toggleRsvpCheck();
         }
       })
       .catch(error => {
@@ -116,41 +116,14 @@ class WeddingApp extends Component {
       });
   }
 
-  submitInvitation(fromRsvp) {
-    apiCall("put", `/api/invitation/` + this.state.invitation._id, this.state.invitation)
-      .then(data => {
-        this.setState({
-          invitation: data
-        });
-        this.refs.SubmitAlert.showAlert("success", "Submit successful, thanks for the RSVP!", true);
-      })
-      .catch(error => {
-        this.refs.SubmitAlert.showAlert("danger", "Submit failed, try again. If problem persists, send this message to rynocav@gmail.com: " + error.data.error.message, false);
-      });
-    if (fromRsvp) {
-      this.refs.RsvpModals.toggleRsvp();
-    } else {
-      this.refs.Modals.toggleChildren();
-    }
-  }
-
-  updateAttendence(guest, attendence) {
-    guest.attending = attendence;    
+  guestsUpdateSuccessful(invitation) {
+    this.setState({
+      invitation: invitation
+    });
+    this.refs.SubmitAlert.showAlert("success", "Submit successful, thanks for the RSVP!", true);
   }
 
   render() {
-    const adults = [];
-    const children = [];
-    if(this.state.invitation) {
-      this.state.invitation.guests.forEach(guest => {
-        if (guest.isChild) {
-          children.push(guest);
-        } else {
-          adults.push(guest);
-        }
-      });
-    }
-
     return (
       <Router>
         <ScrollToTop>
@@ -162,7 +135,7 @@ class WeddingApp extends Component {
             <SiteNavigation
               toggleCodeFromNav={this.toggleCodeFromNav.bind(this)}
               toggleCodeFromSongRequests={this.toggleCodeFromSongRequests.bind(this)}
-              invitation={this.state.invitation}
+              invitation={(this.state.invitation) ? this.state.invitation._id : null}
             />
             <Modal centered autoFocus={false} isOpen={this.state.modalCode} backdrop={"static"}>
               <ModalHeader toggle={this.codeCancel}>Enter Invitation Code</ModalHeader>
@@ -183,13 +156,9 @@ class WeddingApp extends Component {
             </Modal>
             <RsvpModals ref="RsvpModals"
               toggleCode={this.toggleCode}
-              invitation={this.state.invitation}
+              invitation={(this.state.invitation) ? this.state.invitation._id : null}
               clearInvitation={this.clearInvitation.bind(this)}
-              submitInvitationFromRsvp={this.submitInvitation.bind(this, true)}
-              submitInvitationFromChildren={this.submitInvitation.bind(this, false)}
-              adults={adults}
-              children={children}
-              updateAttendence={this.updateAttendence.bind(this)}
+              showAlert={(color, message, timeout) => this.refs.SubmitAlert.showAlert(color, message, timeout)}
             />
           </div>
         </ScrollToTop>
