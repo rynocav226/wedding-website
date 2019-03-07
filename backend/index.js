@@ -7,7 +7,7 @@ const authRoutes = require("./routes/auth");
 const invitationRoutes = require("./routes/invitation");
 const guestRoutes = require("./routes/guest");
 
-const PORT = 8080;
+const PORT = process.env.PORT || 8080;
 
 app.use(cors());
 app.use(bodyParser.json());
