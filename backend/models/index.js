@@ -9,3 +9,6 @@ mongoose.connect(process.env.MONGODB_URI  || "mongodb://localhost/wedding", {
 
 module.exports.Invitation = require("./invitation");
 module.exports.Guest = require("./guest");
+module.exports.SongRequests = require("./songRequests");
+module.exports.Song = require("./songList");
+module.exports.User = require("./user");

@@ -6,6 +6,8 @@ const errorHandler = require("./handlers/error");
 const authRoutes = require("./routes/auth");
 const invitationRoutes = require("./routes/invitation");
 const guestRoutes = require("./routes/guest");
+const requestRoutes = require("./routes/songRequests");
+const songRoutes = require("./routes/songRoutes");
 
 const PORT = process.env.PORT || 8080;
 
@@ -15,6 +17,10 @@ app.use(bodyParser.json());
 app.use("/api/auth", authRoutes);
 app.use("/api/invitation", invitationRoutes);
 app.use("/api/invitation/:id/guest", guestRoutes);
+app.use("/api/users/:id/songRequests",
+  requestRoutes
+)
+app.use("/api/songs", songRoutes)
 
 app.use(function(req, res, next) {
   let err = new Error("Route Not Found.");
