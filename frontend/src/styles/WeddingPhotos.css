@@ -1,0 +1,22 @@
+.carouselMain {
+  height: 89vh;
+  display: flex;
+  align-items: center;
+}
+
+.carouselImage {
+  max-width: 70vw;
+  max-height: 75vh;
+  border-radius: 5%;
+  border: 3px dashed;
+  padding: 3px;
+  width: auto;
+  height: auto;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.carouselButton {
+  cursor: pointer;
+}

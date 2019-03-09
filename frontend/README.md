@@ -41,6 +41,8 @@ RSVP
 > add address to form? - show on summary page before submit - add to backend
 > do responsive test with longest name
 > test tooltip on Mobile - may have to switch to popover
+> on invitation error, don't show red 'x' in input
+> scroll to top after submit so see alert
 
 Additional Pages
 > Bridal Party page - pictures and how became friends
