@@ -20,7 +20,7 @@ const WeddingDetails = (props) => {
                     <CardText className="text-center font-weight-bold">Day Block Brewing</CardText>
                   </Col>
                   <Col sm="12" className="mb-2">
-                    <CardImg src={require("../assets/dayBlockImage.jpg")} alt="DayBlock" />
+                    <CardImg src={require("../assets/weddingDetails/dayBlockImage.jpg")} alt="DayBlock" />
                   </Col>
                   <Col>
                     <CardText className="text-center"><a href="geo:0,0?q=aloft+minneapolis" target="_blank" rel="noopener noreferrer">1103 S Washington Ave, Minneapolis MN 55415</a></CardText>

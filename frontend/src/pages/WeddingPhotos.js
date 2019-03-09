@@ -2,9 +2,9 @@ import React, { Component } from 'react';
 import { Container } from 'reactstrap';
 import { Carousel, CarouselItem, CarouselControl, CarouselIndicators } from 'reactstrap';
 import "../styles/WeddingPhotos.css";
-import gophersImage from  "../assets/gophersImage.jpg";
-import weddingImage from "../assets/weddingImage.jpg";
-import honeymoonImage from "../assets/honeymoonImage.jpg";
+import gophersImage from  "../assets/ourStory/gophersImage.jpg";
+import weddingImage from "../assets/ourStory/weddingImage.jpg";
+import honeymoonImage from "../assets/ourStory/honeymoonImage.jpg";
 
 const items = [
   {
@@ -81,7 +81,7 @@ class WeddingPhotos extends Component {
     return (
       <Container fluid>
         <Carousel interval={false} slide={false} className="carouselMain" pause={false} activeIndex={this.state.activeIndex} next={this.next} previous={this.previous} >
-          <CarouselIndicators items={items} activeIndex={this.state.activeIndex} onClickHandler={this.goToIndex} />
+          <CarouselIndicators className="carouselIndicator" items={items} activeIndex={this.state.activeIndex} onClickHandler={this.goToIndex} />
           {slides}
           <CarouselControl className="carouselButton" direction="prev" directionText="Previous" onClickHandler={this.previous} />
           <CarouselControl className="carouselButton" direction="next" directionText="Next" onClickHandler={this.next} />

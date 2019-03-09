@@ -6,7 +6,7 @@ const {
     getSongRequest,
     updateSongRequest,
     deleteSongRequest
-} = require("../handlers/SongRequests");
+} = require("../handlers/songRequests");
 
 //prefix - /api/users/:id/SongRequest
 router.route("/").post(createSongRequest)

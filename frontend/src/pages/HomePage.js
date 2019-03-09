@@ -17,7 +17,7 @@ const HomePage = (props) => {
         </Row>
         <Row className="mb-2">
           <Col>
-            <img src={require("../assets/engagementImage.jpg")} className="imageHome img-fluid border-primary" alt="Engagement" />
+            <img src={require("../assets/homePage/engagementImage.jpg")} className="imageHome img-fluid border-primary" alt="Engagement" />
           </Col>
         </Row>
         <Row className="mb-2">
