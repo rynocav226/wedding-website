@@ -15,12 +15,8 @@ exports.createSongRequest = async function (req, res, next) {
             song5: req.body.song5,
             user: req.params.id
         });
-        let foundUser = await db.User.findById(req.params.id);
-        console.log(`Found user is ${foundUser}`)
-        console.log(`User requests are ${foundUser.requests}`)
-        // add it to the user table
-        foundUser.requests.push(req.params.id);
-        await foundUser.save();
+        if(request)
+            console.log("create song success")
 
         return res.status(200);//.json(foundMessage);
     } catch (error) {
@@ -47,7 +43,7 @@ exports.updateSongRequest = async function (req, res, next) {
 
         console.log(request)
 
-        let foundUser = await db.User.findByIdAndUpdate(req.params.id, request, function (err, foundReq) {
+        let foundUser = await db.Invitation.findByIdAndUpdate(req.params.id, request, function (err, foundReq) {
             if (err) {
                 console.log(`Update err ${err}`)
             } else {
