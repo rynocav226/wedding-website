@@ -1,7 +1,12 @@
+.subHeader {
+  margin-top: -10px;
+}
+
 .carouselMain {
-  height: 89vh;
+  height: 87vh;
   display: flex;
   align-items: center;
+  margin-top: -40px;
 }
 
 .carouselImage {

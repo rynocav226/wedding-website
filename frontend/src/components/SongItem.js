@@ -1,4 +1,4 @@
-import React, {Component} from 'react'
+import React from 'react'
 
 function drag(ev, text) {
     ev.dataTransfer.setData("text", text);
