@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { postSongRequests } from "../store/actions/songs"
 import { apiCall } from "../services/api";
 import FavSongForm from "../components/FavSongForm"
 import SongItem from "../components/SongItem"
@@ -14,63 +13,47 @@ class SongRequests extends Component {
     super(props);
     this.state = {
       song: "",
-      songList: []
+      songList: [],
+      invitation:props.invitation
     };
     
-    this.handleChange = this.handleChange.bind(this);
-    this.handleNewMessage = this.handleNewMessage.bind(this);
     this.addFavSongs = this.addFavSongs.bind(this);
-    // this.handleSubmit = this.handleSubmit.bind(this);
+    this.addLeastFavSongs = this.addLeastFavSongs.bind(this);
   }
 
-  handleNewMessage = event => {
-    console.log(`Song is ${this.state.song}`)
-    var text = this.state.song
-    // this.props.(this.state.song);
-    // this.setState({song:"postSongRequests"});
-    // postSongRequests(this.state.song)
-      // let { currentUser } = getState();
-      console.log("Post Song Requests " + text)
-      const id = "5c154d170c26da3bec966861"
-      var path = "http://localhost:8080/api/users/5c154d170c26da3bec966861/songRequests"
-      return apiCall("post", path, { text })
-          .then(res => { console.log(`Response of ${res}`)})
-          .catch(
-            err => {console.log(`Error is blank ${err}`)}
-          
-          )
-      // .catch(err => dispatch(addError(err.message)));
-    // }
-    // this.props.history.push("/");
-  }
 
   addFavSongs(songs) {
-    console.log(`Fav songs ${songs}`)
-    var songJson = {}
+    var songJson = {likes:{}}
     var i = 1
+    
     songs.forEach(song => {
-      songJson["song"+i] = song
-      console.log(song)
+      songJson.likes["song"+i] = song
       i++
     });
-
-    console.log(songJson)
-    var path = "http://localhost:8080/api/users/5c154d170c26da3bec966861/songRequests"
+    var path = `/api/users/${this.props.invitation}/songRequests`
     return apiCall("put", path, songJson)
-      .then(res => {console.log(`Successfule response ${res}`) })
+      .then(res => {console.log(`Successful response ${res}`) })
       .catch( err => {console.log(`Error is ${err}`)})
   }
 
   addLeastFavSongs(songs) {
-    console.log(`Least Fav songs ${songs}`)
+    var songJson = { dislikes: {} }
+    var i = 1
+
+    songs.forEach(song => {
+      songJson.dislikes["song" + i] = song
+      i++
+    });
+
+    var path = `/api/users/${this.props.invitation}/songRequests`
+    return apiCall("put", path, songJson)
+      .then(res => { console.log(`Successful response ${res}`) })
+      .catch(err => { console.log(`Error is ${err}`) })
   }
 
-  handleChange(event) {
-    this.setState({song: event.target.value})
-  }
   
   componentWillMount() {
-    var path = "http://localhost:8080/api/songs"
+    var path = "/api/songs"
     return apiCall("get", path)
       .then(songList => this.setState({songList}))
       .catch(err => {console.log(`Error ${err}`)
@@ -83,13 +66,12 @@ class SongRequests extends Component {
       this.props.toggleCode();
     }
   }
+
   drag(ev) {
     ev.persist()
-    // console.log("Ev target")
     let node = ReactDom.findDOMNode(ev.target)
     let child = node.querySelector('.song')
     ev.dataTransfer.setData("text", child.innerHTML)
-    // console.log(ev.target)
   }
 
   render() {
@@ -130,10 +112,5 @@ class SongRequests extends Component {
   }
 };
 
-// function mapStateToProps(state) {
-//   return {
-//     errors: state.errors
-//   };
-// }
 
-export default SongRequests// connect(mapStateToProps, { postSongRequests })(SongRequests);
+export default SongRequests

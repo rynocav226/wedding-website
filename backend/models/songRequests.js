@@ -3,25 +3,49 @@ const User = require("./user");
 
 const songRequestSchema = new mongoose.Schema(
     {
-        song1: {
-            type: String,
-            maxlength: 50
+        likes: {
+            song1: {
+                type: String,
+                maxlength: 50
+            },
+            song2: {
+                type: String,
+                maxlength: 50
+            },
+            song3: {
+                type: String,
+                maxlength: 50
+            },
+            song4: {
+                type: String,
+                maxlength: 50
+            },
+            song5: {
+                type: String,
+                maxlength: 50
+            }
         },
-        song2: {
-            type: String,
-            maxlength: 50
-        },
-        song3: {
-            type: String,
-            maxlength: 50
-        },
-        song4: {
-            type: String,
-            maxlength: 50
-        },
-        song5: {
-            type: String,
-            maxlength: 50
+        dislikes:{
+            song1: {
+                type: String,
+                maxlength: 50
+            },
+            song2: {
+                type: String,
+                maxlength: 50
+            },
+            song3: {
+                type: String,
+                maxlength: 50
+            },
+            song4: {
+                type: String,
+                maxlength: 50
+            },
+            song5: {
+                type: String,
+                maxlength: 50
+            }
         },
         user: {
             type: mongoose.Schema.Types.ObjectId,
