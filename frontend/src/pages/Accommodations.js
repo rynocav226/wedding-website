@@ -10,7 +10,7 @@ import '../styles/Accommodations.css';
 const Accommodations = () => {
   return (
     <Container fluid>
-      <Nav id="accommodationsNavigation" style={{zIndex: '2'}} className="hotelNav bg-secondary justify-content-center">
+      <Nav style={{zIndex: '2'}} className="hotelNav bg-secondary justify-content-center" role="navigation">
         <NavItem>
           <NavLink tag={Link} to="#aloftCardGroup">Aloft</NavLink>
         </NavItem>

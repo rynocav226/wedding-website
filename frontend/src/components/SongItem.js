@@ -1,9 +1,5 @@
 import React from 'react'
 
-function drag(ev, text) {
-    ev.dataTransfer.setData("text", text);
-}
-
 const SongItem = ({ artist, song, category }) => (
 
     

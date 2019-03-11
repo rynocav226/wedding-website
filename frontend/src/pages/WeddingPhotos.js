@@ -235,7 +235,7 @@ class WeddingPhotos extends Component {
 
     const slides = items.map((item) => {
       return (
-        <CarouselItem tag="div" className="carouselItem" onExiting={this.onExiting} onExited={this.onExited} key={item.altText} >
+        <CarouselItem className="carouselItem" onExiting={this.onExiting} onExited={this.onExited} key={item.altText} >
           <img className="carouselImage img-fluid border-primary" src={item.src} alt={item.altText} />
         </CarouselItem>
       );
