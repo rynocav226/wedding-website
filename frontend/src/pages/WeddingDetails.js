@@ -11,7 +11,7 @@ const WeddingDetails = (props) => {
     <Container fluid>
       <Row>
         <Col md="6" lg="5" xl="4" className="mb-2">
-          <Card color="light">
+          <Card>
             <CardBody>
               <CardTitle>Venue</CardTitle>
               <Container>
