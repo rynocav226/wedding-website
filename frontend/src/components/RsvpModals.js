@@ -169,6 +169,7 @@ class RsvpModals extends Component {
       } else {
         this.toggleChildren();
       }
+      window.scrollTo(0, 0);
   }
 
   updateAttendence(guest, attendence) {
@@ -216,7 +217,7 @@ class RsvpModals extends Component {
           </ModalFooter>
         </Modal>
         <Modal centered size="lg" isOpen={this.state.modalChildren} backdrop={"static"}>
-          <ModalHeader toggle={this.childrenCancel}>Daycare Required?</ModalHeader>
+          <ModalHeader toggle={this.childrenCancel}>Babysitter Required?</ModalHeader>
           <ModalBody>
             <Alert className="text-center" color="danger" isOpen={this.state.childrenNeedReply}>Daycare reply required for all children.</Alert>
             <ListGroup flush>{childGuests}</ListGroup>

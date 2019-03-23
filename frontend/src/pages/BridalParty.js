@@ -94,21 +94,13 @@ class BridalParty extends Component {
           <TabPane tabId='2'>
           <CardDeck>
               <Card outline color="primary" className="mb-2">
-                <CardImg className="bridalPartyImage img-fluid" src={require("../assets/bridalParty/barryAndersen.jpg")} alt="Barry Andersen" />
-                <CardBody>
-                  <CardTitle className="text-primary text-center">Barry Andersen</CardTitle>
-                  <CardText>Jorden and Caitlin met at their internship at Target.</CardText>
-                </CardBody>
-              </Card>
-              <div className="w-100 d-none d-sm-block d-md-none" />
-              <Card outline color="primary" className="mb-2">
                 <CardImg className="bridalPartyImage img-fluid" src={require("../assets/bridalParty/ajButt.jpg")} alt="AJ Butt" />
                 <CardBody>
                   <CardTitle className="text-primary text-center">AJ Butt</CardTitle>
                   <CardText>Jorden and Caitlin met at their internship at Target.</CardText>
                 </CardBody>
               </Card>
-              <div className="w-100 d-none d-sm-block d-lg-none" />
+              <div className="w-100 d-none d-sm-block d-md-none" />
               <Card outline color="primary" className="mb-2">
                 <CardImg className="bridalPartyImage img-fluid" src={require("../assets/bridalParty/michaelCavanaugh.jpg")} alt="Michael Cavanaugh" />
                 <CardBody>
@@ -116,11 +108,19 @@ class BridalParty extends Component {
                   <CardText>Jorden and Caitlin met at their internship at Target.</CardText>
                 </CardBody>
               </Card>
-              <div className="w-100 d-none d-sm-block d-md-none d-lg-block" />
+              <div className="w-100 d-none d-sm-block d-lg-none" />
               <Card outline color="primary" className="mb-2">
                 <CardImg className="bridalPartyImage img-fluid" src={require("../assets/bridalParty/pjCavanaugh.jpg")} alt="PJ Cavanaugh" />
                 <CardBody>
                   <CardTitle className="text-primary text-center">PJ Cavanaugh</CardTitle>
+                  <CardText>Jorden and Caitlin met at their internship at Target.</CardText>
+                </CardBody>
+              </Card>
+              <div className="w-100 d-none d-sm-block d-md-none d-lg-block" />
+              <Card outline color="primary" className="mb-2">
+                <CardImg className="bridalPartyImage img-fluid" src={require("../assets/bridalParty/alexEllingson.jpg")} alt="Alex Ellingson" />
+                <CardBody>
+                  <CardTitle className="text-primary text-center">Alex Ellingson</CardTitle>
                   <CardText>Jorden and Caitlin met at their internship at Target.</CardText>
                 </CardBody>
               </Card>

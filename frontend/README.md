@@ -40,13 +40,26 @@ Accommodations Page
 RSVP
 > add address to form? - show on summary page before submit - add to backend
 > do responsive test with longest name
-> test tooltip on Mobile - may have to switch to popover
+> test tooltip on Mobile - may have to switch to popover - works - DONE
 > on invitation error, don't show red 'x' in input
-> scroll to top after submit so see alert
+> scroll to top after submit so see alert - DONE
+> auto adult popup is broke - DONE
+> change to babysitter required - DONE
+> don't list children, ask yes or no and how many
+
+Song Requests
+> ensure invitation code has been entered before submitting
+
+Bridal Party
+> find picture of Jorden and Lucy
+> write out the descriptions
+
+Brewery Crawl
+> change up order on single column so don't have picture back to back
 
 Additional Pages
-> Bridal Party page - pictures and how became friends
-> Wedding Photos - share more photos from wedding; or could be modal slideshow popup from Our Story page
+> Bridal Party page - pictures and how became friends - DONE
+> Wedding Photos - share more photos from wedding; or could be modal slideshow popup from Our Story page - DONE
 
 ----------------------------------------------------------------------------------------------------
 
