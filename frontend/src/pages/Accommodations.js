@@ -89,7 +89,7 @@ const Accommodations = () => {
               <ListGroup flush>
                 <ListGroupItem>
                   <ListGroupItemHeading>Location</ListGroupItemHeading>
-                  <ListGroupItemText>In downtown Mineapolis.  Closest hotel to both the venue on Saturday and the starting point of the brewery crawl on Friday.  Easiest access is via 35W.</ListGroupItemText>
+                  <ListGroupItemText>In downtown Mineapolis.  Closest hotel to the venue, is walkable.  Easiest access is via 35W.</ListGroupItemText>
                 </ListGroupItem>
                 <ListGroupItem>
                   <ListGroupItemHeading>Booking Instructions</ListGroupItemHeading>
@@ -174,7 +174,7 @@ const Accommodations = () => {
               <ListGroup flush>
                 <ListGroupItem>
                   <ListGroupItemHeading>Location</ListGroupItemHeading>
-                  <ListGroupItemText>In downtown Mineapolis, right in the heart of Seven Corners, just off of 35W.  Wedding venue and the starting point of the brewery crawl are both walkable.</ListGroupItemText>
+                  <ListGroupItemText>In downtown Mineapolis, right in the heart of Seven Corners, just off of 35W.  Wedding venue is walkable.</ListGroupItemText>
                 </ListGroupItem>
                 <ListGroupItem>
                   <ListGroupItemHeading>Child Care</ListGroupItemHeading>

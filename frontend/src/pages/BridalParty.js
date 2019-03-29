@@ -83,7 +83,7 @@ class BridalParty extends Component {
               </Card>
               <div className="w-100 d-none d-sm-block d-md-none" />
               <Card outline color="primary" className="mb-2">
-                <CardImg className="bridalPartyImage img-fluid" src={require("../assets/bridalParty/saraMichalskiLynch.jpg")} alt="Lucy Tong" />
+                <CardImg className="bridalPartyImage img-fluid" src={require("../assets/bridalParty/lucyTong.jpg")} alt="Lucy Tong" />
                 <CardBody>
                   <CardTitle className="text-primary text-center">Lucy Tong</CardTitle>
                   <CardText>Jorden and Caitlin met at their internship at Target.</CardText>

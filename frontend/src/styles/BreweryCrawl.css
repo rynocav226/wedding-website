@@ -2,3 +2,21 @@
   object-fit: cover;
   height: 278px;
 }
+
+@media (min-width: 768px) {
+  .routeMap {
+    height: 240px;
+  }
+}
+
+@media (min-width: 992px) {
+  .routeMap {
+    height: 310px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .routeMap {
+    height: 287px;
+  }
+}
