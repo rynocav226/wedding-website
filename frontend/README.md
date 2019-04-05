@@ -3,15 +3,18 @@ Things to do/fix:
 General
 > Change title and icon - DONE
 > change favorite title - DONE
-> Have addresses open in map apps on phone
+> Have addresses open in map apps on phone (fix existing ones)
 > initial page load shows unstyled navbar for a quick sec
 > once hosted, test when backend is not running and database is not running
 > can prevent users form accessing backend routes?
+> revert error handling to the example
 
 Navigation Menu
 > Put RSVP all the way to the right and make a different style to stand out - DONE
 > Make NavbarBrand into an image of our save the date sticker
 > Put some pages in a dropdown so navbar doesn't collapse until xs screen size - DONE
+> collapse menu on medium?
+> show brewery crawl link on lg and xl
 
 Home Page
 > make the image the full background, overlayed with the text - DONE
@@ -38,10 +41,10 @@ Accommodations Page
 > doubletree pic on ios
 
 RSVP
-> add address to form? - show on summary page before submit - add to backend
+> add address to form? - show on summary page before submit - add to backend - NO
 > do responsive test with longest name
 > test tooltip on Mobile - may have to switch to popover - works - DONE
-> on invitation error, don't show red 'x' in input
+> on invitation error, don't show red 'x' in input - NOT POSSIBLE
 > scroll to top after submit so see alert - DONE
 > auto adult popup is broke - DONE
 > change to babysitter required - DONE
@@ -51,11 +54,11 @@ Song Requests
 > ensure invitation code has been entered before submitting
 
 Bridal Party
-> find picture of Jorden and Lucy -- DONE
+> find picture of Jorden and Lucy - DONE
 > write out the descriptions
 
 Wedding Photos
-> adding padding to top of the photo credit text -- DONE
+> adding padding to top of the photo credit text - DONE
 
 Brewery Crawl
-> change up order on single column so don't have picture back to back
+> change up order on single column so don't have picture back to back - DONE
