@@ -1,5 +1,6 @@
 .imageHome {
   max-height: 77vh;
+  min-height: 350px;
   border-radius: 10%;
   border: 5px dashed;
   padding: 3px;

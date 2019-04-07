@@ -8,12 +8,12 @@ const {
     deleteSongRequest
 } = require("../handlers/songRequests");
 
-//prefix - /api/users/:id/SongRequest
+//prefix - /api/invitation/:id/SongRequest
 router.route("/").post(createSongRequest)
     .put(updateSongRequest)
     .get(getSongRequest)
 
-// prefix - /api/users/:id/SongRequests/:SongRequest_id
+// prefix - /api/invitation/:id/SongRequests/:SongRequest_id
 router
     .route("/:SongRequest_id")
     .get(getSongRequest)

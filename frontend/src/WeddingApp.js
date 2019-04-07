@@ -108,11 +108,7 @@ class WeddingApp extends Component {
         }
       })
       .catch(error => {
-        if (error.status === 500) {
-          this.codeErrorShow("Backend is not running.  Email rynocav@gmail.com to let Ryan know.");
-        } else {
-          this.codeErrorShow(error.data.error.message + " If problem persists, email rynocav@gmail.com");
-        }
+        this.codeErrorShow(error.message + " If problem persists, email rynocav@gmail.com");
       });
   }
 

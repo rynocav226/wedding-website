@@ -97,7 +97,7 @@ class BridalParty extends Component {
                 <CardImg className="bridalPartyImage img-fluid" src={require("../assets/bridalParty/ajButt.jpg")} alt="AJ Butt" />
                 <CardBody>
                   <CardTitle className="text-primary text-center">AJ Butt</CardTitle>
-                  <CardText>Jorden and Caitlin met at their internship at Target.</CardText>
+                  <CardText>Ryan and AJ met in the 6th grade when they were sat next to each other in computer class.  From there, they developed a lasting friendship centered around basketball, video games, and Ryan impersonating an outdoorsman.  Today, AJ lives in Gillette WY with his wife Tiffany and three daughters: Ella, ??, and Violet.</CardText>
                 </CardBody>
               </Card>
               <div className="w-100 d-none d-sm-block d-md-none" />
@@ -105,7 +105,7 @@ class BridalParty extends Component {
                 <CardImg className="bridalPartyImage img-fluid" src={require("../assets/bridalParty/michaelCavanaugh.jpg")} alt="Michael Cavanaugh" />
                 <CardBody>
                   <CardTitle className="text-primary text-center">Michael Cavanaugh</CardTitle>
-                  <CardText>Jorden and Caitlin met at their internship at Target.</CardText>
+                  <CardText>Michael is Ryan's older brother by 2 1/2 years.  Growing up was a constant competition of alll things sport; from backyard football, to driveway basketball, to the video game console.  Today, Michael lives in Caledonia MS with his wife Lynn and two children: Jack and Audrey.</CardText>
                 </CardBody>
               </Card>
               <div className="w-100 d-none d-sm-block d-lg-none" />
@@ -113,7 +113,7 @@ class BridalParty extends Component {
                 <CardImg className="bridalPartyImage img-fluid" src={require("../assets/bridalParty/pjCavanaugh.jpg")} alt="PJ Cavanaugh" />
                 <CardBody>
                   <CardTitle className="text-primary text-center">PJ Cavanaugh</CardTitle>
-                  <CardText>Jorden and Caitlin met at their internship at Target.</CardText>
+                  <CardText>PJ is Ryan's younger brother by a little over 3 years.  For the most part, they have always gotten along, bonding over a range of interests from the obvious, sports, to the acedemic, coding, to the nerdy, Yu-Gi-Oh!.  Today, PJ lives in Minneapolis MN with his wife Allie and their three pets.</CardText>
                 </CardBody>
               </Card>
               <div className="w-100 d-none d-sm-block d-md-none d-lg-block" />
@@ -121,7 +121,7 @@ class BridalParty extends Component {
                 <CardImg className="bridalPartyImage img-fluid" src={require("../assets/bridalParty/alexEllingson.jpg")} alt="Alex Ellingson" />
                 <CardBody>
                   <CardTitle className="text-primary text-center">Alex Ellingson</CardTitle>
-                  <CardText>Jorden and Caitlin met at their internship at Target.</CardText>
+                  <CardText>Ryan and Alex met during their Freshman year of college and were then roommates for their Sophmore and Junior years.  They immediately bonded over Halo, Gopher basketball, and their love of Blake Hoffarber.  Today, Alex lives in downtown Minneapolis MN and is an eligible bachelor.</CardText>
                 </CardBody>
               </Card>
               <div className="w-100 d-none d-sm-block d-lg-none" />
@@ -129,7 +129,7 @@ class BridalParty extends Component {
                 <CardImg className="bridalPartyImage img-fluid" src={require("../assets/bridalParty/sethThompson.jpg")} alt="Seth Thompson" />
                 <CardBody>
                   <CardTitle className="text-primary text-center">Seth Thompson</CardTitle>
-                  <CardText>Jorden and Caitlin met at their internship at Target.</CardText>
+                  <CardText>Ryan and Seth met in middle school when they started playing on the same travel basketball team.  They continued teaming up through high school, both on the court, and on the diamond, before their shared college days at the U of M.  Today, Seth lives in Eden Praire MN with his wife Mollie and son Huxley.</CardText>
                 </CardBody>
               </Card>
               <div className="w-100 d-none d-sm-block d-md-none" />
@@ -137,7 +137,7 @@ class BridalParty extends Component {
                 <CardImg className="bridalPartyImage img-fluid" src={require("../assets/bridalParty/derekWooters.jpg")} alt="Derek Wooters" />
                 <CardBody>
                   <CardTitle className="text-primary text-center">Derek Wooters</CardTitle>
-                  <CardText>Jorden and Caitlin met at their internship at Target.</CardText>
+                  <CardText>Ryan and Derek met fresh out of college working together at Unisys.  They formed their friendship at the work ping-pong tables, playing together on the Rainbow Connection, and sampling many brews at the local breweries.  Today, Derek lives in Durham NC with his girlfriend Timirri and new pup Tot.</CardText>
                 </CardBody>
               </Card>
             </CardDeck>

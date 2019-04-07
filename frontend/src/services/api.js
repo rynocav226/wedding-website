@@ -7,7 +7,6 @@ import axios from "axios";
 
 export function apiCall(method, path, data) {
     return new Promise((resolve, reject) => {
-        // path ="http://localhost:8081/api/users/5c154d170c26da3bec966861/songRequests"
         console.log("Working with data: " + data)
         console.log(data)
         return axios[method.toLowerCase()](path, data)
@@ -15,8 +14,13 @@ export function apiCall(method, path, data) {
                 return resolve(res.data);
             })
             .catch(err => {
-                console.log(err.response.data.error)
-                return reject(err.response);
+                console.log(err);
+                if (err.response.data.error) {
+                    console.log(err.response.data.error);
+                    return reject(err.response.data.error);
+                } else {
+                    return reject({"message":"Backend is not running."});
+                }
             });
     });
 }

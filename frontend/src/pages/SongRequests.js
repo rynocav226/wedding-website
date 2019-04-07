@@ -28,7 +28,7 @@ class SongRequests extends Component {
       songJson.likes["song"+i] = song
       i++
     });
-    var path = `/api/users/${this.props.invitation}/songRequests`
+    var path = `/api/invitation/${this.props.invitation}/songRequests`
     return apiCall("put", path, songJson)
       .then(res => {console.log(`Successful response ${res}`) })
       .catch( err => {console.log(`Error is ${err}`)})
@@ -43,7 +43,7 @@ class SongRequests extends Component {
       i++
     });
 
-    var path = `/api/users/${this.props.invitation}/songRequests`
+    var path = `/api/invitation/${this.props.invitation}/songRequests`
     return apiCall("put", path, songJson)
       .then(res => { console.log(`Successful response ${res}`) })
       .catch(err => { console.log(`Error is ${err}`) })
@@ -82,14 +82,14 @@ class SongRequests extends Component {
     ));
     return (
       
-      <div class="container">
-        <div class="row">
-          <div class="col-md">
+      <div className="container">
+        <div className="row">
+          <div className="col-md">
             <FavSongForm addFavSongs={this.addFavSongs} />
             <br/>
             <DislikedSongForm addLeastFavSongs={this.addLeastFavSongs}/>
           </div>
-          <div class="col-md">
+          <div className="col-md">
             <div style={{height: '500px', width:'400px', overflow:"auto"}}>
               <table onDragStart={this.drag} >
                 <tbody>

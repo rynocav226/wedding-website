@@ -149,7 +149,7 @@ class RsvpModals extends Component {
         });
       })
       .catch(error => {
-        this.props.showAlert("danger", "Unabled to retrieve guest list from the database.  If problem persists, send this message to rynocav@gmail.com: " + error.data.error.message, false);
+        this.props.showAlert("danger", "Unabled to retrieve guest list from the database.  If problem persists, send this message to rynocav@gmail.com: " + error.message, false);
       })
   }
 
@@ -162,7 +162,7 @@ class RsvpModals extends Component {
         this.props.showAlert("success", "Submit was successful, thanks for the RSVP!", true);
       })
       .catch(error => {
-        this.props.showAlert("danger", "Submit failed, try again. If problem persists, send this message to rynocav@gmail.com: " + error.data.error.message, false);
+        this.props.showAlert("danger", "Submit failed, try again. If problem persists, send this message to rynocav@gmail.com: " + error.message, false);
       });
       if (fromRsvp) {
         this.toggleRsvp();

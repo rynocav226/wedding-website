@@ -39,7 +39,7 @@ class FavSongForm extends Component {
 
     render() {
         return(
-            <div id="favSongs" class="container">
+            <div id="favSongs" className="container">
                 <h1>Favorite Songs</h1>
                 1. <input type="text" name="song1" onDrop={this.handleDrop} value={this.state.song1} onChange={this.handleChange}></input><br/>
                 2. <input type="text" name="song2" onDrop={this.handleDrop} value={this.state.song2} onChange={this.handleChange}></input><br/>
