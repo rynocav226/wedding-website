@@ -4,30 +4,28 @@ import FavSongForm from "../components/FavSongForm";
 import SongItem from "../components/SongItem";
 import DislikedSongForm from "../components/DislikedSongForm";
 import ReactDom from "react-dom";
+import TouchBackend from 'react-dnd-touch-backend';
+import { DragDropContext } from 'react-dnd';
 
 class SongRequests extends Component {
 
   constructor(props) {
     super(props);
     this.state = {
-      song: "",
-      songList: [],
-      invitation:props.invitation
+      likes: { "song1": "", "song2": "", "song3": "", "song4": "", "song5": "" },
+      dislikes: { "song1": "", "song2": "", "song3": "", "song4": "", "song5": ""},
+      songList: []
     };
     
     this.addFavSongs = this.addFavSongs.bind(this);
     this.addLeastFavSongs = this.addLeastFavSongs.bind(this);
+    this.populateSongs = this.populateSongs.bind(this);
+
   }
 
 
   addFavSongs(songs) {
-    var songJson = {likes:{}}
-    var i = 1
-    
-    songs.forEach(song => {
-      songJson.likes["song"+i] = song
-      i++
-    });
+    var songJson = {likes:songs}
     var path = `/api/users/${this.props.invitation}/songRequests`
     return apiCall("put", path, songJson)
       .then(res => {console.log(`Successful response ${res}`) })
@@ -35,20 +33,33 @@ class SongRequests extends Component {
   }
 
   addLeastFavSongs(songs) {
-    var songJson = { dislikes: {} }
-    var i = 1
-
-    songs.forEach(song => {
-      songJson.dislikes["song" + i] = song
-      i++
-    });
-
+    var songJson = { dislikes: songs }
     var path = `/api/users/${this.props.invitation}/songRequests`
     return apiCall("put", path, songJson)
       .then(res => { console.log(`Successful response ${res}`) })
       .catch(err => { console.log(`Error is ${err}`) })
   }
 
+  populateSongs() {
+    var path = `/api/users/${this.props.invitation}/songRequests`
+    return apiCall("get", path)
+      .then(res => { 
+        console.log(`Successful response ${res}`)
+        this.setState({likes: res.likes})
+        this.setState({dislikes: res.dislikes})
+        // this.likes = res.likes
+        // this.dislikes = res.dislikes
+       })
+      .catch(err => { console.log(`Error is ${err}`) })
+  }
+
+  jsonIsEmmpty(jsonArray){
+    for(let key in jsonArray) {
+      if(jsonArray[key] !== "")
+        return false
+    }
+    return true
+  }
   
   componentWillMount() {
     var path = "/api/songs"
@@ -65,6 +76,18 @@ class SongRequests extends Component {
     }
   }
 
+  componentDidUpdate(){
+    if (this.props.invitation && this.jsonIsEmmpty(this.state.dislikes)) {
+      console.log(this.state.dislikes)
+      console.log("updating dislikes")
+      // this.setState({ dislikes: {"song1":"Red","song2":"blue"} })
+      console.log("POPULATE SONGS")
+      this.populateSongs() 
+    }
+    // console.log(this.state.dislikes)
+    
+  }
+
   drag(ev) {
     ev.persist()
     let node = ReactDom.findDOMNode(ev.target)
@@ -73,42 +96,45 @@ class SongRequests extends Component {
   }
 
   render() {
-    console.log(this.state.songList)
     const songList = this.state.songList.map((t) => (
       <SongItem
         key={t._id}
         {...t}
       />
     ));
+    // <table onDragStart={this.drag} ></table>
+    console.log("Rendering song requests")
     return (
-      
-      <div class="container">
-        <div class="row">
-          <div class="col-md">
-            <FavSongForm addFavSongs={this.addFavSongs} />
-            <br/>
-            <DislikedSongForm addLeastFavSongs={this.addLeastFavSongs}/>
-          </div>
-          <div class="col-md">
-            <div style={{height: '500px', width:'400px', overflow:"auto"}}>
-              <table onDragStart={this.drag} >
-                <tbody>
-                  <tr>
-                    <td>Artist</td>
-                    <td>Song</td>
-                    <td>Genre</td>
-                  </tr>
-                  {songList}
-                </tbody>                
-              </table>
+      <DragDropContext backend={TouchBackend}>
+        <div className="container">
+          <div className="row">
+            <div className="col-md">
+              <FavSongForm addFavSongs={this.addFavSongs} likes={this.state.likes}/>
+              <br/>
+              <DislikedSongForm addLeastFavSongs={this.addLeastFavSongs} dislikes={this.state.dislikes}/>
+            </div>
+            <div className="col-md">
+              <div style={{height: '500px', width:'400px', overflow:"auto"}}>
+                <table draggable onDragStart={this.drag}>
+                  <tbody>
+                    <tr>
+                      <td>Artist</td>
+                      <td>Song</td>
+                      <td>Genre</td>
+                    </tr>
+                    {songList}
+                  </tbody>                
+                </table>
+              </div>
             </div>
           </div>
+          
         </div>
-        
-      </div>
+      </DragDropContext>
     );
   }
 };
 
 
+// export default DragDropContext(TouchBackend)(SongRequests)
 export default SongRequests

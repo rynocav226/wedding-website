@@ -9,6 +9,7 @@ export function apiCall(method, path, data) {
     return new Promise((resolve, reject) => {
         // path ="http://localhost:8081/api/users/5c154d170c26da3bec966861/songRequests"
         console.log("Working with data: " + data)
+        path = "http://localhost:8080"+path
         console.log(data)
         return axios[method.toLowerCase()](path, data)
             .then(res => {

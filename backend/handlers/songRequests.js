@@ -64,7 +64,12 @@ exports.updateSongRequest = async function (req, res, next) {
 exports.getSongRequest = async function (req, res, next) {
     console.log("Get request");
     try {
-        let request = await db.SongRequests.find();
+
+        var query = { 'user': req.params.id }
+        let request = await db.SongRequests.findOne(query)
+        
+        console.log("Returning request")
+        console.log(request)
         return res.status(200).json(request);
     } catch (error) {
         return next(error);

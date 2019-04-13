@@ -22,12 +22,20 @@ class FavSongForm extends Component {
 
     handleSubmit() {
         var favSong = [this.state.song1, this.state.song2, this.state.song3, this.state.song4, this.state.song5]
-        this.props.addFavSongs(favSong)
+        this.props.addFavSongs(this.state)
 
     }
 
     handleChange(e) {
         this.setState({ [e.target.name] : e.target.value })
+    }
+
+    jsonIsEmmpty(jsonArray) {
+        for (let key in jsonArray) {
+            if (jsonArray[key] !== "")
+                return false
+        }
+        return true
     }
 
     handleDrop(e) {
@@ -40,9 +48,29 @@ class FavSongForm extends Component {
         e.preventDefault();
     }
 
+    componentDidUpdate() {
+        console.log("Component did update Dislike form")
+        // console.log(this.props.dislikes)
+        // console.log(this.state)
+        if (this.jsonIsEmmpty(this.state) && !this.jsonIsEmmpty(this.props.likes)) {
+            this.setState({ song1: this.props.likes.song1 })
+            this.setState({ song2: this.props.likes.song2 })
+            this.setState({ song3: this.props.likes.song3 })
+            this.setState({ song4: this.props.likes.song4 })
+            this.setState({ song5: this.props.likes.song5 })
+        }
+    }
+
     render() {
+        // this.state.song1 = this.props.songs[0]
+        // if(this.props.songs){
+        // this.setState({"song1" : this.props.songs[0]})
+        // console.log("Songs in fav song form hit")
+        // }
+        // console.log("Props")
+        // console.log(this.props)
         return(
-            <div id="favSongs" class="container">
+            <div id="favSongs">
                 <h1>Favorite Songs</h1>
                 1. <input type="text" name="song1" onDrop={this.handleDrop} value={this.state.song1} onChange={this.handleChange}></input><br/>
                 2. <input type="text" name="song2" onDrop={this.handleDrop} value={this.state.song2} onChange={this.handleChange}></input><br/>
