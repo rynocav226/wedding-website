@@ -1,0 +1,54 @@
+.bridalLink.active, .bridalLink.active:hover {
+  color: white!important;
+  background-color: var(--primary)!important;
+  font-weight: bold;
+}
+
+.bridalPartyNav {
+  position: fixed;
+  width: 100%;
+  margin-top: -15px;
+  padding-top: 10px;
+  padding-right: 15px;
+  padding-bottom: 10px;
+  text-align: center;
+  align-content: center;
+}
+
+.bridalPartyNavItem:hover {
+  cursor: pointer;
+}
+
+.bridalPartyImage {
+  height: 50vh;
+  min-height: 350px;
+  max-height: 450px;
+  object-fit: cover;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1px;
+}
+
+@media (min-width: 576px) {
+  .bridalPartyNav {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .bridalPartyNav {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .bridalPartyNav {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .bridalPartyNav {
+    max-width: 1140px;
+  }
+}

@@ -4,8 +4,6 @@ import FavSongForm from "../components/FavSongForm";
 import SongItem from "../components/SongItem";
 import DislikedSongForm from "../components/DislikedSongForm";
 import ReactDom from "react-dom";
-import TouchBackend from 'react-dnd-touch-backend';
-import { DragDropContext } from 'react-dnd';
 
 class SongRequests extends Component {
 
@@ -26,7 +24,7 @@ class SongRequests extends Component {
 
   addFavSongs(songs) {
     var songJson = {likes:songs}
-    var path = `/api/users/${this.props.invitation}/songRequests`
+    var path = `/api/invitations/${this.props.invitation}/songRequests`
     return apiCall("put", path, songJson)
       .then(res => {console.log(`Successful response ${res}`) })
       .catch( err => {console.log(`Error is ${err}`)})
@@ -34,7 +32,7 @@ class SongRequests extends Component {
 
   addLeastFavSongs(songs) {
     var songJson = { dislikes: songs }
-    var path = `/api/users/${this.props.invitation}/songRequests`
+    var path = `/api/invitations/${this.props.invitation}/songRequests`
     return apiCall("put", path, songJson)
       .then(res => { console.log(`Successful response ${res}`) })
       .catch(err => { console.log(`Error is ${err}`) })
@@ -105,32 +103,30 @@ class SongRequests extends Component {
     // <table onDragStart={this.drag} ></table>
     console.log("Rendering song requests")
     return (
-      <DragDropContext backend={TouchBackend}>
-        <div className="container">
-          <div className="row">
-            <div className="col-md">
-              <FavSongForm addFavSongs={this.addFavSongs} likes={this.state.likes}/>
-              <br/>
-              <DislikedSongForm addLeastFavSongs={this.addLeastFavSongs} dislikes={this.state.dislikes}/>
-            </div>
-            <div className="col-md">
-              <div style={{height: '500px', width:'400px', overflow:"auto"}}>
-                <table draggable onDragStart={this.drag}>
-                  <tbody>
-                    <tr>
-                      <td>Artist</td>
-                      <td>Song</td>
-                      <td>Genre</td>
-                    </tr>
-                    {songList}
-                  </tbody>                
-                </table>
-              </div>
+      
+      <div className="container">
+        <div className="row">
+          <div className="col-md">
+            <FavSongForm addFavSongs={this.addFavSongs} />
+            <br/>
+            <DislikedSongForm addLeastFavSongs={this.addLeastFavSongs}/>
+          </div>
+          <div className="col-md">
+            <div style={{height: '500px', width:'400px', overflow:"auto"}}>
+              <table onDragStart={this.drag} >
+                <tbody>
+                  <tr>
+                    <td>Artist</td>
+                    <td>Song</td>
+                    <td>Genre</td>
+                  </tr>
+                  {songList}
+                </tbody>                
+              </table>
             </div>
           </div>
-          
         </div>
-      </DragDropContext>
+      </div>
     );
   }
 };

@@ -10,7 +10,7 @@ import '../styles/Accommodations.css';
 const Accommodations = () => {
   return (
     <Container fluid>
-      <Nav id="accommodationsNavigation" style={{zIndex: '2'}} className="hotelNav bg-secondary justify-content-center">
+      <Nav style={{zIndex: '2'}} className="hotelNav bg-secondary justify-content-center" role="navigation">
         <NavItem>
           <NavLink tag={Link} to="#aloftCardGroup">Aloft</NavLink>
         </NavItem>
@@ -43,7 +43,7 @@ const Accommodations = () => {
                 </colgroup>
                 <tbody>
                   <tr>
-                    <th>Adress</th>
+                    <th>Address</th>
                     <td><a href="https://www.google.com/maps/search/?api=1&query=900+Washington+Ave+South+Minneapolis+MN+55415" target="_blank" rel="noopener noreferrer">900 Washington Ave South</a></td>
                   </tr>
                   <tr>
@@ -89,7 +89,7 @@ const Accommodations = () => {
               <ListGroup flush>
                 <ListGroupItem>
                   <ListGroupItemHeading>Location</ListGroupItemHeading>
-                  <ListGroupItemText>In downtown Mineapolis.  Closest hotel to both the venue on Saturday and the starting point of the brewery crawl on Friday.  Easiest access is via 35W.</ListGroupItemText>
+                  <ListGroupItemText>In downtown Mineapolis.  Closest hotel to the venue, is walkable.  Easiest access is via 35W.</ListGroupItemText>
                 </ListGroupItem>
                 <ListGroupItem>
                   <ListGroupItemHeading>Booking Instructions</ListGroupItemHeading>
@@ -128,7 +128,7 @@ const Accommodations = () => {
                 </colgroup>
                 <tbody>
                   <tr>
-                    <th>Adress</th>
+                    <th>Address</th>
                     <td><a href="https://goo.gl/maps/sf9Vi4s2KCE2" target="_blank" rel="noopener noreferrer">1500 Washington Ave South</a></td>
                   </tr>
                   <tr>
@@ -174,7 +174,7 @@ const Accommodations = () => {
               <ListGroup flush>
                 <ListGroupItem>
                   <ListGroupItemHeading>Location</ListGroupItemHeading>
-                  <ListGroupItemText>In downtown Mineapolis, right in the heart of Seven Corners, just off of 35W.  Wedding venue and the starting point of the brewery crawl are both walkable.</ListGroupItemText>
+                  <ListGroupItemText>In downtown Mineapolis, right in the heart of Seven Corners, just off of 35W.  Wedding venue is walkable.</ListGroupItemText>
                 </ListGroupItem>
                 <ListGroupItem>
                   <ListGroupItemHeading>Child Care</ListGroupItemHeading>
@@ -217,7 +217,7 @@ const Accommodations = () => {
                 </colgroup>
                 <tbody>
                   <tr>
-                    <th>Adress</th>
+                    <th>Address</th>
                     <td><a href="https://goo.gl/maps/sQwBaNQysAv" target="_blank" rel="noopener noreferrer">1500 Park Place Blvd</a></td>
                   </tr>
                   <tr>

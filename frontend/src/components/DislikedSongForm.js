@@ -1,5 +1,4 @@
-import React, { Component } from 'react'
-import { apiCall } from "../services/api";
+import React, { Component } from 'react';
 
 class DislikedSongForm extends Component {
 
@@ -40,9 +39,6 @@ class DislikedSongForm extends Component {
     }
 
     handleSubmit() {
-        var songs = [this.state.song1, this.state.song2, this.state.song3, this.state.song4, this.state.song5]
-        // console.log("What is this.state")
-        // console.log(this.state)
         this.props.addLeastFavSongs(this.state)
 
     }
@@ -74,7 +70,7 @@ class DislikedSongForm extends Component {
         
         // console.log(this.state)
         return (
-            <div id="dislikes">
+            <div className="container">
                 <h1>Least Favorite Songs</h1>
                 1. <input type="text" name="song1" onDrop={this.handleDrop} value={this.state.song1} onChange={this.handleChange}></input><br />
                 2. <input type="text" name="song2" onDrop={this.handleDrop} value={this.state.song2} onChange={this.handleChange}></input><br />

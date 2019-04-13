@@ -1,12 +1,20 @@
+.splitHeader {
+    margin-top: 8px;
+    margin-bottom: 2px;
+}
+
 .carouselMain {
-  height: 89vh;
+  height: 87vh;
+  min-height: 450px;
   display: flex;
   align-items: center;
+  margin-top: -40px;
 }
 
 .carouselImage {
   max-width: 70vw;
   max-height: 75vh;
+  min-height: 350px;
   border-radius: 5%;
   border: 3px dashed;
   padding: 3px;

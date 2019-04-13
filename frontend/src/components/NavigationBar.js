@@ -44,10 +44,10 @@ class NavigationBar extends Component {
             <NavItem>
               <NavLink tag={Link} to="/Accommodations/">Accommodations</NavLink>
             </NavItem>
-            <NavItem className="d-sm-none">
+            <NavItem className="d-sm-none d-md-block">
               <NavLink tag={Link} to="/BreweryCrawl/">Brewery Crawl</NavLink>
             </NavItem>
-            <NavItem className="d-sm-none">
+            <NavItem className="d-sm-none d-lg-block">
               <NavLink tag={Link} to="/SongRequests/">Song Requests</NavLink>
             </NavItem>
             <NavItem className="d-sm-none">
@@ -62,10 +62,10 @@ class NavigationBar extends Component {
             <UncontrolledButtonDropdown nav inNavbar className="d-none d-sm-block">
               <DropdownToggle nav caret>More</DropdownToggle>
               <DropdownMenu right>
-                <DropdownItem>
+                <DropdownItem className="d-md-none">
                   <NavLink tag={Link} to="/BreweryCrawl/">Brewery Crawl</NavLink>
                 </DropdownItem>
-                <DropdownItem>
+                <DropdownItem className="d-lg-none">
                   <NavLink tag={Link} to="/SongRequests/">Song Requests</NavLink>
                 </DropdownItem>
                 <DropdownItem>

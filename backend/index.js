@@ -17,7 +17,7 @@ app.use(bodyParser.json());
 app.use("/api/auth", authRoutes);
 app.use("/api/invitation", invitationRoutes);
 app.use("/api/invitation/:id/guest", guestRoutes);
-app.use("/api/users/:id/songRequests", requestRoutes);
+app.use("/api/invitation/:id/songRequests", requestRoutes);
 app.use("/api/songs", songRoutes);
 
 app.use(function(req, res, next) {

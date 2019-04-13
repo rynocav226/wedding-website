@@ -1,7 +1,4 @@
-import React, { Component } from 'react'
-import { apiCall } from "../services/api";
-import ReactDom from "react-dom"
-import SongItem from './SongItem';
+import React, { Component } from 'react';
 
 class FavSongForm extends Component {
 
@@ -21,9 +18,7 @@ class FavSongForm extends Component {
     }
 
     handleSubmit() {
-        var favSong = [this.state.song1, this.state.song2, this.state.song3, this.state.song4, this.state.song5]
         this.props.addFavSongs(this.state)
-
     }
 
     handleChange(e) {
@@ -70,7 +65,7 @@ class FavSongForm extends Component {
         // console.log("Props")
         // console.log(this.props)
         return(
-            <div id="favSongs">
+            <div id="favSongs" className="container">
                 <h1>Favorite Songs</h1>
                 1. <input type="text" name="song1" onDrop={this.handleDrop} value={this.state.song1} onChange={this.handleChange}></input><br/>
                 2. <input type="text" name="song2" onDrop={this.handleDrop} value={this.state.song2} onChange={this.handleChange}></input><br/>

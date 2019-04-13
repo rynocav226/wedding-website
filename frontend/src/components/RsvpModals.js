@@ -149,7 +149,7 @@ class RsvpModals extends Component {
         });
       })
       .catch(error => {
-        this.props.showAlert("danger", "Unabled to retrieve guest list from the database.  If problem persists, send this message to rynocav@gmail.com: " + error.data.error.message, false);
+        this.props.showAlert("danger", "Unabled to retrieve guest list from the database.  If problem persists, send this message to rynocav@gmail.com: " + error.message, false);
       })
   }
 
@@ -162,13 +162,14 @@ class RsvpModals extends Component {
         this.props.showAlert("success", "Submit was successful, thanks for the RSVP!", true);
       })
       .catch(error => {
-        this.props.showAlert("danger", "Submit failed, try again. If problem persists, send this message to rynocav@gmail.com: " + error.data.error.message, false);
+        this.props.showAlert("danger", "Submit failed, try again. If problem persists, send this message to rynocav@gmail.com: " + error.message, false);
       });
       if (fromRsvp) {
         this.toggleRsvp();
       } else {
         this.toggleChildren();
       }
+      window.scrollTo(0, 0);
   }
 
   updateAttendence(guest, attendence) {
@@ -216,7 +217,7 @@ class RsvpModals extends Component {
           </ModalFooter>
         </Modal>
         <Modal centered size="lg" isOpen={this.state.modalChildren} backdrop={"static"}>
-          <ModalHeader toggle={this.childrenCancel}>Daycare Required?</ModalHeader>
+          <ModalHeader toggle={this.childrenCancel}>Babysitter Required?</ModalHeader>
           <ModalBody>
             <Alert className="text-center" color="danger" isOpen={this.state.childrenNeedReply}>Daycare reply required for all children.</Alert>
             <ListGroup flush>{childGuests}</ListGroup>

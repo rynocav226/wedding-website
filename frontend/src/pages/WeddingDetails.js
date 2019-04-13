@@ -11,7 +11,7 @@ const WeddingDetails = (props) => {
     <Container fluid>
       <Row>
         <Col md="6" lg="5" xl="4" className="mb-2">
-          <Card color="light">
+          <Card>
             <CardBody>
               <CardTitle>Venue</CardTitle>
               <Container>
@@ -81,7 +81,7 @@ const WeddingDetails = (props) => {
             </CardBody>
           </Card>
         </Col>
-        <Col md="4" lg="3" xl="3" className="mb-2">
+        <Col md="5" lg="3" className="mb-2">
           <Card>
             <CardBody>
               <CardTitle>Registry</CardTitle>
@@ -93,15 +93,15 @@ const WeddingDetails = (props) => {
             </CardBody>
           </Card>
         </Col>
-        <Col md="8" lg="5" xl="5" className="mb-2">
+        <Col md="7" lg="4" className="mb-2">
           <Card>
             <CardBody>
               <CardTitle>Pre-Wedding Fun</CardTitle>
-              <CardText>In lieu of a Groom's Dinner, we will be doing a Brewery Crawl through the North Loop of Downtown Minneapolis on Friday night, September 27th.  All are welcome to partake for however many stops your heart desires.  The crawl will start and end near the downtown hotels so if staying at the <Link to="../Accommodations/#aloftCardGroup">Aloft</Link> or <Link to="../Accommodations/#courtyardMarriottCardGroup">Courtyard Marriott</Link>, will be able to walk.  See the <Link to="../BreweryCrawl/">'Brewery Crawl'</Link> page for the details.</CardText>
+              <CardText>In lieu of a Groom's Dinner, we will be doing a Brewery Crawl through the North Loop of Downtown Minneapolis on Friday night, September 27th.  All are welcome to partake for however many stops your heart desires.  See the <Link to="../BreweryCrawl/">'Brewery Crawl'</Link> page for the details.</CardText>
             </CardBody>
           </Card>
         </Col>
-        <Col md="6" lg="4" className="mb-2">
+        <Col md="6" lg="5" className="mb-2">
           <Card>
             <CardBody>
               <CardTitle>Transport</CardTitle>

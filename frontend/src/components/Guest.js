@@ -32,13 +32,17 @@ class Guest extends Component {
           <h5 className="text-primary d-sm-none text-monospace mt-auto mb-auto">{this.props.firstName} {this.props.lastName}</h5>
         </Col>
         <Col className="col-auto">
-          <ButtonGroup className="d-none d-md-block" role="group">
+          <ButtonGroup className="d-none d-lg-block" role="group">
             <Button size="lg" outline color="success" onClick={() => this.onRadioButtonClick(1)} active={this.state.rSelected === 1}>Yes</Button>
             <Button size="lg" outline color="danger" onClick={() => this.onRadioButtonClick(2)} active={this.state.rSelected === 2}>No</Button>
           </ButtonGroup>
-          <ButtonGroup className="d-md-none" role="group">
+          <ButtonGroup className="d-none d-sm-block d-lg-none" role="group">
             <Button outline color="success" onClick={() => this.onRadioButtonClick(1)} active={this.state.rSelected === 1}>Yes</Button>
             <Button outline color="danger" onClick={() => this.onRadioButtonClick(2)} active={this.state.rSelected === 2}>No</Button>
+          </ButtonGroup>
+          <ButtonGroup className="d-sm-none" role="group">
+            <Button size="sm" outline color="success" onClick={() => this.onRadioButtonClick(1)} active={this.state.rSelected === 1}>Yes</Button>
+            <Button size="sm" outline color="danger" onClick={() => this.onRadioButtonClick(2)} active={this.state.rSelected === 2}>No</Button>
           </ButtonGroup>
         </Col>
       </Row>
