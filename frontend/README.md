@@ -10,6 +10,7 @@ General
 > revert error handling to the example - DONE
 > remove console logs
 > set min-heights on things - DONE
+> update based on Jorden's comments
 
 Navigation Menu
 > Put RSVP all the way to the right and make a different style to stand out - DONE
@@ -36,6 +37,7 @@ Wedding Details Page
 Our Story
 > Add card for honeymoon - DONE
 > write out modals for each life phase - DONE
+> set max-height on pics
 
 Accommodations Page
 > Get the Scrollspy to adjust for the permanent navigation bar (probably get rid of, wanted to test it out) - DONE
@@ -51,14 +53,15 @@ RSVP
 > scroll to top after submit so see alert - DONE
 > auto adult popup is broke - DONE
 > change to babysitter required - DONE
-> don't list children, ask yes or no and how many
+> don't list children, ask yes or no and how many -- DONE
+> do responsive test with max number of children
 
 Song Requests
 > ensure invitation code has been entered before submitting
 
 Bridal Party
 > find picture of Jorden and Lucy - DONE
-> write out the descriptions
+> write out the descriptions - DONE
 > set a max-size (or make it smaller) - DONE
 
 Wedding Photos

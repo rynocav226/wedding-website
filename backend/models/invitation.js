@@ -6,21 +6,18 @@ const invitationSchema = new mongoose.Schema({
     required: true,
     unique: true
   },
-  guests: [
-    {
-      type: mongoose.Schema.Types.ObjectId,
-      ref: "Guest"
-    }
-  ]
+  guestInfo: {
+    type: mongoose.Schema.Types.ObjectId,
+    ref: "Guest",
+    default: null
+  }
 });
 
 invitationSchema.pre("remove", async function(next) {
   try {
     const Guest = require("./guest");
-    for (const guest of this.guests) {
-      let foundGuest = await Guest.findById(guest);
-      await foundGuest.remove();
-    }
+    let foundGuest = await Guest.findById(this.guestInfo);
+    await foundGuest.remove();
     return next();
   } catch (err) {
     return next(err);

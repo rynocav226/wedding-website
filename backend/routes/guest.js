@@ -3,10 +3,7 @@ const router = express.Router({ mergeParams: true });
 const handlers = require("../handlers/guest");
 
 router.route("/")
-  .post(handlers.createGuest)
-  .get(handlers.getGuests)
-  .delete(handlers.deleteGuests)
-  .put(handlers.updateGuests);
+  .post(handlers.createGuest);
 
 router.route("/:guest_id")
   .get(handlers.getGuest)

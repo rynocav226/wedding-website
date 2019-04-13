@@ -1,26 +1,39 @@
 const mongoose = require("mongoose");
 
 const guestSchema = new mongoose.Schema({
-  lastName: {
-    type: String,
-    required: true
+  adults: [
+    {
+      lastName: {
+        type: String,
+        required: true
+      },
+      firstName: {
+        type: String,
+        required: true
+      },
+      attending: {
+        type: String,
+        enum: ["yes", "no", "null"],
+        default: "null",
+      }
+    }
+  ],
+  children: {
+    type: Number,
+    default: 0
   },
-  firstName: {
-    type: String,
-    required: true
+  daycare: {
+    type: Number,
+    default: 0
   },
-  attending: {
-    type: String,
-    enum: ["yes", "no", "null"],
-    default: "null",
-  },
-  isChild: {
+  responded: {
     type: Boolean,
     default: false
   },
   invitation: {
     type: mongoose.Schema.Types.ObjectId,
-    ref: "Invitation"
+    ref: "Invitation",
+    default: null
   }
 });
 
@@ -28,7 +41,7 @@ guestSchema.pre("remove", async function(next) {
   try {
     const Invitation = require("./invitation");
     let invitation = await Invitation.findById(this.invitation);
-    invitation.guests.remove(this.id);
+    invitation.guestInfo = null;
     await invitation.save();
     return next();
   } catch (err) {

@@ -4,6 +4,7 @@ import { ListGroup, ListGroupItem } from 'reactstrap';
 import { Button } from 'reactstrap';
 import { Alert, UncontrolledTooltip } from 'reactstrap';
 import Guest from '../components/Guest';
+import Daycare from '../components/Daycare';
 import { apiCall } from '../services/api';
 
 class RsvpModals extends Component {
@@ -11,7 +12,10 @@ class RsvpModals extends Component {
     super(props);
 
     this.state = {
-      guests: null,
+      adults: [],
+      responded: false,
+      children: 0,
+      daycare: 0,
       modalRsvp: false,
       modalChildren: false,
       rsvpNeedReply: false,
@@ -22,7 +26,6 @@ class RsvpModals extends Component {
     this.toggleRsvp = this.toggleRsvp.bind(this);
     this.toggleChildren = this.toggleChildren.bind(this);
     this.toggleTooltip = this.toggleTooltip.bind(this);
-    this.toggleRsvpCheck = this.toggleRsvpCheck.bind(this);
     this.rsvpClick = this.rsvpClick.bind(this);
     this.rsvpCancel = this.rsvpCancel.bind(this);
     this.rsvpBack = this.rsvpBack.bind(this);
@@ -43,9 +46,21 @@ class RsvpModals extends Component {
     });
   }
 
+  populateGuests(data) {
+    this.setState({
+      adults: data.adults,
+      responded: data.responded,
+      children: data.children,
+      daycare: data.daycare
+    });
+  }
+
   clearGuests() {
     this.setState({
-      guests: null
+      adults: [],
+      responded: false,
+      children: 0,
+      daycare: 0
     });
   }
 
@@ -79,26 +94,19 @@ class RsvpModals extends Component {
     });
   }
 
-  toggleRsvpCheck() {
-    if(!this.state.guests) {
-      this.getGuests();
-    }
-    this.toggleRsvp();
-  }
-
   rsvpCancel() {
     this.rsvpErrorClear();
     this.toggleRsvp();
   }
 
-  rsvpClick(areChildren, adults) {
-    if (this.checkReplies(adults)) {
+  rsvpClick() {
+    if (this.checkReplies()) {
       this.rsvpErrorClear();
-      if (areChildren) {
+      if (this.state.children > 0) {
         this.toggleRsvp();
         this.toggleChildren();
       } else {
-        this.submitGuests(true);
+        this.submitGuestInfo(true);
       }
     } else {
       this.rsvpErrorShow();
@@ -117,10 +125,10 @@ class RsvpModals extends Component {
     this.toggleChildren();
   }
 
-  childrenSubmit(children) {
-    if (this.checkReplies(children)) {
+  childrenSubmit() {
+    if (this.checkReplies()) {
       this.childrenErrorClear();
-      this.submitGuests(false);
+      this.submitGuestInfo(false);
     } else {
       this.childrenErrorShow();
     }
@@ -131,34 +139,41 @@ class RsvpModals extends Component {
     this.toggleRsvp();
   }
 
-  checkReplies(guests) {
+  checkReplies() {
     var allReplied = true;
-    guests.forEach(guest => {
-      if (guest.attending === "null") {
+    this.state.adults.forEach(adult => {
+      if (adult.attending === "null") {
         allReplied = false;
       }
     });
     return allReplied;
   }
 
-  getGuests() {
-    apiCall("get", `/api/invitation/` + this.props.invitation + `/guest/`)
+  getGuestInfo() {
+    if (!this.props.guestInfo) {
+      this.props.showAlert("danger", "Guest list does not exist for this invitation code.  Email Ryan at rynocav@gmail.com to let him know.");
+      this.props.clearInvitation();
+      return;
+    }
+    apiCall("get", `/api/invitation/` + this.props.invitation + `/guest/` + this.props.guestInfo)
       .then(data => {
-        this.setState({
-          guests: data
-        });
+        this.populateGuests(data);
+        this.toggleRsvp();
       })
       .catch(error => {
         this.props.showAlert("danger", "Unabled to retrieve guest list from the database.  If problem persists, send this message to rynocav@gmail.com: " + error.message, false);
       })
   }
 
-  submitGuests(fromRsvp) {
-    apiCall("put", `/api/invitation/` + this.props.invitation + `/guest`, this.state.guests)
+  submitGuestInfo(fromRsvp) {
+    apiCall("put", `/api/invitation/` + this.props.invitation + `/guest/` + this.props.guestInfo,
+      {
+        "adults": this.state.adults,
+        "responded": true,
+        "daycare": this.state.daycare
+      })
       .then(data => {
-        this.setState({
-          guests:data.guests
-        });
+        this.populateGuests(data);
         this.props.showAlert("success", "Submit was successful, thanks for the RSVP!", true);
       })
       .catch(error => {
@@ -176,28 +191,16 @@ class RsvpModals extends Component {
     guest.attending = attendence;    
   }
 
-  render() {
-    const adults = [];
-    const children = [];
-    if (this.state.guests) {
-      this.state.guests.forEach(guest => {
-        if (guest.isChild) {
-          children.push(guest);
-        } else {
-          adults.push(guest);
-        }
-      });
-    }
+  updateDaycare(daycare) {
+    this.setState({
+      daycare: daycare
+    });
+  }
 
-    const adultGuests = adults.map((adult) => (
+  render() {
+    const adultGuests = this.state.adults.map((adult) => (
       <ListGroupItem key={adult._id}><Guest {...adult} updateAttendence={(attendence) => this.updateAttendence(adult, attendence)} /></ListGroupItem>
     ));
-    var childGuests = [];
-    if (children.length) {
-      childGuests = children.map((child) => (
-        <ListGroupItem key={child._id}><Guest {...child} updateAttendence={(attendence) => this.updateAttendence(child, attendence)} /></ListGroupItem>
-      ));
-    }
 
     return (
       <div>
@@ -209,8 +212,8 @@ class RsvpModals extends Component {
           </ModalBody>
           <ModalFooter>
             <Button size="lg" className="ml-auto" color="secondary" onClick={this.rsvpBack}>Back</Button>
-            <Button size="lg" className="mr-auto" color="secondary" onClick={() => this.rsvpClick(children.length, adults)}>
-              {children.length ? "Next" : "Submit"}
+            <Button size="lg" className="mr-auto" color="secondary" onClick={this.rsvpClick}>
+              {this.state.children > 0 ? "Next" : "Submit"}
             </Button>
             <span style={{textDecoration: "underline"}} className="text-info" id="tooltipRsvp">Not You?</span>
             <UncontrolledTooltip placement="top-end" target="tooltipRsvp">If invitation code was entered incorrectly, click the 'Back' button to reenter the code. If problem persists, email rynocav@gmail.com</UncontrolledTooltip>
@@ -219,12 +222,16 @@ class RsvpModals extends Component {
         <Modal centered size="lg" isOpen={this.state.modalChildren} backdrop={"static"}>
           <ModalHeader toggle={this.childrenCancel}>Babysitter Required?</ModalHeader>
           <ModalBody>
-            <Alert className="text-center" color="danger" isOpen={this.state.childrenNeedReply}>Daycare reply required for all children.</Alert>
-            <ListGroup flush>{childGuests}</ListGroup>
+            <Alert className="text-center" color="danger" isOpen={this.state.childrenNeedReply}>Select number of children.</Alert>
+            <ListGroup flush>
+              <ListGroupItem key={this.state.children}>
+                <Daycare children={this.state.children} daycare={this.state.daycare} updateDaycare={(daycare) => this.updateDaycare(daycare)} />
+              </ListGroupItem>
+            </ListGroup>
           </ModalBody>
           <ModalFooter>
             <Button size="lg" className="ml-auto" color="secondary" onClick={this.childrenBack}>Back</Button>
-            <Button size="lg" className="mr-auto" color="secondary" onClick={() => this.childrenSubmit(children)}>Submit</Button>
+            <Button size="lg" className="mr-auto" color="secondary" onClick={this.childrenSubmit}>Submit</Button>
           </ModalFooter>
         </Modal>
       </div>
