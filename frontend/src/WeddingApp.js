@@ -58,7 +58,7 @@ class WeddingApp extends Component {
 
   toggleCodeFromNav() {
     if (this.state.invitation) {
-      this.refs.RsvpModals.toggleRsvpCheck();
+      this.refs.RsvpModals.getGuestInfo();
     } else {
       this.setState({
         toggleCodeFromNav: true
@@ -104,19 +104,12 @@ class WeddingApp extends Component {
         this.codeErrorClear();
         this.toggleCode();
         if(this.state.toggleCodeFromNav) {
-          this.refs.RsvpModals.toggleRsvpCheck();
+          this.refs.RsvpModals.getGuestInfo();
         }
       })
       .catch(error => {
         this.codeErrorShow(error.message + " If problem persists, email rynocav@gmail.com");
       });
-  }
-
-  guestsUpdateSuccessful(invitation) {
-    this.setState({
-      invitation: invitation
-    });
-    this.refs.SubmitAlert.showAlert("success", "Submit successful, thanks for the RSVP!", true);
   }
 
   render() {
@@ -153,6 +146,7 @@ class WeddingApp extends Component {
             <RsvpModals ref="RsvpModals"
               toggleCode={this.toggleCode}
               invitation={(this.state.invitation) ? this.state.invitation._id : null}
+              guestInfo={(this.state.invitation) ? this.state.invitation.guestInfo : null}
               clearInvitation={this.clearInvitation.bind(this)}
               showAlert={(color, message, timeout) => this.refs.SubmitAlert.showAlert(color, message, timeout)}
             />

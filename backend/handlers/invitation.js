@@ -19,11 +19,11 @@ exports.createInvitation = async function(req, res, next) {
 
 exports.getInvitations = async function(req, res, next) {
   try {
-    let invitations = await db.Invitation.find().populate("guests", {
-      lastName: true,
-      firstName: true,
-      attending: true,
-      isChild: true
+    let invitations = await db.Invitation.find().populate("guestInfo", {
+      adults: true,
+      children: true,
+      daycare: true,
+      responded: true
     });
     return res.status(200).json(invitations);
   } catch (err) {
@@ -33,11 +33,11 @@ exports.getInvitations = async function(req, res, next) {
 
 exports.getInvitation = async function(req, res, next) {
   try {
-    let invitation = await db.Invitation.findById(req.params.invitation_id).populate("guests", {
-      lastName: true,
-      firstName: true,
-      attending: true,
-      isChild: true
+    let invitation = await db.Invitation.findById(req.params.invitation_id).populate("guestInfo", {
+      adults: true,
+      children: true,
+      daycare: true,
+      responded: true
     });
     return res.status(200).json(invitation);
   } catch (err) {
