@@ -32,18 +32,21 @@ Wedding Details Page
 > add section about bar being hosted all night - DONE
 > add links to two other registeries - DONE
 > fix RSVP link fire the modal - DONE
-> finish parking lot details
+> finish parking lot details - DONE
+> set sara's travel blog URL
 
 Our Story
 > Add card for honeymoon - DONE
 > write out modals for each life phase - DONE
-> set max-height on pics
+> set max-height on pics - DONE
+> change honeymoon modal photo - DONE
 
 Accommodations Page
 > Get the Scrollspy to adjust for the permanent navigation bar (probably get rid of, wanted to test it out) - DONE
 > add addresses for the hotel details - DONE
 > fix submenu on small mobile - DONE
 > doubletree pic on ios
+> set max-width on the container - DONE
 
 RSVP
 > add address to form? - show on summary page before submit - add to backend - NO
@@ -63,6 +66,8 @@ Bridal Party
 > find picture of Jorden and Lucy - DONE
 > write out the descriptions - DONE
 > set a max-size (or make it smaller) - DONE
+> remove Danielle
+> reorder
 
 Wedding Photos
 > adding padding to top of the photo credit text - DONE

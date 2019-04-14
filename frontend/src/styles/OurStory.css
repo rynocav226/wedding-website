@@ -2,6 +2,11 @@
   cursor: pointer;
 }
 
+.pageImage {
+  max-height: 550px;
+  max-width: auto;
+}
+
 @media (min-width: 576px) {
   .card-columns {
     column-count: 2;

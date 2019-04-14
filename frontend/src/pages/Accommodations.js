@@ -9,7 +9,7 @@ import '../styles/Accommodations.css';
 
 const Accommodations = () => {
   return (
-    <Container fluid>
+    <Container className="accommodationsContainer" fluid>
       <Nav style={{zIndex: '2'}} className="hotelNav bg-secondary justify-content-center" role="navigation">
         <NavItem>
           <NavLink tag={Link} to="#aloftCardGroup">Aloft</NavLink>
@@ -93,7 +93,7 @@ const Accommodations = () => {
                 </ListGroupItem>
                 <ListGroupItem>
                   <ListGroupItemHeading>Booking Instructions</ListGroupItemHeading>
-                  <ListGroupItemText>Call the number listed and mention the Taveirne/Cavanaugh wedding block.  A credit card will be required to make the reservation.  Alternatively, the booking can be made through this <a href="https://www.marriott.com/event-reservations/reservation-link.mi?id=1544558844816&key=GRP&app=resvlink" target="_blank" rel="noopener noreferrer">website</a>.</ListGroupItemText>
+                  <ListGroupItemText>A block of rooms has been reserved for the wedding.  A reservation can be made by calling the number listed and mentioning the <strong>Taveirne/Cavanaugh</strong> wedding block.  A credit card will be required to make the reservation.  Alternatively, the reservation can be made through this <a href="https://www.marriott.com/event-reservations/reservation-link.mi?id=1544558844816&key=GRP&app=resvlink" target="_blank" rel="noopener noreferrer">booking website</a>.</ListGroupItemText>
                 </ListGroupItem>
                 <ListGroupItem>
                   <ListGroupItemHeading>Availibility</ListGroupItemHeading>
@@ -182,7 +182,7 @@ const Accommodations = () => {
                 </ListGroupItem>
                 <ListGroupItem>
                   <ListGroupItemHeading>Booking Instructions</ListGroupItemHeading>
-                  <ListGroupItemText>Call Marriott reservations at the number listed and metion the Taveirne/Cavanaugh wedding block.  Either a first night room deposit or major credit card is required to secure a reservation.</ListGroupItemText>
+                  <ListGroupItemText>A block of rooms has been reserved for the wedding.  A reservation can be made by calling Marriott reservations at the number listed and metioning the <strong>Taveirne/Cavanaugh</strong> wedding block.  Either a first night room deposit or major credit card is required to secure a reservation.</ListGroupItemText>
                 </ListGroupItem>
                 <ListGroupItem>
                   <ListGroupItemHeading>Availibility</ListGroupItemHeading>
@@ -267,7 +267,7 @@ const Accommodations = () => {
                 </ListGroupItem>
                 <ListGroupItem>
                   <ListGroupItemHeading>Booking Instructions</ListGroupItemHeading>
-                  <ListGroupItemText>Reservation can be made through the <a href="https://doubletree3.hilton.com/en/hotels/minnesota/doubletree-by-hilton-hotel-minneapolis-park-place-MSPPHDT/index.html?SEO_id=GMB-DT-MSPPHDT" target="_blank" rel="noopener noreferrer">hotel's website</a> or by calling the hotel directly at the phone number listed.  When making the reservation, use the group code <strong>609</strong> to receive the discounted rate.</ListGroupItemText>
+                  <ListGroupItemText>A block of rooms has been reserved for the wedding.  A reservation can be made through the <a href="https://doubletree3.hilton.com/en/hotels/minnesota/doubletree-by-hilton-hotel-minneapolis-park-place-MSPPHDT/index.html?SEO_id=GMB-DT-MSPPHDT" target="_blank" rel="noopener noreferrer">hotel's website</a> or by calling the hotel directly at the phone number listed.  When making the reservation, use the group code <strong>609</strong> to receive the discounted rate.</ListGroupItemText>
                 </ListGroupItem>
                 <ListGroupItem>
                   <ListGroupItemHeading>Availibility</ListGroupItemHeading>
@@ -275,7 +275,7 @@ const Accommodations = () => {
                 </ListGroupItem>
                 <ListGroupItem>
                   <ListGroupItemHeading>Getting to the Venue</ListGroupItemHeading>
-                  <ListGroupItemText>As alcohol is provided throughout the night, we request guests use Uber or Lyft to get to and from the venue.  If driving is desired, a parking lot adjacent to the venue has been reserved.  Address of the parking lot is ???.</ListGroupItemText>
+                  <ListGroupItemText>As alcohol is provided throughout the night, we request guests use Uber or Lyft to get to and from the venue.  If driving is desired, a parking lot behind the venue has been reserved.  Address of the parking lot is <a href="https://www.google.com/maps/place/1100+S+3rd+St,+Minneapolis,+MN+55415/@44.974597,-93.2555857,17z/data=!3m1!4b1!4m5!3m4!1s0x52b32d67010df461:0x8e487826acd3c0a7!8m2!3d44.974597!4d-93.253397" target="_blank" rel="noopener noreferrer">1100 S 3rd St</a>.</ListGroupItemText>
                 </ListGroupItem>
               </ListGroup>
             </CardBody>
