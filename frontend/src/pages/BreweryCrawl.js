@@ -6,20 +6,20 @@ import "../styles/BreweryCrawl.css";
 const BreweryCrawl = () => {
   return (
     <Container>
-      <Row className="mb-2">
-        <Col sm="12" lg="6">
-          <Card>
-            <CardBody>
-              <CardTitle className="text-primary text-center">Details</CardTitle>
-              <CardText>On Friday September 27th, the night before the wedding, join the bride and groom on a brewery crawl through the North Loop.<br />Easiest transport options to the start of the crawl and from the end of the crawl will be via Uber or Lyft.  Another option is taking the light rail, traversing between the US Bank Stadium stop and the Target Field stop.<br />For those wishing to extend the crawl a few more stops on their way back to the downtown hotels, recommend Clockwerks Brewing and Day Block Brewing.</CardText>
-            </CardBody>
-          </Card>
-        </Col>
-        <Col sm="12" lg="6">
+      <Row className="mb-2 no-gutters">
+        <Col lg="6" xl="5">
           <Card>
             <div className="embed-responsive embed-responsive-16by9 routeMap">
               <iframe title="BreweryCrawlRoute" className="embed-responsive-item" src="https://www.google.com/maps/d/embed?mid=1vBYumfcioh7n3lcIJgcJAHrQB6ReuoFN" />
             </div>
+          </Card>
+        </Col>
+        <Col lg="6" xl="7">
+          <Card>
+            <CardBody>
+              <CardTitle className="text-primary text-center">Details</CardTitle>
+              <CardText>On Friday September 27th, in lieu of a groom's dinner the night before the wedding, join the bride and groom on a brewery crawl through the North Loop.  All are welcome!<br />Easiest transport options to the start of the crawl and from the end of the crawl will be via Uber or Lyft.  Another option is taking the light rail; the US Bank Stadium stop is near the downtown hotels and the Target Field stop is near the breweries.<br />If unable to join us at the beginning of the crawl, may text Ryan at 605.381.2813 to ensure we are keeping up with the timeline.<br />No group dinner is planned as part of the crawl, eat before or can order food along the route.  See the brewery details below for food options at each stop.<br />For those wishing to extend the crawl a few more stops on their way back to the downtown hotels, recommend Clockwerks Brewing and Day Block Brewing.</CardText>
+            </CardBody>
           </Card>
         </Col>
       </Row>
@@ -28,7 +28,7 @@ const BreweryCrawl = () => {
           <Card>
             <CardBody>
               <CardTitle className="text-primary">Stop #1 - Inbound BrewCo</CardTitle>
-              <Table>
+              <Table className="breweryFont">
                 <tbody>
                   <tr>
                     <th scope="row">Arrive At</th>
@@ -45,6 +45,10 @@ const BreweryCrawl = () => {
                   <tr>
                     <th scope="row">Beer List</th>
                     <td><a href="https://inboundbrew.co/inbound-brewco-beer" target="_blank" rel="noopener noreferrer">https://inboundbrew.co/inbound-brewco-beer</a></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Food Option</th>
+                    <td><a href="https://www.facebook.com/The-big-red-wagon-1767533636895848/" target="_blank" rel="noopener noreferrer">The Big Red Wagon</a></td>
                   </tr>
                 </tbody>
               </Table>
@@ -67,7 +71,7 @@ const BreweryCrawl = () => {
           <Card>
             <CardBody>
               <CardTitle className="text-primary">Stop #2 - Fulton Brewing</CardTitle>
-              <Table>
+              <Table className="breweryFont">
                 <tbody>
                   <tr>
                     <th scope="row">Arrive At</th>
@@ -85,6 +89,10 @@ const BreweryCrawl = () => {
                     <th scope="row">Beer List</th>
                     <td><a href="http://www.fultonbeer.com/beer" target="_blank" rel="noopener noreferrer">http://www.fultonbeer.com/beer</a></td>
                   </tr>
+                  <tr>
+                    <th scope="row">Food Option</th>
+                    <td><a href="http://www.fultonbeer.com/tap-room" target="_blank" rel="noopener noreferrer">The Taproom Kitchen</a> (scroll to see the menu)</td>
+                  </tr>
                 </tbody>
               </Table>
             </CardBody>
@@ -101,7 +109,7 @@ const BreweryCrawl = () => {
         <Card>
             <CardBody>
               <CardTitle className="text-primary">Stop #3 - Modist Brewing</CardTitle>
-              <Table>
+              <Table className="breweryFont">
                 <tbody>
                   <tr>
                     <th scope="row">Arrive At</th>
@@ -118,6 +126,10 @@ const BreweryCrawl = () => {
                   <tr>
                     <th scope="row">Beer List</th>
                     <td><a href="http://modistbrewing.com/beers/" target="_blank" rel="noopener noreferrer">http://modistbrewing.com/beers/</a></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Food Option</th>
+                    <td>None</td>
                   </tr>
                 </tbody>
               </Table>

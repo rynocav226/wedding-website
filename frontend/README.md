@@ -10,7 +10,8 @@ General
 > revert error handling to the example - DONE
 > remove console logs
 > set min-heights on things - DONE
-> update based on Jorden's comments
+> update based on Jorden's comments: reverify brewery crawl food, wedding details, and new RSVP
+> make new favicon.ico
 
 Navigation Menu
 > Put RSVP all the way to the right and make a different style to stand out - DONE
@@ -74,3 +75,5 @@ Wedding Photos
 
 Brewery Crawl
 > change up order on single column so don't have picture back to back - DONE
+> add another groomsman number to contact
+> ensure food truck is still accurate
