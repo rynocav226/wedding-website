@@ -11,11 +11,11 @@ General
 > remove console logs
 > set min-heights on things - DONE
 > update based on Jorden's comments: reverify brewery crawl food, wedding details, bridal party centering, and new RSVP
-> make new favicon.ico
+> make new favicon.ico - DONE
 
 Navigation Menu
 > Put RSVP all the way to the right and make a different style to stand out - DONE
-> Make NavbarBrand into an image of our save the date sticker
+> Make NavbarBrand into an image of our save the date sticker - DONE
 > Put some pages in a dropdown so navbar doesn't collapse until xs screen size - DONE
 > collapse menu on medium? - no - DONE
 > show brewery crawl link on lg and xl - DONE

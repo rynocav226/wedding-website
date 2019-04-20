@@ -31,7 +31,7 @@ class NavigationBar extends Component {
   render() {
     return (
       <Navbar className="fixed-top" color="light" light expand="sm">
-        <NavbarBrand tag={Link} to="/">R & J</NavbarBrand>
+        <NavbarBrand tag={Link} to="/"><img src={require("../assets/navIcon.png")} className="navIcon img-fluid" alt="R & J" /></NavbarBrand>
         <NavbarToggler onClick={this.toggle} />
         <Collapse isOpen={this.state.isOpen} navbar>
           <Nav className="ml-auto" navbar onClick={this.collapseNav}>
