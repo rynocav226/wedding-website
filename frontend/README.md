@@ -10,7 +10,7 @@ General
 > revert error handling to the example - DONE
 > remove console logs
 > set min-heights on things - DONE
-> update based on Jorden's comments: reverify brewery crawl food, wedding details, and new RSVP
+> update based on Jorden's comments: reverify brewery crawl food, wedding details, bridal party centering, and new RSVP
 > make new favicon.ico
 
 Navigation Menu
@@ -67,8 +67,9 @@ Bridal Party
 > find picture of Jorden and Lucy - DONE
 > write out the descriptions - DONE
 > set a max-size (or make it smaller) - DONE
-> remove Danielle
-> reorder
+> remove Danielle - DONE
+> reorder - DONE
+> AJ's kid names - DONE
 
 Wedding Photos
 > adding padding to top of the photo credit text - DONE

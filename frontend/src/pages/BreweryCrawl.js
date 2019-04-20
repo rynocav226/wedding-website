@@ -29,6 +29,10 @@ const BreweryCrawl = () => {
             <CardBody>
               <CardTitle className="text-primary">Stop #1 - Inbound BrewCo</CardTitle>
               <Table className="breweryFont">
+                <colgroup>
+                  <col style={{width: '26%'}} />
+                  <col style={{width: '74%'}} />
+                </colgroup>
                 <tbody>
                   <tr>
                     <th scope="row">Arrive At</th>
@@ -72,6 +76,10 @@ const BreweryCrawl = () => {
             <CardBody>
               <CardTitle className="text-primary">Stop #2 - Fulton Brewing</CardTitle>
               <Table className="breweryFont">
+                <colgroup>
+                  <col style={{width: '26%'}} />
+                  <col style={{width: '74%'}} />
+                </colgroup>
                 <tbody>
                   <tr>
                     <th scope="row">Arrive At</th>
@@ -110,6 +118,10 @@ const BreweryCrawl = () => {
             <CardBody>
               <CardTitle className="text-primary">Stop #3 - Modist Brewing</CardTitle>
               <Table className="breweryFont">
+                <colgroup>
+                  <col style={{width: '26%'}} />
+                  <col style={{width: '74%'}} />
+                </colgroup>
                 <tbody>
                   <tr>
                     <th scope="row">Arrive At</th>

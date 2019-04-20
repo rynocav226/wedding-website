@@ -99,10 +99,6 @@ const Accommodations = () => {
                   <ListGroupItemHeading>Availibility</ListGroupItemHeading>
                   <ListGroupItemText>Room rate is valid for both Friday and Saturday night.  Do not need to book both.</ListGroupItemText>
                 </ListGroupItem>
-                <ListGroupItem>
-                  <ListGroupItemHeading>Shuttle Service</ListGroupItemHeading>
-                  <ListGroupItemText>Available Friday and Saturday on a first come, first serve basis anywhere within a 5 mile radius.</ListGroupItemText>
-                </ListGroupItem>
               </ListGroup>
             </CardBody>
           </Card>
@@ -178,11 +174,11 @@ const Accommodations = () => {
                 </ListGroupItem>
                 <ListGroupItem>
                   <ListGroupItemHeading>Child Care</ListGroupItemHeading>
-                  <ListGroupItemText>If unable to make other arrangements, child care will be provided in the suite of this hotel during the wedding.</ListGroupItemText>
+                  <ListGroupItemText>If unable to make other arrangements, child care and dinner will be provided in the suite of this hotel during the wedding.</ListGroupItemText>
                 </ListGroupItem>
                 <ListGroupItem>
                   <ListGroupItemHeading>Booking Instructions</ListGroupItemHeading>
-                  <ListGroupItemText>A block of rooms has been reserved for the wedding.  A reservation can be made by calling Marriott reservations at the number listed and metioning the <strong>Taveirne/Cavanaugh</strong> wedding block.  Either a first night room deposit or major credit card is required to secure a reservation.</ListGroupItemText>
+                  <ListGroupItemText>A block of rooms has been reserved for the wedding.  A reservation can be made by calling Marriott reservations at the number listed and metioning the <strong>Taveirne/Cavanaugh</strong> wedding block.  Either a first night room deposit or major credit card is required to secure a reservation.  Alternatively, the reservation can be made through this <a href="https://www.marriott.com/meeting-event-hotels/group-corporate-travel/groupCorp.mi?resLinkData=Taveirne%20Cavanaugh%20Wedding%5Emspdc%60tcwtcwa%7Ctcwtcwb%7Ctcwtcwc%60144.00%60USD%60false%604%609/27/19%609/29/19%6008/31/2019&app=resvlink&stop_mobi=yes" target="_blank" rel="noopener noreferrer">booking website</a>.</ListGroupItemText>
                 </ListGroupItem>
                 <ListGroupItem>
                   <ListGroupItemHeading>Availibility</ListGroupItemHeading>

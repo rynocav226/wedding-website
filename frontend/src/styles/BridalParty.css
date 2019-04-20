@@ -39,16 +39,35 @@
   .bridalPartyNav {
     max-width: 720px;
   }
+  .bridesmaid5 {
+    max-width: 330px;
+    margin-left: 195px !important;
+  }
 }
 
 @media (min-width: 992px) {
   .bridalPartyNav {
     max-width: 960px;
   }
+  .bridesmaid4, .bridesmaid5 {
+    max-width: 290px;
+  }
+  .bridesmaid4 {
+    margin-left: 160px !important;
+  }
+  .bridesmaid5 {
+    margin-left: 15px !important;
+  }
 }
 
 @media (min-width: 1200px) {
   .bridalPartyNav {
     max-width: 1140px;
+  }
+  .bridesmaid4, .bridesmaid5 {
+    max-width: 350px;
+  }
+  .bridesmaid4 {
+    margin-left: 190px !important;
   }
 }
