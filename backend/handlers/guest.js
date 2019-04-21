@@ -6,6 +6,7 @@ exports.createGuest = async function(req, res, next) {
       adults: req.body.adults,
       children: req.body.children,
       daycare: req.body.daycare,
+      allergies: req.body.allergies,
       responded: req.body.responded,
       invitation: req.params.id
     });

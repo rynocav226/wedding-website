@@ -26,6 +26,10 @@ const guestSchema = new mongoose.Schema({
     type: Number,
     default: 0
   },
+  allergies: {
+    type: String,
+    default: ""
+  },
   responded: {
     type: Boolean,
     default: false

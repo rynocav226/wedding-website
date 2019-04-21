@@ -12,6 +12,7 @@ General
 > set min-heights on things - DONE
 > update based on Jorden's comments: reverify brewery crawl food, wedding details, bridal party centering, and new RSVP
 > make new favicon.ico - DONE
+> test with Firefox - can go smaller
 
 Navigation Menu
 > Put RSVP all the way to the right and make a different style to stand out - DONE
@@ -24,6 +25,7 @@ Home Page
 > make the image the full background, overlayed with the text - DONE
 > split up text lines on x-small screen size - DONE
 > make scrolling past the image start displaying the wedding details page (maybe) - DONE
+> Lucida Calligraphy for the text - DONE
 
 Wedding Details Page
 > link the hotel metion in the child care card to the accommodations page and auto scroll to the Courtyard section - DONE
@@ -59,9 +61,14 @@ RSVP
 > change to babysitter required - DONE
 > don't list children, ask yes or no and how many -- DONE
 > do responsive test with max number of children
+> add descriptor to children modal - DONE
+> add event keys to children modal - DONE
+> add event keys on code modal - DONE
+> responsive tests the modals - DONE
 
 Song Requests
 > ensure invitation code has been entered before submitting
+> remove console logs
 
 Bridal Party
 > find picture of Jorden and Lucy - DONE
