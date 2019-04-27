@@ -44,7 +44,7 @@ const Accommodations = () => {
                 <tbody className="accommodationTableText">
                   <tr>
                     <th scope="row">Address</th>
-                    <td><a href="https://www.google.com/maps/search/?api=1&query=900+Washington+Ave+South+Minneapolis+MN+55415" target="_blank" rel="noopener noreferrer">900 Washington Ave South</a></td>
+                    <td><a href="https://www.google.com/maps/place/Aloft+Minneapolis/@44.9762921,-93.2545232,15z/data=!4m5!3m4!1s0x0:0x28524a5bd31d103f!8m2!3d44.9762921!4d-93.2545232" target="_blank" rel="noopener noreferrer">900 Washington Ave South</a></td>
                   </tr>
                   <tr>
                     <th scope="row">Phone</th>
@@ -125,7 +125,7 @@ const Accommodations = () => {
                 <tbody className="accommodationTableText">
                   <tr>
                     <th scope="row">Address</th>
-                    <td><a href="https://goo.gl/maps/sf9Vi4s2KCE2" target="_blank" rel="noopener noreferrer">1500 Washington Ave South</a></td>
+                    <td><a href="https://www.google.com/maps/place/Courtyard+by+Marriott+Minneapolis+Downtown/@44.9737321,-93.2473116,15z/data=!4m5!3m4!1s0x0:0x533451a877f4dc48!8m2!3d44.9737321!4d-93.2473116" target="_blank" rel="noopener noreferrer">1500 Washington Ave South</a></td>
                   </tr>
                   <tr>
                     <th scope="row">Phone</th>
@@ -214,7 +214,7 @@ const Accommodations = () => {
                 <tbody className="accommodationTableText">
                   <tr>
                     <th scope="row">Address</th>
-                    <td><a href="https://goo.gl/maps/sQwBaNQysAv" target="_blank" rel="noopener noreferrer">1500 Park Place Blvd</a></td>
+                    <td><a href="https://www.google.com/maps/place/DoubleTree+by+Hilton+Hotel+Minneapolis+-+Park+Place/@44.9684034,-93.3513996,15z/data=!4m2!3m1!1s0x0:0xfe9f32bd8f649c42?sa=X&ved=2ahUKEwivgZOYt_HhAhWQmuAKHR65DcMQ_BIwDHoECAwQCA" target="_blank" rel="noopener noreferrer">1500 Park Place Blvd</a></td>
                   </tr>
                   <tr>
                     <th scope="row">Phone</th>

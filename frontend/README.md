@@ -3,10 +3,9 @@ Things to do/fix:
 General
 > Change title and icon - DONE
 > change favorite title - DONE
-> Have addresses open in map apps on phone (fix existing ones)
+> Have addresses open in map apps on phone
 > initial page load shows unstyled navbar for a quick sec -- DONE
 > once hosted, test when backend is not running and database is not running and handle error paths
-> can prevent users form accessing backend routes?
 > revert error handling to the example - DONE
 > remove console logs
 > set min-heights on things - DONE
@@ -39,7 +38,8 @@ Wedding Details Page
 > finish parking lot details - DONE
 > set sara's travel blog URL
 > remove vikings from things to do - DONE
-> responsive test updated Things To Do section
+> responsive test updated Things To Do section - DONE
+> update amazon wedding registry link - DONE
 
 Our Story
 > Add card for honeymoon - DONE
@@ -53,7 +53,7 @@ Accommodations Page
 > fix submenu on small mobile - DONE
 > doubletree pic on ios
 > set max-width on the container - DONE
-> update booking website URL
+> update booking website URL - DONE
 
 RSVP
 > add address to form? - show on summary page before submit - add to backend - NO
@@ -63,7 +63,7 @@ RSVP
 > scroll to top after submit so see alert - DONE
 > auto adult popup is broke - DONE
 > change to babysitter required - DONE
-> don't list children, ask yes or no and how many -- DONE
+> don't list children, ask yes or no and how many - DONE
 > do responsive test with max number of children
 > add descriptor to children modal - DONE
 > add event keys to children modal - DONE

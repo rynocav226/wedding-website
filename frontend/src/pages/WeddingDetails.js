@@ -23,7 +23,7 @@ const WeddingDetails = (props) => {
                     <CardImg className="venueImage img-fluid" src={require("../assets/weddingDetails/dayBlockImage.jpg")} alt="DayBlock" />
                   </Col>
                   <Col sm="12" className="mb-2">
-                    <CardText className="text-center venueAddress"><a href="geo:0,0?q=aloft+minneapolis" target="_blank" rel="noopener noreferrer">1103 S Washington Ave, Minneapolis MN 55415</a></CardText>
+                    <CardText className="text-center venueAddress"><a href="https://www.google.com/maps/place/Day+Block+Brewing+Company/@44.975189,-93.253061,15z/data=!4m2!3m1!1s0x0:0x38dbd00185981f45?sa=X&ved=2ahUKEwjGkvbyt_HhAhXQY98KHXuZCDcQ_BIwDXoECAgQCA" target="_blank" rel="noopener noreferrer">1103 S Washington Ave, Minneapolis MN 55415</a></CardText>
                   </Col>
                   <Col>
                     <CardText>Event space is on the second floor; entrance is at the rear of the building.</CardText>
@@ -77,8 +77,8 @@ const WeddingDetails = (props) => {
             <CardBody>
               <CardTitle>Registry</CardTitle>
               <ListGroup flush>
-                <ListGroupItem className="list-group-item-action text-primary" tag="a" href="https://amazon.com" target="_blank" rel="noopener noreferrer">Amazon</ListGroupItem>
-                <ListGroupItem className="list-group-item-action text-primary" tag="a" href="https://www.target.com/gift-registry/dashboard?registryId=0f58270090e2432f81c982c93c5492ca&lnk=reg_invite_accept" target="_blank" rel="noopener noreferrer">Target</ListGroupItem>
+                <ListGroupItem className="list-group-item-action text-primary" tag="a" href="https://www.amazon.com/wedding/registry/TGP2VO7G4DVG?ref=wr_search_page_result_1" target="_blank" rel="noopener noreferrer">Amazon</ListGroupItem>
+                <ListGroupItem className="list-group-item-action text-primary" tag="a" href="https://www.target.com/gift-registry/giftgiver?registryId=0f58270090e2432f81c982c93c5492ca&type=WEDDING" target="_blank" rel="noopener noreferrer">Target</ListGroupItem>
                 <ListGroupItem className="list-group-item-action text-primary" tag="a" href="https://www.crateandbarrel.com/gift-registry/jorden-taveirne-and-ryan-cavanaugh/r5948856" target="_blank" rel="noopener noreferrer">Crate&Barrel</ListGroupItem>
               </ListGroup>
             </CardBody>
@@ -124,7 +124,7 @@ const WeddingDetails = (props) => {
             </CardBody>
           </Card>
         </Col>
-        <Col lg="5" className="mb-2">
+        <Col lg="5" xl="6" className="mb-2">
           <Card>
             <CardBody>
               <CardTitle>Parking</CardTitle>
@@ -132,7 +132,7 @@ const WeddingDetails = (props) => {
             </CardBody>
           </Card>
         </Col>
-        <Col xl="7" className="mb-2">
+        <Col xl="6" className="mb-2">
           <Card>
             <CardBody>
               <CardTitle>Things To Do</CardTitle>
