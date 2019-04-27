@@ -3,6 +3,7 @@
   width: 100%;
   margin-top: -15px;
   padding-right: 15px;
+  padding-left: 15px;
   text-align: center;
 }
 
@@ -17,6 +18,14 @@
 
 @media (max-width: 575px) {
   .hotelNav .nav-link {
-    font-size: 0.85rem;
+    font-size: 0.75rem;
+    padding-right: 8px !important;
+    padding-left: 8px !important;
+  }
+  .accommodationTableText {
+    font-size: 0.75rem;
+  }
+  .detailsHeadingText {
+    font-size: 0.99rem;
   }
 }

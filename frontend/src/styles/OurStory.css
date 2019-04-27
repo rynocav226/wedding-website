@@ -7,6 +7,12 @@
   max-width: auto;
 }
 
+@media (max-width: 575px) {
+  .cardText {
+    font-size: 0.97rem;
+  }
+}
+
 @media (min-width: 576px) {
   .card-columns {
     column-count: 2;

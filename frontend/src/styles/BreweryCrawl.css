@@ -3,12 +3,6 @@
   height: 326px;
 }
 
-@media (max-width: 768px) {
-  .breweryFont {
-    font-size: 0.75rem;
-  }
-}
-
 @media (min-width: 768px) {
   .routeMap {
     height: 280px;
@@ -24,5 +18,20 @@
 @media (min-width: 1200px) {
   .routeMap {
     height: 355px;
+  }
+}
+
+@media (max-width: 575px) {
+  .breweryHeaderFont {
+    font-size: 0.99rem;
+  }
+  .breweryFont {
+    font-size: 0.75rem;
+  }
+}
+
+@media (min-width: 576px) {
+  .breweryFont {
+    font-size: 0.98rem;
   }
 }

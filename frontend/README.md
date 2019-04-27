@@ -5,14 +5,15 @@ General
 > change favorite title - DONE
 > Have addresses open in map apps on phone (fix existing ones)
 > initial page load shows unstyled navbar for a quick sec -- DONE
-> once hosted, test when backend is not running and database is not running
+> once hosted, test when backend is not running and database is not running and handle error paths
 > can prevent users form accessing backend routes?
 > revert error handling to the example - DONE
 > remove console logs
 > set min-heights on things - DONE
-> update based on Jorden's comments: reverify brewery crawl food, wedding details, bridal party centering, and new RSVP
+> update based on Jorden's comments: reverify brewery crawl food, wedding details, bridal party centering, and new RSVP - DONE
 > make new favicon.ico - DONE
-> test with Firefox - can go smaller
+> test with Firefox - can go smaller - DONE
+> upgrade backend account to always be available
 
 Navigation Menu
 > Put RSVP all the way to the right and make a different style to stand out - DONE
@@ -37,6 +38,8 @@ Wedding Details Page
 > fix RSVP link fire the modal - DONE
 > finish parking lot details - DONE
 > set sara's travel blog URL
+> remove vikings from things to do - DONE
+> responsive test updated Things To Do section
 
 Our Story
 > Add card for honeymoon - DONE
@@ -50,6 +53,7 @@ Accommodations Page
 > fix submenu on small mobile - DONE
 > doubletree pic on ios
 > set max-width on the container - DONE
+> update booking website URL
 
 RSVP
 > add address to form? - show on summary page before submit - add to backend - NO

@@ -92,15 +92,15 @@ class OurStory extends Component {
         <CardColumns>
           <Card onClick={this.toggleGopher} className="cardModal">
             <CardBody>
-              <CardTitle>For the Love of the Game</CardTitle>
-              <CardSubtitle>And the Maroon and Gold</CardSubtitle>
+              <CardTitle>Love of the Game</CardTitle>
+              <CardSubtitle className="mb-2 cardText">And the Maroon and Gold</CardSubtitle>
               <CardText>
                 We met at the University of Minnesota and grew our friendship on the softball field.<br /><br />Click to read more...
               </CardText>
             </CardBody>
           </Card>
           <Modal centered autoFocus size="lg" isOpen={this.state.modalGopher} toggle={this.toggleGopher}>
-            <ModalHeader toggle={this.toggleGopher}>For the Love of the Game</ModalHeader>
+            <ModalHeader toggle={this.toggleGopher}>Love of the Game</ModalHeader>
             <ModalBody>
               <Row>
                 <Col md="4" lg="2" className="d-none d-md-block">
@@ -121,7 +121,7 @@ class OurStory extends Component {
           <Card onClick={this.toggleCountry} className="cardModal">
             <CardBody>
               <CardTitle>Country Music</CardTitle>
-              <CardSubtitle>The Soundtrack to Our Journey</CardSubtitle>
+              <CardSubtitle className="mb-2 cardText">The Soundtrack to Our Journey</CardSubtitle>
               <CardText>
                 From city concerts to WE Fest, we heard them all.<br /><br />Click to read more...
               </CardText>
@@ -149,7 +149,7 @@ class OurStory extends Component {
           <Card onClick={this.toggleDecker} className="cardModal">
             <CardBody>
               <CardTitle>Decker Caveirne</CardTitle>
-              <CardSubtitle>The Life of the Family</CardSubtitle>
+              <CardSubtitle className="mb-2 cardText">The Life of the Family</CardSubtitle>
               <CardText>
                 Once we moved in together, Jorden let us get a dog.<br /><br />Click to read more...
               </CardText>
@@ -177,7 +177,7 @@ class OurStory extends Component {
           <Card onClick={this.toggleRainbow} className="cardModal">
             <CardBody>
               <CardTitle>Rainbow Connection</CardTitle>
-              <CardSubtitle>Our Softball Journey Continues</CardSubtitle>
+              <CardSubtitle className="mb-2 cardText">Our Softball Journey Continues</CardSubtitle>
               <CardText>
                 Together we founded the greatest team ever to play at the Law School Fields.<br /><br />Click to read more...
               </CardText>
@@ -205,7 +205,7 @@ class OurStory extends Component {
           <Card onClick={this.toggleMiami} className="cardModal">
             <CardBody>
               <CardTitle>Move to Miami</CardTitle>
-              <CardSubtitle>Living it up in Paridise</CardSubtitle>
+              <CardSubtitle className="mb-2 cardText">Living it up in Paridise</CardSubtitle>
               <CardText>
                 We exchanged the frigid North for the sun and the beach.<br /><br />Click to read more...
               </CardText>
@@ -233,7 +233,7 @@ class OurStory extends Component {
           <Card onClick={this.toggleProposal} className="cardModal">
             <CardBody>
               <CardTitle>The Proposal</CardTitle>
-              <CardSubtitle>Magic at the Biltmore</CardSubtitle>
+              <CardSubtitle className="mb-2 cardText">Magic at the Biltmore</CardSubtitle>
               <CardText>
                 Committing to each other amidst a weekend of pool side chilling and golfing.<br /><br />Click to read more...
               </CardText>
@@ -261,7 +261,7 @@ class OurStory extends Component {
           <Card onClick={this.toggleDuke} className="cardModal">
             <CardBody>
               <CardTitle>Back to School</CardTitle>
-              <CardSubtitle>Becoming a Blue Devil</CardSubtitle>
+              <CardSubtitle className="mb-2 cardText">Becoming a Blue Devil</CardSubtitle>
               <CardText>
                 Watching games at Cameron Indoor and traveling around the globe.<br /><br />Click to read more...
               </CardText>
@@ -289,7 +289,7 @@ class OurStory extends Component {
           <Card onClick={this.toggleWedding} className="cardModal">
             <CardBody>
               <CardTitle>Wedding Day</CardTitle>
-              <CardSubtitle>Saying 'I Do' on the Beach of our Dreams</CardSubtitle>
+              <CardSubtitle className="mb-2 cardText">Saying 'I Do' on the Beach</CardSubtitle>
               <CardText>
                 We married each other on a beach in South Carolina.  To see photos from the big day, head to the <Link to="../WeddingPhotos/">'Wedding Photos'</Link> page.<br /><br />Click to read more...
               </CardText>
@@ -317,7 +317,7 @@ class OurStory extends Component {
           <Card onClick={this.toggleHoneymoon} className="cardModal">
             <CardBody>
               <CardTitle>Honeymoon</CardTitle>
-              <CardSubtitle>Exploring a New Continent Together</CardSubtitle>
+              <CardSubtitle className="mb-2 cardText">Exploring a New Continent</CardSubtitle>
               <CardText>
                 For three weeks, we swapped the winter cold for the summer heat of Australia and New Zealand.<br /><br />Click to read more...
               </CardText>

@@ -18,3 +18,9 @@
   width: auto;
   display: block;
 }
+
+@media (max-width: 575px) {
+  .scheduleText {
+    font-size: 0.78rem;
+  }
+}

@@ -1,19 +1,23 @@
 .splitHeader {
-    margin-top: 8px;
-    margin-bottom: 2px;
+  margin-top: 6px;
+  margin-bottom: 2px;
+}
+
+.splitHeaderMiddle {
+  margin-bottom: 2px;
 }
 
 .carouselMain {
-  height: 87vh;
+  height: 85vh;
   min-height: 450px;
   display: flex;
   align-items: center;
-  margin-top: -40px;
+  margin-top: -25px;
 }
 
 .carouselImage {
-  max-width: 70vw;
-  max-height: 75vh;
+  max-width: 60vw;
+  max-height: 70vh;
   min-height: 350px;
   border-radius: 5%;
   border: 3px dashed;
@@ -38,4 +42,8 @@
 
 .carouselIndicator > li {
   background-color: var(--primary);
+}
+
+.carouselIndicator {
+  margin-bottom: 4px;
 }
