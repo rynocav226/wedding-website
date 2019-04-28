@@ -3,7 +3,7 @@ Things to do/fix:
 General
 > Change title and icon - DONE
 > change favorite title - DONE
-> Have addresses open in map apps on phone
+> Have addresses open in map apps on phone - DONE
 > initial page load shows unstyled navbar for a quick sec -- DONE
 > once hosted, test when backend is not running and database is not running and handle error paths
 > revert error handling to the example - DONE
@@ -56,7 +56,6 @@ Accommodations Page
 > update booking website URL - DONE
 
 RSVP
-> add address to form? - show on summary page before submit - add to backend - NO
 > do responsive test with longest name
 > test tooltip on Mobile - may have to switch to popover - works - DONE
 > on invitation error, don't show red 'x' in input - NOT POSSIBLE - DONE
@@ -69,6 +68,7 @@ RSVP
 > add event keys to children modal - DONE
 > add event keys on code modal - DONE
 > responsive tests the modals - DONE
+> have number pad open on mobile
 
 Song Requests
 > ensure invitation code has been entered before submitting
@@ -89,3 +89,4 @@ Brewery Crawl
 > change up order on single column so don't have picture back to back - DONE
 > add another groomsman number to contact
 > ensure food truck is still accurate
+> first column wider on the stops - DONE
