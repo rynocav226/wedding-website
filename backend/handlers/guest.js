@@ -14,8 +14,7 @@ exports.createGuest = async function(req, res, next) {
     foundInvitation.guestInfo = guest.id;
     await foundInvitation.save();
     let foundGuest = await db.Guest.findById(guest.id).populate("invitation", {
-      code: true,
-      responded: true
+      code: true
     });
     return res.status(200).json(foundGuest);
   } catch (err) {
@@ -26,8 +25,7 @@ exports.createGuest = async function(req, res, next) {
 exports.getGuest = async function(req, res, next) {
   try {
     let guest = await db.Guest.findById(req.params.guest_id).populate("invitation", {
-      code: true,
-      responded: true
+      code: true
     });
     return res.status(200).json(guest);
   } catch (err) {

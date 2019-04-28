@@ -9,15 +9,13 @@ const {
 } = require("../handlers/songRequests");
 
 //prefix - /api/invitation/:id/SongRequest
-router.route("/").post(createSongRequest)
-    .put(updateSongRequest)
-    .get(getSongRequest)
+router.route("/")
+    .post(createSongRequest);
 
-// prefix - /api/invitation/:id/SongRequests/:SongRequest_id
-router
-    .route("/:SongRequest_id")
+// prefix - /api/invitation/:id/SongRequests/:request_id
+router.route("/:request_id")
     .get(getSongRequest)
-    .delete(deleteSongRequest);
-
+    .delete(deleteSongRequest)
+    .put(updateSongRequest);
 
 module.exports = router;
