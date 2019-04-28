@@ -48,7 +48,7 @@ const BreweryCrawl = () => {
                   </tr>
                   <tr>
                     <th scope="row">Beer List</th>
-                    <td><a href="https://inboundbrew.co/inbound-brewco-beer" target="_blank" rel="noopener noreferrer">https://inboundbrew.co/inbound-brewco-beer</a></td>
+                    <td><a href="https://inboundbrew.co/inbound-brewco-beer" target="_blank" rel="noopener noreferrer">inboundbrew.co/inbound-brewco-beer</a></td>
                   </tr>
                   <tr>
                     <th scope="row">Food Option</th>
@@ -95,11 +95,11 @@ const BreweryCrawl = () => {
                   </tr>
                   <tr>
                     <th scope="row">Beer List</th>
-                    <td><a href="http://www.fultonbeer.com/beer" target="_blank" rel="noopener noreferrer">http://www.fultonbeer.com/beer</a></td>
+                    <td><a href="http://www.fultonbeer.com/beer" target="_blank" rel="noopener noreferrer">fultonbeer.com/beer</a></td>
                   </tr>
                   <tr>
                     <th scope="row">Food Option</th>
-                    <td><a href="http://www.fultonbeer.com/tap-room" target="_blank" rel="noopener noreferrer">The Taproom Kitchen</a> (scroll to see the menu)</td>
+                    <td><a href="http://www.fultonbeer.com/tap-room" target="_blank" rel="noopener noreferrer">The Taproom Kitchen</a></td>
                   </tr>
                 </tbody>
               </Table>
@@ -137,7 +137,7 @@ const BreweryCrawl = () => {
                   </tr>
                   <tr>
                     <th scope="row">Beer List</th>
-                    <td><a href="http://modistbrewing.com/beers/" target="_blank" rel="noopener noreferrer">http://modistbrewing.com/beers/</a></td>
+                    <td><a href="http://modistbrewing.com/beers/" target="_blank" rel="noopener noreferrer">modistbrewing.com/beers/</a></td>
                   </tr>
                   <tr>
                     <th scope="row">Food Option</th>
