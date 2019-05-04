@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Row, Col, ButtonGroup, Button } from 'reactstrap';
+import "../styles/Daycare.css";
 
 class Daycare extends Component {
   constructor(props) {
@@ -47,7 +48,7 @@ class Daycare extends Component {
         <Col className="col-auto mr-auto">
           <h3 className="text-primary d-none d-lg-block text-monospace mt-auto mb-auto">Number of children:</h3>
           <h5 className="text-primary d-none d-sm-block d-lg-none text-monospace mt-auto mb-auto">Number of children:</h5>
-          <h6 className="text-primary d-sm-none text-monospace mt-auto mb-auto">Number of children:</h6>
+          <h6 className="text-primary d-sm-none text-monospace mt-auto mb-auto numberFont">Number of children:</h6>
         </Col>
         <Col className="col-auto">
           <ButtonGroup className="d-none d-lg-block" role="group">{daycareButtonsLarge}</ButtonGroup>

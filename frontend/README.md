@@ -51,24 +51,26 @@ Accommodations Page
 > Get the Scrollspy to adjust for the permanent navigation bar (probably get rid of, wanted to test it out) - DONE
 > add addresses for the hotel details - DONE
 > fix submenu on small mobile - DONE
-> doubletree pic on ios
+> doubletree pic on ios - DONE
 > set max-width on the container - DONE
 > update booking website URL - DONE
+> center sub menu on xl screens beyond max width
 
 RSVP
-> do responsive test with longest name
+> do responsive test with longest name (sara Mic-Lyn?)  - DONE
 > test tooltip on Mobile - may have to switch to popover - works - DONE
 > on invitation error, don't show red 'x' in input - NOT POSSIBLE - DONE
 > scroll to top after submit so see alert - DONE
 > auto adult popup is broke - DONE
 > change to babysitter required - DONE
 > don't list children, ask yes or no and how many - DONE
-> do responsive test with max number of children
+> do responsive test with max number of children (4) - DONE
 > add descriptor to children modal - DONE
 > add event keys to children modal - DONE
 > add event keys on code modal - DONE
 > responsive tests the modals - DONE
 > have number pad open on mobile
+> do responsive test with max people (5) - DONE
 
 Song Requests
 > ensure invitation code has been entered before submitting
@@ -84,6 +86,7 @@ Bridal Party
 
 Wedding Photos
 > adding padding to top of the photo credit text - DONE
+> move arrows in on xl screens?
 
 Brewery Crawl
 > change up order on single column so don't have picture back to back - DONE
