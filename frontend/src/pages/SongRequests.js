@@ -4,6 +4,9 @@ import FavSongForm from "../components/FavSongForm";
 import SongItem from "../components/SongItem";
 import DislikedSongForm from "../components/DislikedSongForm";
 import ReactDom from "react-dom";
+import { DragDropContextProvider } from 'react-dnd'
+import TouchBackend from 'react-dnd-touch-backend';
+
 
 class SongRequests extends Component {
 
@@ -104,33 +107,36 @@ class SongRequests extends Component {
     console.log("Rendering song requests")
     return (
       
-      <div className="container">
-        <div className="row">
-          <div className="col-md">
-            <FavSongForm addFavSongs={this.addFavSongs} />
-            <br/>
-            <DislikedSongForm addLeastFavSongs={this.addLeastFavSongs}/>
-          </div>
-          <div className="col-md">
-            <div style={{height: '500px', width:'400px', overflow:"auto"}}>
-              <table onDragStart={this.drag} >
-                <tbody>
-                  <tr>
-                    <td>Artist</td>
-                    <td>Song</td>
-                    <td>Genre</td>
-                  </tr>
-                  {songList}
-                </tbody>                
-              </table>
+      <DragDropContextProvider backend={TouchBackend}>
+        <div className="container">
+          <div className="row">
+            <div className="col-md">
+              <FavSongForm addFavSongs={this.addFavSongs} />
+              <br/>
+              <DislikedSongForm addLeastFavSongs={this.addLeastFavSongs}/>
+            </div>
+            <div className="col-md">
+              <div style={{height: '500px', width:'400px', overflow:"auto"}}>
+                <table >
+                  <tbody>
+                    <tr>
+                      <td>Artist</td>
+                      <td>Song</td>
+                      <td>Genre</td>
+                    </tr>
+                    {songList}
+                  </tbody>                
+                </table>
+              </div>
             </div>
           </div>
         </div>
-      </div>
+      </DragDropContextProvider>
     );
   }
 };
 
 
 // export default DragDropContext(TouchBackend)(SongRequests)
+
 export default SongRequests
