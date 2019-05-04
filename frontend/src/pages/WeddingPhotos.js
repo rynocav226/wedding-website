@@ -242,7 +242,7 @@ class WeddingPhotos extends Component {
     });
 
     return (
-      <Container fluid>
+      <Container className="photosContainer" fluid>
         <p className="text-center d-none d-md-block">Photos are courtesy of <a href="https://www.instagram.com/haleyjane.photography/" target="_blank" rel="noopener noreferrer">Haley Jane Photography</a> | <a href="https://haleyjanephotography.com/" target="_blank" rel="noopener noreferrer">haleyjanephotography.com</a></p>
         <p className="text-center d-none d-sm-block d-md-none splitHeader">Photos are courtesy of <a href="https://www.instagram.com/haleyjane.photography/" target="_blank" rel="noopener noreferrer">Haley Jane Photography</a></p>
         <p className="text-center d-sm-none splitHeader">Photos are courtesy of</p>

@@ -54,7 +54,7 @@ Accommodations Page
 > doubletree pic on ios - DONE
 > set max-width on the container - DONE
 > update booking website URL - DONE
-> center sub menu on xl screens beyond max width
+> center sub menu on xl screens beyond max width - DONE
 
 RSVP
 > do responsive test with longest name (sara Mic-Lyn?)  - DONE
@@ -69,9 +69,9 @@ RSVP
 > add event keys to children modal - DONE
 > add event keys on code modal - DONE
 > responsive tests the modals - DONE
-> have number pad open on mobile
+> have number pad open on mobile - DONE
 > do responsive test with max people (5) - DONE
-> center stuff on xs screen size
+> center stuff on xs screen size - DONE
 
 Song Requests
 > ensure invitation code has been entered before submitting
@@ -87,7 +87,7 @@ Bridal Party
 
 Wedding Photos
 > adding padding to top of the photo credit text - DONE
-> move arrows in on xl screens?
+> move arrows in on xl screens? - DONE
 
 Brewery Crawl
 > change up order on single column so don't have picture back to back - DONE

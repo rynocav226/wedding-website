@@ -1,3 +1,7 @@
+.photosContainer {
+  max-width: 1600px;
+}
+
 .splitHeader {
   margin-top: 6px;
   margin-bottom: 2px;

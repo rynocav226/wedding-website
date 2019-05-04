@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { DropTarget } from 'react-dnd'
+import { DropTarget } from 'react-dnd';
 
 const Types = {
     SONG: 'song',
