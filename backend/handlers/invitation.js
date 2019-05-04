@@ -23,6 +23,7 @@ exports.getInvitations = async function(req, res, next) {
       adults: true,
       children: true,
       daycare: true,
+      allergies: true,
       responded: true
     });
     return res.status(200).json(invitations);
@@ -37,6 +38,7 @@ exports.getInvitation = async function(req, res, next) {
       adults: true,
       children: true,
       daycare: true,
+      allergies: true,
       responded: true
     });
     return res.status(200).json(invitation);

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Row, Col, ButtonGroup, Button } from 'reactstrap';
+import "../styles/Guest.css";
 
 class Guest extends Component {
   constructor (props) {
@@ -29,7 +30,7 @@ class Guest extends Component {
         <Col className="col-auto mr-auto">
           <h3 className="text-primary d-none d-lg-block text-monospace mt-auto mb-auto">{this.props.firstName} {this.props.lastName}</h3>
           <h4 className="text-primary d-none d-sm-block d-lg-none text-monospace mt-auto mb-auto">{this.props.firstName} {this.props.lastName}</h4>
-          <h5 className="text-primary d-sm-none text-monospace mt-auto mb-auto">{this.props.firstName} {this.props.lastName}</h5>
+          <h5 className="text-primary d-sm-none text-monospace mt-auto mb-auto nameFont">{this.props.firstName} {this.props.lastName}</h5>
         </Col>
         <Col className="col-auto">
           <ButtonGroup className="d-none d-lg-block" role="group">

@@ -95,6 +95,13 @@ class WeddingApp extends Component {
     this.codeNext();
   }
 
+  codeKeyUp(keyPress) {
+    var code = keyPress.keyCode || keyPress.which;
+    if (code === 27) {
+      this.codeCancel();
+    }
+  }
+
   getInvitation() {
     apiCall("post", `/api/auth/`, { code: this.state.invitationCode })
       .then(data => {
@@ -108,7 +115,7 @@ class WeddingApp extends Component {
         }
       })
       .catch(error => {
-        this.codeErrorShow(error.message + " If problem persists, email rynocav@gmail.com");
+        this.codeErrorShow(error.message + " If problem persists, email rynocav@gmail.com with this message.");
       });
   }
 
@@ -126,7 +133,7 @@ class WeddingApp extends Component {
               toggleCodeFromSongRequests={this.toggleCodeFromSongRequests.bind(this)}
               invitation={(this.state.invitation) ? this.state.invitation._id : null}
             />
-            <Modal centered autoFocus={false} isOpen={this.state.modalCode} backdrop={"static"}>
+            <Modal centered autoFocus={false} isOpen={this.state.modalCode} backdrop={"static"} onKeyUp={e => this.codeKeyUp(e)}>
               <ModalHeader toggle={this.codeCancel}>Enter Invitation Code</ModalHeader>
               <ModalBody>
                 <Form onSubmit={this.codeEnter}>

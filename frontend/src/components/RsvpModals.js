@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
 import { ListGroup, ListGroupItem } from 'reactstrap';
-import { Button } from 'reactstrap';
+import { Button, Input } from 'reactstrap';
 import { Alert, UncontrolledTooltip } from 'reactstrap';
 import Guest from '../components/Guest';
 import Daycare from '../components/Daycare';
@@ -16,6 +16,7 @@ class RsvpModals extends Component {
       responded: false,
       children: 0,
       daycare: 0,
+      allergies: "",
       modalRsvp: false,
       modalChildren: false,
       rsvpNeedReply: false,
@@ -51,7 +52,8 @@ class RsvpModals extends Component {
       adults: data.adults,
       responded: data.responded,
       children: data.children,
-      daycare: data.daycare
+      daycare: data.daycare,
+      allergies: data.allergies
     });
   }
 
@@ -60,7 +62,8 @@ class RsvpModals extends Component {
       adults: [],
       responded: false,
       children: 0,
-      daycare: 0
+      daycare: 0,
+      allergies: ""
     });
   }
 
@@ -120,6 +123,18 @@ class RsvpModals extends Component {
     this.props.toggleCode();
   }
 
+  rsvpKeyUp(keyPress, ignoreEnter) {
+    var code = keyPress.keyCode || keyPress.which;
+    if (code === 13 && !ignoreEnter) {
+      this.rsvpClick();
+      return;
+    }
+    if (code === 27) {
+      this.rsvpCancel();
+      return;
+    }
+  }
+
   childrenCancel() {
     this.childrenErrorClear();
     this.toggleChildren();
@@ -137,6 +152,14 @@ class RsvpModals extends Component {
   childrenBack() {
     this.childrenCancel();
     this.toggleRsvp();
+  }
+
+  childrenKeyUp(keyPress) {
+    var code = keyPress.keyCode || keyPress.which;
+    if (code === 27) {
+      this.childrenCancel();
+      return;
+    }
   }
 
   checkReplies() {
@@ -162,6 +185,7 @@ class RsvpModals extends Component {
       })
       .catch(error => {
         this.props.showAlert("danger", "Unabled to retrieve guest list from the database.  If problem persists, send this message to rynocav@gmail.com: " + error.message, false);
+        this.props.clearInvitation();
       })
   }
 
@@ -170,7 +194,8 @@ class RsvpModals extends Component {
       {
         "adults": this.state.adults,
         "responded": true,
-        "daycare": this.state.daycare
+        "daycare": this.state.daycare,
+        "allergies": this.state.allergies
       })
       .then(data => {
         this.populateGuests(data);
@@ -197,20 +222,32 @@ class RsvpModals extends Component {
     });
   }
 
+  updateAllergies(allergies) {
+    this.setState({
+      allergies: allergies
+    });
+  }
+
   render() {
     const adultGuests = this.state.adults.map((adult) => (
-      <ListGroupItem key={adult._id}><Guest {...adult} updateAttendence={(attendence) => this.updateAttendence(adult, attendence)} /></ListGroupItem>
+      <ListGroupItem key={adult._id} onKeyUp={e => this.rsvpKeyUp(e, true)}><Guest {...adult} updateAttendence={(attendence) => this.updateAttendence(adult, attendence)} /></ListGroupItem>
     ));
 
     return (
       <div>
         <Modal centered size="lg" isOpen={this.state.modalRsvp} backdrop={"static"}>
-          <ModalHeader toggle={this.rsvpCancel}>Attending?</ModalHeader>
+          <ModalHeader toggle={this.rsvpCancel} onKeyUp={e => this.rsvpKeyUp(e, true)}>Attending?</ModalHeader>
           <ModalBody>
             <Alert className="text-center" color="danger" isOpen={this.state.rsvpNeedReply}>Attendence reply required for all guests.</Alert>
-            <ListGroup flush>{adultGuests}</ListGroup>
+            <ListGroup flush>
+              {adultGuests}
+              <ListGroupItem key="allergies" onKeyUp={e => this.rsvpKeyUp(e, false)}>
+                <label htmlFor="allergies">Any allergies or food restrictions for any guests?</label>
+                <Input id="allergies" name="allergies" value={this.state.allergies} onChange={e => this.updateAllergies(e.target.value)} autoComplete="off" />
+              </ListGroupItem>
+            </ListGroup>
           </ModalBody>
-          <ModalFooter>
+          <ModalFooter onKeyUp={e => this.rsvpKeyUp(e, true)}>
             <Button size="lg" className="ml-auto" color="secondary" onClick={this.rsvpBack}>Back</Button>
             <Button size="lg" className="mr-auto" color="secondary" onClick={this.rsvpClick}>
               {this.state.children > 0 ? "Next" : "Submit"}
@@ -219,11 +256,14 @@ class RsvpModals extends Component {
             <UncontrolledTooltip placement="top-end" target="tooltipRsvp">If invitation code was entered incorrectly, click the 'Back' button to reenter the code. If problem persists, email rynocav@gmail.com</UncontrolledTooltip>
           </ModalFooter>
         </Modal>
-        <Modal centered size="lg" isOpen={this.state.modalChildren} backdrop={"static"}>
+        <Modal centered size="lg" isOpen={this.state.modalChildren} backdrop={"static"} onKeyUp={e => this.childrenKeyUp(e)}>
           <ModalHeader toggle={this.childrenCancel}>Babysitter Required?</ModalHeader>
           <ModalBody>
             <Alert className="text-center" color="danger" isOpen={this.state.childrenNeedReply}>Select number of children.</Alert>
             <ListGroup flush>
+              <ListGroupItem key="description">
+                <p>Due to the size of the venue, we are requesting an adults only reception.  If you are unable to make arrangements, child care and dinner will be provided in the suite of the Courtyard Marriott Hotel.  If you have any questions or concerns, reach out to us at rynocav@gmail.com.</p>
+              </ListGroupItem>
               <ListGroupItem key={this.state.children}>
                 <Daycare children={this.state.children} daycare={this.state.daycare} updateDaycare={(daycare) => this.updateDaycare(daycare)} />
               </ListGroupItem>

@@ -1,22 +1,37 @@
 .breweryCrawlImage {
   object-fit: cover;
-  height: 278px;
+  height: 326px;
 }
 
 @media (min-width: 768px) {
   .routeMap {
-    height: 240px;
+    height: 280px;
   }
 }
 
 @media (min-width: 992px) {
   .routeMap {
-    height: 310px;
+    height: 473px;
   }
 }
 
 @media (min-width: 1200px) {
   .routeMap {
-    height: 287px;
+    height: 355px;
+  }
+}
+
+@media (max-width: 575px) {
+  .breweryHeaderFont {
+    font-size: 0.99rem;
+  }
+  .breweryFont {
+    font-size: 0.84rem;
+  }
+}
+
+@media (min-width: 576px) {
+  .breweryFont {
+    font-size: 0.98rem;
   }
 }

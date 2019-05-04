@@ -10,6 +10,11 @@ const invitationSchema = new mongoose.Schema({
     type: mongoose.Schema.Types.ObjectId,
     ref: "Guest",
     default: null
+  },
+  requests: {
+    type: mongoose.Schema.Types.ObjectId,
+    ref: "SongRequest",
+    default: null
   }
 });
 
@@ -18,6 +23,9 @@ invitationSchema.pre("remove", async function(next) {
     const Guest = require("./guest");
     let foundGuest = await Guest.findById(this.guestInfo);
     await foundGuest.remove();
+    const SongRequests = require("./songRequests");
+    let foundRequest = await SongRequests.findById(this.requests);
+    await foundRequest.remove();
     return next();
   } catch (err) {
     return next(err);

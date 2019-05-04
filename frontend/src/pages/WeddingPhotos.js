@@ -244,10 +244,12 @@ class WeddingPhotos extends Component {
     return (
       <Container fluid>
         <p className="text-center d-none d-md-block">Photos are courtesy of <a href="https://www.instagram.com/haleyjane.photography/" target="_blank" rel="noopener noreferrer">Haley Jane Photography</a> | <a href="https://haleyjanephotography.com/" target="_blank" rel="noopener noreferrer">haleyjanephotography.com</a></p>
-        <p className="text-center d-md-none splitHeader">Photos are courtesy of <a href="https://www.instagram.com/haleyjane.photography/" target="_blank" rel="noopener noreferrer">Haley Jane Photography</a></p>
+        <p className="text-center d-none d-sm-block d-md-none splitHeader">Photos are courtesy of <a href="https://www.instagram.com/haleyjane.photography/" target="_blank" rel="noopener noreferrer">Haley Jane Photography</a></p>
+        <p className="text-center d-sm-none splitHeader">Photos are courtesy of</p>
+        <p className="text-center d-sm-none splitHeaderMiddle"><a href="https://www.instagram.com/haleyjane.photography/" target="_blank" rel="noopener noreferrer">Haley Jane Photography</a></p>
         <p className="text-center d-md-none"><a href="https://haleyjanephotography.com/" target="_blank" rel="noopener noreferrer">haleyjanephotography.com</a></p>
         <Carousel interval={false} slide={false} className="carouselMain" pause={false} activeIndex={this.state.activeIndex} next={this.next} previous={this.previous} >
-          <CarouselIndicators className="carouselIndicator d-none d-md-flex mb-2" items={items} activeIndex={this.state.activeIndex} onClickHandler={this.goToIndex} />
+          <CarouselIndicators className="carouselIndicator d-none d-md-flex" items={items} activeIndex={this.state.activeIndex} onClickHandler={this.goToIndex} />
           {slides}
           <CarouselControl className="carouselButton" direction="prev" directionText="Previous" onClickHandler={this.previous} />
           <CarouselControl className="carouselButton" direction="next" directionText="Next" onClickHandler={this.next} />

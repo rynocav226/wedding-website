@@ -7,3 +7,8 @@
 .buttonHover:hover {
   cursor: pointer;
 }
+
+.navIcon {
+  width: 33px;
+  height: auto;
+}

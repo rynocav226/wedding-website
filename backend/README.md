@@ -1,6 +1,12 @@
 Things to do/fix:
 
-add in jwt tokens when logging in with a reservation code
-add in authentication/authorization middleware
 maybe remove the delete all invitations functionality and the others the webpage doesn't use
-able to remove guestInfo from invitation on delete instead of setting to null?
+Kari invite
+put your Dad?
+michalski-lynch or lynch? - DONE
+remove (jij)? - DONE
+remove 'the train'? - DONE
+Keck have his kid?
+Ray last name?
+Kirsten last name to Tschida - DONE
+figure out export of data for book keeping
