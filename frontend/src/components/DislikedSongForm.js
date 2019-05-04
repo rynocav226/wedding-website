@@ -1,7 +1,25 @@
 import React, { Component } from 'react';
+import { DropTarget } from 'react-dnd'
+
+const Types = {
+    SONG: 'song',
+}
+
+const Target = {
+    drop(props) {
+        console.log("DROPPED ITEM")
+        console.log(props)
+    },
+}
+
+function collect(connect, monitor) {
+    return {
+        connectDropTarget: connect.dropTarget(),
+        isOver: monitor.isOver(),
+    }
+}
 
 class DislikedSongForm extends Component {
-
     constructor(props) {
         super(props);
         this.state = {
@@ -16,6 +34,7 @@ class DislikedSongForm extends Component {
         this.handleSubmit = this.handleSubmit.bind(this);
     }
 
+    
     handleChange(e) {
         this.setState({ [e.target.name]: e.target.value })
     }
@@ -44,18 +63,11 @@ class DislikedSongForm extends Component {
     }
 
     componentDidMount() {
-        // this.setState({song1 : this.props.dislikes[0]} )
-
-        // console.log("PROPS")
-        // this.props.dislikes.push("Hi")
         console.log("Dislikes:")
         
     }
 
     componentDidUpdate(){
-        console.log("Component did update Dislike form")
-        // console.log(this.props.dislikes)
-        // console.log(this.state)
         if(this.jsonIsEmmpty(this.state) && !this.jsonIsEmmpty(this.props.dislikes)){
             this.setState({ song1: this.props.dislikes.song1 })
             this.setState({ song2: this.props.dislikes.song2 })
@@ -66,9 +78,6 @@ class DislikedSongForm extends Component {
     }
 
     render() {
-        // console.log("Rendering Dislike form")
-        
-        // console.log(this.state)
         return (
             <div className="container">
                 <h1>Least Favorite Songs</h1>
@@ -83,4 +92,4 @@ class DislikedSongForm extends Component {
     }
 }
 
-export default DislikedSongForm;
+export default DropTarget(Types.SONG, Target, collect)(DislikedSongForm);
