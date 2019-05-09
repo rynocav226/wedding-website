@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 mongoose.set("debug", true);
 mongoose.Promise = Promise;
-mongoose.connect(process.env.MONGOLAB_WHITE_URI  || "mongodb://localhost/wedding", {
+mongoose.connect(process.env.MONGODB_URI  || "mongodb://localhost/wedding", {
   keepAlive: true,
   useNewUrlParser: true,
   useCreateIndex: true,

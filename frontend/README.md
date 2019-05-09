@@ -1,5 +1,10 @@
 Things to do/fix:
 
+PRODUCTION
+
+hide Song Request menu item
+hide Sara's travel blog
+
 General
 > Change title and icon - DONE
 > change favorite title - DONE
@@ -7,12 +12,13 @@ General
 > initial page load shows unstyled navbar for a quick sec - DONE
 > once hosted, test when backend is not running and database is not running and handle error paths - DONE
 > revert error handling to the example - DONE
-> remove console logs
+> remove console logs - DONE
 > set min-heights on things - DONE
 > update based on Jorden's comments: reverify brewery crawl food, wedding details, bridal party centering, and new RSVP - DONE
 > make new favicon.ico - DONE
 > test with Firefox - can go smaller - DONE
 > upgrade backend account to always be available - DONE
+> remove Daycare stuff?
 
 Navigation Menu
 > Put RSVP all the way to the right and make a different style to stand out - DONE
