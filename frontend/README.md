@@ -18,7 +18,7 @@ General
 > make new favicon.ico - DONE
 > test with Firefox - can go smaller - DONE
 > upgrade backend account to always be available - DONE
-> remove Daycare stuff?
+> remove Daycare stuff? - DONE
 
 Navigation Menu
 > Put RSVP all the way to the right and make a different style to stand out - DONE

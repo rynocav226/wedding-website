@@ -10,7 +10,7 @@ Ray last name? Hall - DONE
 Kirsten last name to Tschida - DONE
 figure out export of data for book keeping
 Kelley Keck to Kelly Keck - DONE
-target sandbox in git
+target sandbox in git - DONE
 
 PRODUCTION
 
