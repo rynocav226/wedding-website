@@ -2,7 +2,7 @@ Things to do/fix:
 
 PRODUCTION
 
-hide Song Request menu item
+hide Song Request menu item and remove from siteNavigation
 hide Sara's travel blog
 
 General
