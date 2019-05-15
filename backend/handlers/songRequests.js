@@ -29,12 +29,15 @@ exports.updateSongRequest = async function (req, res, next) {
 };
 
 exports.getSongRequest = async function (req, res, next) {
+    
+    console.log("Trying get Song request")
     try {
         let request = await db.SongRequests.findById(req.params.request_id).populate("invitation", {
             code: true
         });
         return res.status(200).json(request);
     } catch (error) {
+        console.log("get Song Request error")
         return next(error);
     }
 };

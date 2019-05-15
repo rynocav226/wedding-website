@@ -1,12 +1,18 @@
 import React, { Component } from 'react';
 import { apiCall } from "../services/api";
 import FavSongForm from "../components/FavSongForm";
-import SongItem from "../components/SongItem";
+// import SongItem from "../components/SongItem";
 import DislikedSongForm from "../components/DislikedSongForm";
 import ReactDom from "react-dom";
-import { DragDropContextProvider } from 'react-dnd'
-import TouchBackend from 'react-dnd-touch-backend';
+import { DragDropContext } from 'react-beautiful-dnd'
+import SongItem from  "../components/Song"
+// import SongItem from "./Song.jsx"
+import SongColumn from '../components/songColumn'
+import styled from 'styled-components'
 
+const Container = styled.div`
+    display: flex;
+`;
 
 class SongRequests extends Component {
 
@@ -15,6 +21,8 @@ class SongRequests extends Component {
     this.state = {
       likes: { "song1": "", "song2": "", "song3": "", "song4": "", "song5": "" },
       dislikes: { "song1": "", "song2": "", "song3": "", "song4": "", "song5": ""},
+      likesD:[],
+      dislikesD:[],
       songList: []
     };
     
@@ -27,7 +35,7 @@ class SongRequests extends Component {
 
   addFavSongs(songs) {
     var songJson = {likes:songs}
-    var path = `/api/invitations/${this.props.invitation}/songRequests`
+    var path = `/api/invitation/${this.props.invitation}/SongRequests/${this.props.requestId}`
     return apiCall("put", path, songJson)
       .then(res => {console.log(`Successful response ${res}`) })
       .catch( err => {console.log(`Error is ${err}`)})
@@ -35,14 +43,15 @@ class SongRequests extends Component {
 
   addLeastFavSongs(songs) {
     var songJson = { dislikes: songs }
-    var path = `/api/invitations/${this.props.invitation}/songRequests`
+    var path = `/api/invitation/${this.props.invitation}/SongRequests/${this.props.requestId}`
     return apiCall("put", path, songJson)
       .then(res => { console.log(`Successful response ${res}`) })
       .catch(err => { console.log(`Error is ${err}`) })
   }
 
   populateSongs() {
-    var path = `/api/users/${this.props.invitation}/songRequests`
+    console.log(this.props)
+    var path = `/api/invitation/${this.props.invitation}/SongRequests/${this.props.requestId}`
     return apiCall("get", path)
       .then(res => { 
         console.log(`Successful response ${res}`)
@@ -82,19 +91,77 @@ class SongRequests extends Component {
       console.log(this.state.dislikes)
       console.log("updating dislikes")
       // this.setState({ dislikes: {"song1":"Red","song2":"blue"} })
-      console.log("POPULATE SONGS")
-      this.populateSongs() 
+      // console.log("POPULATE SONGS")
+      // this.populateSongs() 
     }
     // console.log(this.state.dislikes)
     
   }
 
-  drag(ev) {
-    ev.persist()
-    let node = ReactDom.findDOMNode(ev.target)
-    let child = node.querySelector('.song')
-    ev.dataTransfer.setData("text", child.innerHTML)
-  }
+  getStateArray(input){
+        if(input ==="likes"){
+            return this.state.likesD
+        } else if (input === "dislikes") {
+            return this.state.dislikesD
+        } else if (input === "songs") {
+            return this.state.songList
+        }
+    }
+
+    setStateArray(input, array){
+        if (input === "songs")
+            this.setState({ songList: array })
+        else if (input === "likes")
+            this.setState({ likes: array })
+        else if (input === "dislikes")
+            this.setState({ dislikes: array })
+    }
+
+    onDragEnd = result => {
+        const { destination, source} = result;
+
+        if(!destination){
+            return;
+        }
+
+        if (
+            destination.droppableId === source.droppableId &&
+            destination.index === source.index
+        ){
+            return;
+        }
+       
+
+        if (source.droppableId === destination.droppableId){
+
+            let sourceArray = this.getStateArray(source.droppableId);
+            let song = sourceArray[source.index]
+            sourceArray.splice(source.index,1);
+            sourceArray.splice(destination.index, 0, song);
+
+            this.setStateArray(source.droppableId, sourceArray)
+            return;
+        }
+        
+        let sourceArray = this.getStateArray(source.droppableId);
+        let destinationArray = this.getStateArray(destination.droppableId);
+        console.log(source.droppableId)
+        console.log(destination.droppableId)
+        let song = sourceArray[source.index]
+        destinationArray.splice(destination.index, 0, song);
+        if ((destination.droppableId === 'likes' || destination.droppableId === 'dislikes') && destinationArray.length > 5){
+          let retSong = destinationArray.splice(-1, 1)
+          console.log("REmoved")
+          console.log(retSong)
+          // sourceArray.push(retSong)
+        }           
+        sourceArray.splice(source.index,1);
+        this.setStateArray(source.droppableId, sourceArray)
+        this.setStateArray(destination.droppableId, destinationArray)
+        
+        
+        
+    }
 
   render() {
     const songList = this.state.songList.map((t) => (
@@ -103,35 +170,25 @@ class SongRequests extends Component {
         {...t}
       />
     ));
-    // <table onDragStart={this.drag} ></table>
     console.log("Rendering song requests")
+    const songColumn = { title: "Songs", id: "songs", taskIds: [] }
     return (
-      
-      <DragDropContextProvider backend={TouchBackend}>
+      <DragDropContext onDragEnd={this.onDragEnd}>
         <div className="container">
           <div className="row">
             <div className="col-md">
-              <FavSongForm addFavSongs={this.addFavSongs} />
+              <FavSongForm addFavSongs={this.addFavSongs} likedSongs={this.state.likesD}/>
               <br/>
-              <DislikedSongForm addLeastFavSongs={this.addLeastFavSongs}/>
+              <DislikedSongForm addLeastFavSongs={this.addLeastFavSongs} dislikedSongs={this.state.dislikesD}/>
             </div>
             <div className="col-md">
               <div style={{height: '500px', width:'400px', overflow:"auto"}}>
-                <table >
-                  <tbody>
-                    <tr>
-                      <td>Artist</td>
-                      <td>Song</td>
-                      <td>Genre</td>
-                    </tr>
-                    {songList}
-                  </tbody>                
-                </table>
+                 <SongColumn key={songColumn.id} column={songColumn} tasks={songList} taskIds={[]} />
               </div>
             </div>
           </div>
         </div>
-      </DragDropContextProvider>
+      </DragDropContext >
     );
   }
 };

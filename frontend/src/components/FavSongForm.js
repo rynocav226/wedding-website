@@ -1,10 +1,32 @@
 import React, { Component } from 'react';
+import styled from 'styled-components'
+import SongColumn from './songColumn'
+import SongItem from './Song'
+
+const Container = styled.div`
+    display: flex;
+`;
+
+const TaskList = styled.div`
+padding: 8px;
+transition: background-color 0.2s ease;
+background-color: ${props => (props.isDraggingOver ? 'skyblue' : 'white')};
+flex-grow: 1;
+min-height: 100px;
+`;
 
 class FavSongForm extends Component {
 
     constructor(props) {
         super(props);
         this.state = {
+            likes: [{
+                _id:"32",
+                song: "Wow",
+                artist: "Roar",
+                category: "Music"
+                }
+            ],
             song1: "",
             song2: "",
             song3: "",
@@ -12,8 +34,8 @@ class FavSongForm extends Component {
             song5: ""   
         };
 
-        this.handleChange = this.handleChange.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
+        this.handleChange = this.handleChange.bind(this);        
         this.handleDrop = this.handleDrop.bind(this);
     }
 
@@ -25,7 +47,13 @@ class FavSongForm extends Component {
         this.setState({ [e.target.name] : e.target.value })
     }
 
-    jsonIsEmmpty(jsonArray) {
+    handleDrop(e) {
+        e.preventDefault();
+        var data = e.dataTransfer.getData("text");
+        this.setState({ [e.target.name]: data })
+    }
+
+    jsonIsEmpty(jsonArray) {
         for (let key in jsonArray) {
             if (jsonArray[key] !== "")
                 return false
@@ -33,21 +61,9 @@ class FavSongForm extends Component {
         return true
     }
 
-    handleDrop(e) {
-        e.preventDefault();
-        var data = e.dataTransfer.getData("text");
-        this.setState({ [e.target.name]: data })
-    }
-
-    allowDrop(e){
-        e.preventDefault();
-    }
-
     componentDidUpdate() {
-        console.log("Component did update Dislike form")
-        // console.log(this.props.dislikes)
-        // console.log(this.state)
-        if (this.jsonIsEmmpty(this.state) && !this.jsonIsEmmpty(this.props.likes)) {
+        console.log("Component did update Like form")
+        if (this.jsonIsEmpty(this.state) && !this.jsonIsEmpty(this.props.likes)) {
             this.setState({ song1: this.props.likes.song1 })
             this.setState({ song2: this.props.likes.song2 })
             this.setState({ song3: this.props.likes.song3 })
@@ -55,6 +71,7 @@ class FavSongForm extends Component {
             this.setState({ song5: this.props.likes.song5 })
         }
     }
+
 
     render() {
         // this.state.song1 = this.props.songs[0]
@@ -64,14 +81,26 @@ class FavSongForm extends Component {
         // }
         // console.log("Props")
         // console.log(this.props)
+        
+        const likes = this.props.likedSongs.map((t) => (
+            <SongItem
+                key={t._id}
+                {...t}
+            />
+        ));
+        const likeColumn = { title: "Favorites", id: "likes", taskIds: [] }
+        // console.log("FavSong props")
+        // console.log(this.props)
         return(
             <div id="favSongs" className="container">
-                <h1>Favorite Songs</h1>
-                1. <input type="text" name="song1" onDrop={this.handleDrop} value={this.state.song1} onChange={this.handleChange}></input><br/>
-                2. <input type="text" name="song2" onDrop={this.handleDrop} value={this.state.song2} onChange={this.handleChange}></input><br/>
-                3. <input type="text" name="song3" onDrop={this.handleDrop} value={this.state.song3} onChange={this.handleChange}></input><br/>
-                4. <input type="text" name="song4" onDrop={this.handleDrop} value={this.state.song4} onChange={this.handleChange}></input><br/>
-                5. <input type="text" name="song5" onDrop={this.handleDrop} value={this.state.song5} onChange={this.handleChange}></input><br/>
+                        {/* {this.state.columnOrder.map(columnId => {
+                        const column = this.state.columns[columnId];
+                        const tasks = column.taskIds.map(taskId => this.state.tasks[taskId]);
+
+                        return <Column key={column.id} column={column} tasks={tasks} />;
+
+                    })} */}
+                <SongColumn key={likeColumn.id} column={likeColumn} tasks={likes} taskIds={[]} />
                 <button onClick={this.handleSubmit}>Submit Song</button>
             </div>
         )
