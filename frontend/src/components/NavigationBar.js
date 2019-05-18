@@ -50,16 +50,16 @@ class NavigationBar extends Component {
             <NavItem className="d-sm-none d-lg-block">
               <NavLink tag={Link} to="/SongRequests/">Song Requests</NavLink>
             </NavItem>
-            <NavItem className="d-sm-none">
+            <NavItem className="d-sm-none d-xl-block">
               <NavLink tag={Link} to="/BridalParty/">Bridal Party</NavLink>
             </NavItem>
-            <NavItem className="d-sm-none">
+            <NavItem className="d-sm-none d-xl-block">
               <NavLink tag={Link} to="/WeddingPhotos/">Wedding Photos</NavLink>
             </NavItem>
             <NavItem className="bg-primary font-weight-bold d-sm-none buttonHover">
               <NavLink className="text-light ml-2" onClick={this.props.toggleCode}>RSVP</NavLink>
             </NavItem>
-            <UncontrolledButtonDropdown nav inNavbar className="d-none d-sm-block">
+            <UncontrolledButtonDropdown nav inNavbar className="d-none d-sm-block d-xl-none">
               <DropdownToggle nav caret>More</DropdownToggle>
               <DropdownMenu right>
                 <DropdownItem className="d-md-none">
@@ -68,10 +68,10 @@ class NavigationBar extends Component {
                 <DropdownItem className="d-lg-none">
                   <NavLink tag={Link} to="/SongRequests/">Song Requests</NavLink>
                 </DropdownItem>
-                <DropdownItem>
+                <DropdownItem className="d-xl-none">
                   <NavLink tag={Link} to="/BridalParty/">Bridal Party</NavLink>
                 </DropdownItem>
-                <DropdownItem>
+                <DropdownItem className="d-xl-none">
                   <NavLink tag={Link} to="/WeddingPhotos/">Wedding Photos</NavLink>
                 </DropdownItem>
               </DropdownMenu>

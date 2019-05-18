@@ -1,0 +1,200 @@
+{"_id":{"$oid":"5c83f60b95f1051f10bd8fd7"},"song":"Brick House","artist":"Commodores","category":"Classics"}
+{"_id":{"$oid":"5c83f60b95f1051f10bd8fd8"},"song":"Brown Eyed Girl","artist":"Van Morrison","category":"Classics"}
+{"_id":{"$oid":"5c83f60b95f1051f10bd8fd9"},"song":"Can't Help Myself","artist":"The Four Tops","category":"Classics"}
+{"_id":{"$oid":"5c83f60b95f1051f10bd8fda"},"song":"Chain of Fools","artist":"Aretha Franklin","category":"Classics"}
+{"_id":{"$oid":"5c83f60b95f1051f10bd8fdb"},"song":"Crazy","artist":"Patsy Cline","category":"Classics"}
+{"_id":{"$oid":"5c83f60b95f1051f10bd8fdc"},"song":"Dock of the Bay","artist":"Otis Redding","category":"Classics"}
+{"_id":{"$oid":"5c83f60b95f1051f10bd8fdd"},"song":"Family Tradition","artist":"Hank Williams Jr","category":"Classics"}
+{"_id":{"$oid":"5c83f60b95f1051f10bd8fde"},"song":"Folsom Prison Blues","artist":"Johnny Cash","category":"Classics"}
+{"_id":{"$oid":"5c83f60b95f1051f10bd8fdf"},"song":"Get Up To Stand Up","artist":"Bob Marley","category":"Classics"}
+{"_id":{"$oid":"5c83f60b95f1051f10bd8fe0"},"song":"I'm a Believer","artist":"Monkees","category":"Classics"}
+{"_id":{"$oid":"5c83f60b95f1051f10bd8fe1"},"song":"It's Not Unusual","artist":"Tom Jones","category":"Classics"}
+{"_id":{"$oid":"5c83f60b95f1051f10bd8fe2"},"song":"I Will Survive","artist":"Gloria Gaynor","category":"Classics"}
+{"_id":{"$oid":"5c83f60b95f1051f10bd8fe3"},"song":"Jackson","artist":"Johnny Cash and June Carter","category":"Classics"}
+{"_id":{"$oid":"5c83f60b95f1051f10bd8fe4"},"song":"Lady Marmelade","artist":"Patti Labelle","category":"Classics"}
+{"_id":{"$oid":"5c83f60b95f1051f10bd8fe5"},"song":"Lovely Day","artist":"Bill Withers","category":"Classics"}
+{"_id":{"$oid":"5c83f60b95f1051f10bd8fe6"},"song":"Margaritaville","artist":"Jimmy Buffet","category":"Classics"}
+{"_id":{"$oid":"5c83f60b95f1051f10bd8fe7"},"song":"Matchbox","artist":"Carl Perkins","category":"Classics"}
+{"_id":{"$oid":"5c83f60b95f1051f10bd8fe8"},"song":"Mustang Sally","artist":"Wilson Picket","category":"Classics"}
+{"_id":{"$oid":"5c83f60b95f1051f10bd8fe9"},"song":"Please Mr. Postman","artist":"The Marvellettes","category":"Classics"}
+{"_id":{"$oid":"5c83f60b95f1051f10bd8fea"},"song":"Pipeline","artist":"The Ventures","category":"Classics"}
+{"_id":{"$oid":"5c83f60b95f1051f10bd8feb"},"song":"Proud Mary","artist":"Tina Turner","category":"Classics"}
+{"_id":{"$oid":"5c83f60b95f1051f10bd8fec"},"song":"Respect","artist":"Aretha Franklin","category":"Classics"}
+{"_id":{"$oid":"5c83f60b95f1051f10bd8fed"},"song":"Ring of Fire","artist":"Johnny Cash","category":"Classics"}
+{"_id":{"$oid":"5c83f60b95f1051f10bd8fee"},"song":"Son of a Preacher Man","artist":"Dusty Springfield","category":"Classics"}
+{"_id":{"$oid":"5c83f60b95f1051f10bd8fef"},"song":"Stand By Me","artist":"Ben E King","category":"Classics"}
+{"_id":{"$oid":"5c83f60b95f1051f10bd8ff0"},"song":"Stir It Up","artist":"Bob Marley","category":"Classics"}
+{"_id":{"$oid":"5c83f60b95f1051f10bd8ff1"},"song":"Superstition","artist":"Stevie Wonder","category":"Classics"}
+{"_id":{"$oid":"5c83f60b95f1051f10bd8ff2"},"song":"Tell Me Something Good","artist":"Shaka Khan","category":"Classics"}
+{"_id":{"$oid":"5c83f60b95f1051f10bd8ff3"},"song":"These Boots","artist":"Nancy Sinatra","category":"Classics"}
+{"_id":{"$oid":"5c83f60b95f1051f10bd8ff4"},"song":"This Will Be","artist":"Natelie Cole","category":"Classics"}
+{"_id":{"$oid":"5c83f60b95f1051f10bd8ff5"},"song":"9 to 5","artist":"Dolly Parton","category":"Country"}
+{"_id":{"$oid":"5c83f60b95f1051f10bd8ff6"},"song":"Achy Breaky Heart","artist":"Billy Ray Cyrus","category":"Country"}
+{"_id":{"$oid":"5c83f60b95f1051f10bd8ff7"},"song":"All About Tonight","artist":"Blake Shelton","category":"Country"}
+{"_id":{"$oid":"5c83f60b95f1051f10bd8ff8"},"song":"All I want to Do","artist":"Sugarland","category":"Country"}
+{"_id":{"$oid":"5c83f60b95f1051f10bd8ff9"},"song":"Any Man of Mine","artist":"Shaina Twain","category":"Country"}
+{"_id":{"$oid":"5c83f60b95f1051f10bd8ffa"},"song":"Barefoot Blue Jean Night","artist":"Jake Owen","category":"Country"}
+{"_id":{"$oid":"5c83f60b95f1051f10bd8ffb"},"song":"Beer Money","artist":"Kip Moore","category":"Country"}
+{"_id":{"$oid":"5c83f60b95f1051f10bd8ffc"},"song":"Before He Cheats","artist":"Carrie Underwood","category":"Country"}
+{"_id":{"$oid":"5c83f60b95f1051f10bd8ffd"},"song":"Cotton Eye Joe","artist":"Rednex","category":"Country"}
+{"_id":{"$oid":"5c83f60b95f1051f10bd8ffe"},"song":"Country Girl","artist":"Luke Bryan","category":"Country"}
+{"_id":{"$oid":"5c83f60b95f1051f10bd8fff"},"song":"Cruise","artist":"Florida Georgia Line","category":"Country"}
+{"_id":{"$oid":"5c83f60b95f1051f10bd9000"},"song":"Devil Went Down to Georgia","artist":"Charlie Daniels Band","category":"Country"}
+{"_id":{"$oid":"5c83f60b95f1051f10bd9001"},"song":"Dirt Road Anthem","artist":"Jason Aldean","category":"Country"}
+{"_id":{"$oid":"5c83f60b95f1051f10bd9002"},"song":"Drink In My Hand","artist":"Eric Church","category":"Country"}
+{"_id":{"$oid":"5c83f60b95f1051f10bd9003"},"song":"Fishin in the Dark","artist":"Nitty Gritty Dirt Band","category":"Country"}
+{"_id":{"$oid":"5c83f60b95f1051f10bd9004"},"song":"Girl Crush","artist":"Little Big Town","category":"Country"}
+{"_id":{"$oid":"5c83f60b95f1051f10bd9005"},"song":"Girl in a Country Song","artist":"Maddie and Tae","category":"Country"}
+{"_id":{"$oid":"5c83f60b95f1051f10bd9006"},"song":"God Made Girls","artist":"Raelynn","category":"Country"}
+{"_id":{"$oid":"5c83f60b95f1051f10bd9007"},"song":"Good Hearted Woman","artist":"Waylon Jenning","category":"Country"}
+{"_id":{"$oid":"5c83f60b95f1051f10bd9008"},"song":"Gunpowder and Lead","artist":"Miranda Lambert","category":"Country"}
+{"_id":{"$oid":"5c83f60b95f1051f10bd9009"},"song":"Here for the Party","artist":"Gretchen Wilson","category":"Country"}
+{"_id":{"$oid":"5c83f60b95f1051f10bd900a"},"song":"Hillbilly Bone","artist":"Blake Shelton","category":"Country"}
+{"_id":{"$oid":"5c83f60b95f1051f10bd900b"},"song":"I Got Friends in Low Places","artist":"Garth Brooks","category":"Country"}
+{"_id":{"$oid":"5c83f60b95f1051f10bd900c"},"song":"I'm the Only One","artist":"Dierks Bently","category":"Country"}
+{"_id":{"$oid":"5c83f60b95f1051f10bd900d"},"song":"Keep Your Hands to Yourself","artist":"Georgia Satellites","category":"Country"}
+{"_id":{"$oid":"5c83f60b95f1051f10bd900e"},"song":"Kerosene","artist":"Miranda Lambert","category":"Country"}
+{"_id":{"$oid":"5c83f60b95f1051f10bd900f"},"song":"Last Name","artist":"Carrie Underwood","category":"Country"}
+{"_id":{"$oid":"5c83f60b95f1051f10bd9010"},"song":"Little Red Wagon","artist":"Miranda Lambert","category":"Country"}
+{"_id":{"$oid":"5c83f60b95f1051f10bd9011"},"song":"Little White Church","artist":"Little Big Town","category":"Country"}
+{"_id":{"$oid":"5c83f60b95f1051f10bd9012"},"song":"Man! I Feel Like a Woman","artist":"Shania Twain","category":"Country"}
+{"_id":{"$oid":"5c83f60b95f1051f10bd9013"},"song":"My Church","artist":"Maren Morris","category":"Country"}
+{"_id":{"$oid":"5c83f60b95f1051f10bd9014"},"song":"Need You Now","artist":"Lady Antebellum","category":"Country"}
+{"_id":{"$oid":"5c83f60b95f1051f10bd9015"},"song":"Pour Me","artist":"Trick Pony","category":"Country"}
+{"_id":{"$oid":"5c83f60b95f1051f10bd9016"},"song":"Redneck Woman","artist":"Gretchen Wilson","category":"Country"}
+{"_id":{"$oid":"5c83f60b95f1051f10bd9017"},"song":"\"Save a Horse","artist":" Ride A Cowboy\"","category":"Big and Rich"}
+{"_id":{"$oid":"5c83f60b95f1051f10bd9018"},"song":"Smoke a Little Smoke","artist":"Eric Church","category":"Country"}
+{"_id":{"$oid":"5c83f60b95f1051f10bd9019"},"song":"Smoke Break","artist":"Carrie Underwood","category":"Country"}
+{"_id":{"$oid":"5c83f60b95f1051f10bd901a"},"song":"Something to Talk About","artist":"Bonnie Rait","category":"Country"}
+{"_id":{"$oid":"5c83f60b95f1051f10bd901b"},"song":"Son of a Bitch","artist":"Nathaniel Radcliff","category":"Country"}
+{"_id":{"$oid":"5c83f60b95f1051f10bd901c"},"song":"Stuck Like Glue","artist":"Sugarland","category":"Country"}
+{"_id":{"$oid":"5c83f60b95f1051f10bd901d"},"song":"Trailerhood","artist":"Toby Keith","category":"Country"}
+{"_id":{"$oid":"5c83f60b95f1051f10bd901e"},"song":"Wagon Wheel","artist":"Old Crow Medicine Show","category":"Country"}
+{"_id":{"$oid":"5c83f60b95f1051f10bd901f"},"song":"Whiskey River","artist":"Willie Nelson","category":"Country"}
+{"_id":{"$oid":"5c83f60b95f1051f10bd9020"},"song":"When Will I Be Loved","artist":"Linda Ronstadt","category":"Country"}
+{"_id":{"$oid":"5c83f60b95f1051f10bd9021"},"song":"All About That Bass","artist":"Meghan Trainor","category":"Pop"}
+{"_id":{"$oid":"5c83f60b95f1051f10bd9022"},"song":"Bad Romance","artist":"Lady Gaga","category":"Pop"}
+{"_id":{"$oid":"5c83f60b95f1051f10bd9023"},"song":"Bang Bang","artist":"Ariana Grande","category":"Pop"}
+{"_id":{"$oid":"5c83f60b95f1051f10bd9024"},"song":"Beat It","artist":"Michael Jackson","category":"Pop"}
+{"_id":{"$oid":"5c83f60b95f1051f10bd9025"},"song":"Billie Jean","artist":"Michael Jackson","category":"Pop"}
+{"_id":{"$oid":"5c83f60b95f1051f10bd9026"},"song":"Billionaire","artist":"Travie McCoy","category":"Pop"}
+{"_id":{"$oid":"5c83f60b95f1051f10bd9027"},"song":"Black Betty","artist":"Spiderbait","category":"Pop"}
+{"_id":{"$oid":"5c83f60b95f1051f10bd9028"},"song":"Black Horse and Cherry Tree","artist":"KT Tungstall","category":"Pop"}
+{"_id":{"$oid":"5c83f60b95f1051f10bd9029"},"song":"Blurred Lines","artist":"Robin Thicke","category":"Pop"}
+{"_id":{"$oid":"5c83f60b95f1051f10bd902a"},"song":"Bulletproof","artist":"La Roux","category":"Pop"}
+{"_id":{"$oid":"5c83f60b95f1051f10bd902b"},"song":"California Gurls","artist":"Katy Perry","category":"Pop"}
+{"_id":{"$oid":"5c83f60b95f1051f10bd902c"},"song":"Call me Maybe","artist":"Carly Rae Jepsen","category":"Pop"}
+{"_id":{"$oid":"5c83f60b95f1051f10bd902d"},"song":"Can't Feel My Face","artist":"The Weekend","category":"Pop"}
+{"_id":{"$oid":"5c83f60b95f1051f10bd902e"},"song":"Chasing Cars","artist":"Snow Patrol","category":"Pop"}
+{"_id":{"$oid":"5c83f60b95f1051f10bd902f"},"song":"Crazy","artist":"Gnarles Barkley","category":"Pop"}
+{"_id":{"$oid":"5c83f60b95f1051f10bd9030"},"song":"Domino","artist":"Jessie J","category":"Pop"}
+{"_id":{"$oid":"5c83f60b95f1051f10bd9031"},"song":"Ex's and Ohs","artist":"Elle King","category":"Pop"}
+{"_id":{"$oid":"5c83f60b95f1051f10bd9032"},"song":"Fade Into You","artist":"Mazzy Star","category":"Pop"}
+{"_id":{"$oid":"5c83f60b95f1051f10bd9033"},"song":"Firework","artist":"Katy Perry","category":"Pop"}
+{"_id":{"$oid":"5c83f60b95f1051f10bd9034"},"song":"Forget You","artist":"Cee Lo Green","category":"Pop"}
+{"_id":{"$oid":"5c83f60b95f1051f10bd9035"},"song":"Get Lucky","artist":"Daft Punk","category":"Pop"}
+{"_id":{"$oid":"5c83f60b95f1051f10bd9036"},"song":"Get This Party Started","artist":"Pink","category":"Pop"}
+{"_id":{"$oid":"5c83f60b95f1051f10bd9037"},"song":"Girls Just Wanna Have Fun","artist":"Cyndi Lauper","category":"Pop"}
+{"_id":{"$oid":"5c83f60b95f1051f10bd9038"},"song":"Happy","artist":"Pharell Williams","category":"Pop"}
+{"_id":{"$oid":"5c83f60b95f1051f10bd9039"},"song":"Harder to Breathe","artist":"Maroon 5","category":"Pop"}
+{"_id":{"$oid":"5c83f60b95f1051f10bd903a"},"song":"Hella Good","artist":"No Doubt","category":"Pop"}
+{"_id":{"$oid":"5c83f60b95f1051f10bd903b"},"song":"Hey Ya","artist":"Outkast","category":"Pop"}
+{"_id":{"$oid":"5c83f60b95f1051f10bd903c"},"song":"Hit Me Baby One More","artist":"Brittany Spears","category":"Pop"}
+{"_id":{"$oid":"5c83f60b95f1051f10bd903d"},"song":"Hold On","artist":"Wilson Philips","category":"Pop"}
+{"_id":{"$oid":"5c83f60b95f1051f10bd903e"},"song":"Hot N Cold","artist":"Katy Perry","category":"Pop"}
+{"_id":{"$oid":"5c83f60b95f1051f10bd903f"},"song":"House Party","artist":"Sam Hunt","category":"Pop"}
+{"_id":{"$oid":"5c83f60b95f1051f10bd9040"},"song":"Ice Ice Baby","artist":"Vanilla Ice","category":"Pop"}
+{"_id":{"$oid":"5c83f60b95f1051f10bd9041"},"song":"\"I Don't Care","artist":" I Love It\"","category":"Icona Pop"}
+{"_id":{"$oid":"5c83f60b95f1051f10bd9042"},"song":"I Got a Feelin'","artist":"Black Eyed Peas","category":"Pop"}
+{"_id":{"$oid":"5c83f60b95f1051f10bd9043"},"song":"I Kissed a Girl","artist":"Katy Perry","category":"Pop"}
+{"_id":{"$oid":"5c83f60b95f1051f10bd9044"},"song":"I Touch Myself","artist":"Divinyls","category":"Pop"}
+{"_id":{"$oid":"5c83f60b95f1051f10bd9045"},"song":"I Wanna Dance with Somebody","artist":"Whitney Houston","category":"Pop"}
+{"_id":{"$oid":"5c83f60b95f1051f10bd9046"},"song":"I'm the Only One","artist":"Melissa Ethridge","category":"Pop"}
+{"_id":{"$oid":"5c83f60b95f1051f10bd9047"},"song":"Just Dance","artist":"Lady Gaga","category":"Pop"}
+{"_id":{"$oid":"5c83f60b95f1051f10bd9048"},"song":"Like a Prayer","artist":"Madonna","category":"Pop"}
+{"_id":{"$oid":"5c83f60b95f1051f10bd9049"},"song":"Lips are Movin'","artist":"Meghan Trainor","category":"Pop"}
+{"_id":{"$oid":"5c83f60b95f1051f10bd904a"},"song":"Locked Out of Heaven","artist":"Bruno Mars","category":"Pop"}
+{"_id":{"$oid":"5c83f60b95f1051f10bd904b"},"song":"Love Fool","artist":"The Cardigans","category":"Pop"}
+{"_id":{"$oid":"5c83f60b95f1051f10bd904c"},"song":"Material Girl","artist":"Madonna","category":"Pop"}
+{"_id":{"$oid":"5c83f60b95f1051f10bd904d"},"song":"Mercy","artist":"Duffy","category":"Pop"}
+{"_id":{"$oid":"5c83f60b95f1051f10bd904e"},"song":"No Diggity","artist":"Blackstreet","category":"Pop"}
+{"_id":{"$oid":"5c83f60b95f1051f10bd904f"},"song":"One of Us","artist":"Joan Osborne","category":"Pop"}
+{"_id":{"$oid":"5c83f60b95f1051f10bd9050"},"song":"Oops I Did It Again","artist":"Brittany Spears","category":"Pop"}
+{"_id":{"$oid":"5c83f60b95f1051f10bd9051"},"song":"Paper Planes","artist":"MIA","category":"Pop"}
+{"_id":{"$oid":"5c83f60b95f1051f10bd9052"},"song":"Party in the USA","artist":"Miley Cyrus","category":"Pop"}
+{"_id":{"$oid":"5c83f60b95f1051f10bd9053"},"song":"Play That Funky Music","artist":"Wild Cherry","category":"Pop"}
+{"_id":{"$oid":"5c83f60b95f1051f10bd9054"},"song":"Poker Face","artist":"Lady Gaga","category":"Pop"}
+{"_id":{"$oid":"5c83f60b95f1051f10bd9055"},"song":"Pumped up Kicks","artist":"Foster the People","category":"Pop"}
+{"_id":{"$oid":"5c83f60b95f1051f10bd9056"},"song":"Raise Your Glass","artist":"P!nk","category":"Pop"}
+{"_id":{"$oid":"5c83f60b95f1051f10bd9057"},"song":"Rehab","artist":"Amy Winehouse","category":"Pop"}
+{"_id":{"$oid":"5c83f60b95f1051f10bd9058"},"song":"Rolling in the Deep","artist":"Adele","category":"Pop"}
+{"_id":{"$oid":"5c83f60b95f1051f10bd9059"},"song":"Royals","artist":"Lorde","category":"Pop"}
+{"_id":{"$oid":"5c83f60b95f1051f10bd905a"},"song":"Sex and Candy","artist":"March Playground","category":"Pop"}
+{"_id":{"$oid":"5c83f60b95f1051f10bd905b"},"song":"Sex Is On Fire","artist":"Kings of Leon","category":"Pop"}
+{"_id":{"$oid":"5c83f60b95f1051f10bd905c"},"song":"Shake It Off","artist":"Taylor Swift","category":"Pop"}
+{"_id":{"$oid":"5c83f60b95f1051f10bd905d"},"song":"Shoop","artist":"Salt and Pepa","category":"Pop"}
+{"_id":{"$oid":"5c83f60b95f1051f10bd905e"},"song":"Shut Up and Dance","artist":"Walk the Moon","category":"Pop"}
+{"_id":{"$oid":"5c83f60b95f1051f10bd905f"},"song":"Soak up the Sun","artist":"Sheryl Crow","category":"Pop"}
+{"_id":{"$oid":"5c83f60b95f1051f10bd9060"},"song":"Somebody Told Me","artist":"The Killers","category":"Pop"}
+{"_id":{"$oid":"5c83f60b95f1051f10bd9061"},"song":"Steal My Kisses","artist":"Ben Harper","category":"Pop"}
+{"_id":{"$oid":"5c83f60b95f1051f10bd9062"},"song":"Strong Enough","artist":"Sheryl Crow","category":"Pop"}
+{"_id":{"$oid":"5c83f60b95f1051f10bd9063"},"song":"Straight Up","artist":"Paula Abdul","category":"Pop"}
+{"_id":{"$oid":"5c83f60b95f1051f10bd9064"},"song":"Teenage Dream","artist":"Katy Perry","category":"Pop"}
+{"_id":{"$oid":"5c83f60b95f1051f10bd9065"},"song":"Telephone","artist":"Lady Gaga/Beyonce","category":"Pop"}
+{"_id":{"$oid":"5c83f60b95f1051f10bd9066"},"song":"Thinking Out Loud","artist":"Ed Sheeran","category":"Pop"}
+{"_id":{"$oid":"5c83f60b95f1051f10bd9067"},"song":"Tik Tok","artist":"Kesha","category":"Pop"}
+{"_id":{"$oid":"5c83f60b95f1051f10bd9068"},"song":"Toxic","artist":"Brittany Spears","category":"Pop"}
+{"_id":{"$oid":"5c83f60b95f1051f10bd9069"},"song":"Uptown Funk","artist":"\"Ronson","category":" Mark ft. Bruno Mars\""}
+{"_id":{"$oid":"5c83f60b95f1051f10bd906a"},"song":"Walking on Sunshine","artist":"Katrina & the Waves","category":"Pop"}
+{"_id":{"$oid":"5c83f60b95f1051f10bd906b"},"song":"Waiting on the World to Change","artist":"John Mayer","category":"Pop"}
+{"_id":{"$oid":"5c83f60b95f1051f10bd906c"},"song":"Wannabe","artist":"The Spice Girls","category":"Pop"}
+{"_id":{"$oid":"5c83f60b95f1051f10bd906d"},"song":"Your Love","artist":"Outfield","category":"Pop"}
+{"_id":{"$oid":"5c83f60b95f1051f10bd906e"},"song":"All Along the Watchtower","artist":"Jimi Hendrix","category":"Rock"}
+{"_id":{"$oid":"5c83f60b95f1051f10bd906f"},"song":"All the Small Things","artist":"Blink 182","category":"Rock"}
+{"_id":{"$oid":"5c83f60b95f1051f10bd9070"},"song":"Another Bites the Dust","artist":"Queen","category":"Rock"}
+{"_id":{"$oid":"5c83f60b95f1051f10bd9071"},"song":"Anyway You Want It","artist":"Journey","category":"Rock"}
+{"_id":{"$oid":"5c83f60b95f1051f10bd9072"},"song":"Are You Gonna Be My Girl","artist":"Jet","category":"Rock"}
+{"_id":{"$oid":"5c83f60b95f1051f10bd9073"},"song":"Authority Song","artist":"John Mellencamp","category":"Rock"}
+{"_id":{"$oid":"5c83f60b95f1051f10bd9074"},"song":"Back on the Chain Gang","artist":"Pretenders","category":"Rock"}
+{"_id":{"$oid":"5c83f60b95f1051f10bd9075"},"song":"The Bad Touch","artist":"Blood Hound Gang","category":"Rock"}
+{"_id":{"$oid":"5c83f60b95f1051f10bd9076"},"song":"Ballroom Blitz","artist":"The Sweet","category":"Rock"}
+{"_id":{"$oid":"5c83f60b95f1051f10bd9077"},"song":"Barracuda","artist":"Heart","category":"Rock"}
+{"_id":{"$oid":"5c83f60b95f1051f10bd9078"},"song":"Beverly Hills","artist":"Weezer","category":"Rock"}
+{"_id":{"$oid":"5c83f60b95f1051f10bd9079"},"song":"Black Velvet","artist":"Alannah Myles","category":"Rock"}
+{"_id":{"$oid":"5c83f60b95f1051f10bd907a"},"song":"Bobby McGee","artist":"Janis Joplin","category":"Rock"}
+{"_id":{"$oid":"5c83f60b95f1051f10bd907b"},"song":"Boom Boom","artist":"Jon Lee Hooker","category":"Rock"}
+{"_id":{"$oid":"5c83f60b95f1051f10bd907c"},"song":"Breakfast at Tiffany's","artist":"Deep Blue Something","category":"Rock"}
+{"_id":{"$oid":"5c83f60b95f1051f10bd907d"},"song":"Cocaine","artist":"Eric Clapton","category":"Rock"}
+{"_id":{"$oid":"5c83f60b95f1051f10bd907e"},"song":"Cowboy","artist":"Kid Rock","category":"Rock"}
+{"_id":{"$oid":"5c83f60b95f1051f10bd907f"},"song":"Crazy Little Thing Called Love","artist":"Queen","category":"Rock"}
+{"_id":{"$oid":"5c83f60b95f1051f10bd9080"},"song":"Crazy On You","artist":"Heart","category":"Rock"}
+{"_id":{"$oid":"5c83f60b95f1051f10bd9081"},"song":"Crazy Train","artist":"Ozzy Osbourne","category":"Rock"}
+{"_id":{"$oid":"5c83f60b95f1051f10bd9082"},"song":"Creep","artist":"Radiohead","category":"Rock"}
+{"_id":{"$oid":"5c83f60b95f1051f10bd9083"},"song":"Don't Stop Believin'","artist":"Journey","category":"Rock"}
+{"_id":{"$oid":"5c83f60b95f1051f10bd9084"},"song":"Dreams","artist":"The Cranberries","category":"Rock"}
+{"_id":{"$oid":"5c83f60b95f1051f10bd9085"},"song":"D'yer Maker","artist":"Led Zepplin","category":"Rock"}
+{"_id":{"$oid":"5c83f60b95f1051f10bd9086"},"song":"Edge of Seventeen","artist":"Stevie Nicks","category":"Rock"}
+{"_id":{"$oid":"5c83f60b95f1051f10bd9087"},"song":"Enter Sandman","artist":"Metallic","category":"Rock"}
+{"_id":{"$oid":"5c83f60b95f1051f10bd9088"},"song":"Every Rose Has It's Thorn","artist":"Poison","category":"Rock"}
+{"_id":{"$oid":"5c83f60b95f1051f10bd9089"},"song":"Fat Bottom Girls","artist":"Queen","category":"Rock"}
+{"_id":{"$oid":"5c83f60b95f1051f10bd908a"},"song":"Fight for Your Right","artist":"Beastie Boys","category":"Rock"}
+{"_id":{"$oid":"5c83f60b95f1051f10bd908b"},"song":"Foxy Lady","artist":"Jimmi Hendrix","category":"Rock"}
+{"_id":{"$oid":"5c83f60b95f1051f10bd908c"},"song":"Girls Girls Girls","artist":"Motley Crue","category":"Rock"}
+{"_id":{"$oid":"5c83f60b95f1051f10bd908d"},"song":"Gimme Three Steps","artist":"Lynard Skynard","category":"Rock"}
+{"_id":{"$oid":"5c83f60b95f1051f10bd908e"},"song":"Hard to Handle","artist":"Black Crowes","category":"Rock"}
+{"_id":{"$oid":"5c83f60b95f1051f10bd908f"},"song":"Hash Pipe","artist":"Weezer","category":"Rock"}
+{"_id":{"$oid":"5c83f60b95f1051f10bd9090"},"song":"Heartbreaker","artist":"Pat Benetar","category":"Rock"}
+{"_id":{"$oid":"5c83f60b95f1051f10bd9091"},"song":"Hit Me with Your Best Shot","artist":"Pat Benetar","category":"Rock"}
+{"_id":{"$oid":"5c83f60b95f1051f10bd9092"},"song":"Hold the Line","artist":"Toto","category":"Rock"}
+{"_id":{"$oid":"5c83f60b95f1051f10bd9093"},"song":"Hope it Gives You Hell","artist":"All American Rejects","category":"Rock"}
+{"_id":{"$oid":"5c83f60b95f1051f10bd9094"},"song":"House Is a Rockin'","artist":"Stevie Ray Vaughan","category":"Rock"}
+{"_id":{"$oid":"5c83f60b95f1051f10bd9095"},"song":"I Hate Myself for Lovin You","artist":"Joan Jett","category":"Rock"}
+{"_id":{"$oid":"5c83f60b95f1051f10bd9096"},"song":"I Love Rock & Roll","artist":"Joan Jett","category":"Rock"}
+{"_id":{"$oid":"5c83f60b95f1051f10bd9097"},"song":"I'm Just a Girl","artist":"No Doubt","category":"Rock"}
+{"_id":{"$oid":"5c83f60b95f1051f10bd9098"},"song":"Ironic","artist":"Alanis Morisette","category":"Rock"}
+{"_id":{"$oid":"5c83f60b95f1051f10bd9099"},"song":"It Ain't My Fault","artist":"Brothers Osborne","category":"Rock"}
+{"_id":{"$oid":"5c83f60b95f1051f10bd909a"},"song":"It's My Life","artist":"Bon Jovi","category":"Rock"}
+{"_id":{"$oid":"5c83f60b95f1051f10bd909b"},"song":"Jessie's Girl","artist":"\"Springfield","category":" Rick\""}
+{"_id":{"$oid":"5c83f60b95f1051f10bd909c"},"song":"The Joker","artist":"Steve Miller Band","category":"Rock"}
+{"_id":{"$oid":"5c83f60b95f1051f10bd909d"},"song":"Keep On Rockin' in the Free World","artist":"Neal Young","category":"Rock"}
+{"_id":{"$oid":"5c83f60b95f1051f10bd909e"},"song":"","artist":null,"category":null}

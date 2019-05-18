@@ -262,7 +262,7 @@ class RsvpModals extends Component {
             <Alert className="text-center" color="danger" isOpen={this.state.childrenNeedReply}>Select number of children.</Alert>
             <ListGroup flush>
               <ListGroupItem key="description">
-                <p>Due to the size of the venue, we are requesting an adults only reception.  If you are unable to make arrangements, child care and dinner will be provided in the suite of the Courtyard Marriott Hotel.  If you have any questions or concerns, reach out to us at rynocav@gmail.com.</p>
+                <p>Due to the size of the venue, we are requesting an adults only reception.  While we prefer for you to make your own arrangements, we know it can be challenging.  If you are unable to make your own, we will provide child care and dinner in the suite of the Courtyard Marriott Hotel.  If you have any questions or concerns, reach out to us at rynocav@gmail.com.</p>
               </ListGroupItem>
               <ListGroupItem key={this.state.children}>
                 <Daycare children={this.state.children} daycare={this.state.daycare} updateDaycare={(daycare) => this.updateDaycare(daycare)} />

@@ -141,7 +141,7 @@ class WeddingApp extends Component {
                   <FormGroup>
                     <InputGroup>
                       <InputGroupAddon addonType="prepend">#</InputGroupAddon>
-                      <Input className={(this.state.invitationCodeInvalid ? "is-invalid": "")} id="code" name="code" autoFocus={true} onChange={e => this.setState({ invitationCode: e.target.value })} autoComplete="off" />
+                      <Input inputMode="numeric" pattern="[0-9]*" type="text" className={(this.state.invitationCodeInvalid ? "is-invalid": "")} id="code" name="code" autoFocus={true} onChange={e => this.setState({ invitationCode: e.target.value })} autoComplete="off" />
                       <FormFeedback>{this.state.invitationCodeError}</FormFeedback>
                     </InputGroup>
                   </FormGroup>

@@ -27,23 +27,18 @@ class Guest extends Component {
   render() {
     return (
       <Row className="mt-2">
-        <Col className="col-auto mr-auto">
+        <Col xs="12" sm="auto" className="col-auto mr-auto guestColumn">
           <h3 className="text-primary d-none d-lg-block text-monospace mt-auto mb-auto">{this.props.firstName} {this.props.lastName}</h3>
-          <h4 className="text-primary d-none d-sm-block d-lg-none text-monospace mt-auto mb-auto">{this.props.firstName} {this.props.lastName}</h4>
-          <h5 className="text-primary d-sm-none text-monospace mt-auto mb-auto nameFont">{this.props.firstName} {this.props.lastName}</h5>
+          <h4 className="text-primary d-lg-none text-monospace mt-auto mb-auto">{this.props.firstName} {this.props.lastName}</h4>
         </Col>
-        <Col className="col-auto">
+        <Col xs="12" sm="auto" className="col-auto guestColumn">
           <ButtonGroup className="d-none d-lg-block" role="group">
             <Button size="lg" outline color="success" onClick={() => this.onRadioButtonClick(1)} active={this.state.rSelected === 1}>Yes</Button>
             <Button size="lg" outline color="danger" onClick={() => this.onRadioButtonClick(2)} active={this.state.rSelected === 2}>No</Button>
           </ButtonGroup>
-          <ButtonGroup className="d-none d-sm-block d-lg-none" role="group">
+          <ButtonGroup className="d-lg-none" role="group">
             <Button outline color="success" onClick={() => this.onRadioButtonClick(1)} active={this.state.rSelected === 1}>Yes</Button>
             <Button outline color="danger" onClick={() => this.onRadioButtonClick(2)} active={this.state.rSelected === 2}>No</Button>
-          </ButtonGroup>
-          <ButtonGroup className="d-sm-none" role="group">
-            <Button size="sm" outline color="success" onClick={() => this.onRadioButtonClick(1)} active={this.state.rSelected === 1}>Yes</Button>
-            <Button size="sm" outline color="danger" onClick={() => this.onRadioButtonClick(2)} active={this.state.rSelected === 2}>No</Button>
           </ButtonGroup>
         </Col>
       </Row>

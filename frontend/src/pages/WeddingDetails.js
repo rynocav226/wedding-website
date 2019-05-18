@@ -84,15 +84,15 @@ const WeddingDetails = (props) => {
             </CardBody>
           </Card>
         </Col>
-        <Col md="7" lg="5" className="mb-2">
+        <Col md="7" lg="5" xl="6" className="mb-2">
           <Card>
             <CardBody>
               <CardTitle>Child Care</CardTitle>
-              <CardText>Due to the size of the venue, we are requesting an adults only reception.  If you are unable to make arrangements, child care and dinner will be provided in the suite of the <Link to="../Accommodations/#courtyardMarriottCardGroup">Courtyard Marriott Hotel</Link> and can be indicated on the <span className="text-primary spanHover" onClick={props.toggleCode}>RSVP</span>.  If you have any questions or concerns, reach out to us at rynocav@gmail.com.</CardText>
+              <CardText>Due to the size of the venue, we are requesting an adults only reception.  While we prefer for you to make your own arrangements, we know it can be challenging.  If you are unable to make your own, we will provide child care in the suite of the <Link to="../Accommodations/#courtyardMarriottCardGroup">Courtyard Marriott Hotel</Link>.  This can be indicated when you <span className="text-primary spanHover" onClick={props.toggleCode}>RSVP</span>.  If you have any questions or concerns, reach out to us at rynocav@gmail.com.</CardText>
             </CardBody>
           </Card>
         </Col>
-        <Col md="6" lg="4" className="mb-2">
+        <Col md="6" lg="4" xl="3" className="mb-2">
           <Card>
             <CardBody>
               <CardTitle>Dress Code</CardTitle>

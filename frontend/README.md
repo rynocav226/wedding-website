@@ -1,5 +1,10 @@
 Things to do/fix:
 
+PRODUCTION
+
+hide Song Request menu item and remove from siteNavigation
+hide Sara's travel blog
+
 General
 > Change title and icon - DONE
 > change favorite title - DONE
@@ -7,12 +12,13 @@ General
 > initial page load shows unstyled navbar for a quick sec - DONE
 > once hosted, test when backend is not running and database is not running and handle error paths - DONE
 > revert error handling to the example - DONE
-> remove console logs
+> remove console logs - DONE
 > set min-heights on things - DONE
 > update based on Jorden's comments: reverify brewery crawl food, wedding details, bridal party centering, and new RSVP - DONE
 > make new favicon.ico - DONE
 > test with Firefox - can go smaller - DONE
 > upgrade backend account to always be available - DONE
+> remove Daycare stuff? - DONE
 
 Navigation Menu
 > Put RSVP all the way to the right and make a different style to stand out - DONE
@@ -54,7 +60,7 @@ Accommodations Page
 > doubletree pic on ios - DONE
 > set max-width on the container - DONE
 > update booking website URL - DONE
-> center sub menu on xl screens beyond max width
+> center sub menu on xl screens beyond max width - DONE
 
 RSVP
 > do responsive test with longest name (sara Mic-Lyn?)  - DONE
@@ -69,9 +75,9 @@ RSVP
 > add event keys to children modal - DONE
 > add event keys on code modal - DONE
 > responsive tests the modals - DONE
-> have number pad open on mobile
+> have number pad open on mobile - DONE
 > do responsive test with max people (5) - DONE
-> center stuff on xs screen size
+> center stuff on xs screen size - DONE
 
 Song Requests
 > ensure invitation code has been entered before submitting
@@ -87,7 +93,7 @@ Bridal Party
 
 Wedding Photos
 > adding padding to top of the photo credit text - DONE
-> move arrows in on xl screens?
+> move arrows in on xl screens? - DONE
 
 Brewery Crawl
 > change up order on single column so don't have picture back to back - DONE
