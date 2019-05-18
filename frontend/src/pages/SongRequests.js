@@ -34,7 +34,16 @@ class SongRequests extends Component {
 
 
   addFavSongs(songs) {
-    var songJson = {likes:songs}
+    let songJson = {}
+    let i = 1
+    this.state.likesD.forEach((song)=>{
+      let keyD = "song"+i
+      // console.log(song)
+      songJson[keyD] = song.song
+      i=i+1
+    })
+    // var songJson = {likes:songs}
+    console.log(songJson)
     var path = `/api/invitation/${this.props.invitation}/SongRequests/${this.props.requestId}`
     return apiCall("put", path, songJson)
       .then(res => {console.log(`Successful response ${res}`) })
@@ -110,11 +119,11 @@ class SongRequests extends Component {
 
     setStateArray(input, array){
         if (input === "songs")
-            this.setState({ songList: array })
+          this.setState({ songList: array })
         else if (input === "likes")
-            this.setState({ likes: array })
+          this.setState({ likesD: array })
         else if (input === "dislikes")
-            this.setState({ dislikes: array })
+          this.setState({ dislikesD: array })
     }
 
     onDragEnd = result => {
@@ -158,9 +167,6 @@ class SongRequests extends Component {
         sourceArray.splice(source.index,1);
         this.setStateArray(source.droppableId, sourceArray)
         this.setStateArray(destination.droppableId, destinationArray)
-        
-        
-        
     }
 
   render() {

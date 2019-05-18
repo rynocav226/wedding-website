@@ -88,18 +88,11 @@ class FavSongForm extends Component {
                 {...t}
             />
         ));
-        const likeColumn = { title: "Favorites", id: "likes", taskIds: [] }
+        const likeColumn = { title: "Add Your 5 favorites", id: "likes", taskIds: [] }
         // console.log("FavSong props")
         // console.log(this.props)
         return(
             <div id="favSongs" className="container">
-                        {/* {this.state.columnOrder.map(columnId => {
-                        const column = this.state.columns[columnId];
-                        const tasks = column.taskIds.map(taskId => this.state.tasks[taskId]);
-
-                        return <Column key={column.id} column={column} tasks={tasks} />;
-
-                    })} */}
                 <SongColumn key={likeColumn.id} column={likeColumn} tasks={likes} taskIds={[]} />
                 <button onClick={this.handleSubmit}>Submit Song</button>
             </div>

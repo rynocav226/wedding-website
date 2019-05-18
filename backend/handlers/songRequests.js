@@ -22,6 +22,7 @@ exports.createSongRequest = async function (req, res, next) {
 exports.updateSongRequest = async function (req, res, next) {
     try {
         let updateRequest = await db.SongRequests.findByIdAndUpdate(req.params.request_id, req.body, { new: true });
+        console.log(updateRequest)
         return res.status(200).json(updateRequest);
     } catch (error) {
         return next(error);
