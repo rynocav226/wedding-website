@@ -1,32 +1,14 @@
 import React, { Component } from 'react';
-import styled from 'styled-components'
-import SongColumn from './songColumn'
-import SongItem from './Song'
-
-const Container = styled.div`
-    display: flex;
-`;
-
-const TaskList = styled.div`
-padding: 8px;
-transition: background-color 0.2s ease;
-background-color: ${props => (props.isDraggingOver ? 'skyblue' : 'white')};
-flex-grow: 1;
-min-height: 100px;
-`;
+import SongColumn from './songColumn';
+import SongItem from './Song';
 
 class FavSongForm extends Component {
 
     constructor(props) {
+        
         super(props);
+
         this.state = {
-            likes: [{
-                _id:"32",
-                song: "Wow",
-                artist: "Roar",
-                category: "Music"
-                }
-            ],
             song1: "",
             song2: "",
             song3: "",
@@ -73,31 +55,21 @@ class FavSongForm extends Component {
     }
 
 
-    render() {
-        // this.state.song1 = this.props.songs[0]
-        // if(this.props.songs){
-        // this.setState({"song1" : this.props.songs[0]})
-        // console.log("Songs in fav song form hit")
-        // }
-        // console.log("Props")
-        // console.log(this.props)
-        
+    render() {        
         const likes = this.props.likedSongs.map((t) => (
             <SongItem
                 key={t._id}
                 {...t}
             />
         ));
-        const likeColumn = { title: "Add Your 5 favorites", id: "likes", taskIds: [] }
-        // console.log("FavSong props")
-        // console.log(this.props)
+        const likeColumn = { title: "Add 5 Songs You MUST Hear", id: "likes", taskIds: [] }
+
         return(
-            <div id="favSongs" className="container">
+            <div id="favSongs">
                 <SongColumn key={likeColumn.id} column={likeColumn} tasks={likes} taskIds={[]} />
-                <button onClick={this.handleSubmit}>Submit Song</button>
             </div>
         )
     }
-}
+};
 
 export default FavSongForm;

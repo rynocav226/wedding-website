@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
-import styled from 'styled-components'
-import SongColumn from './songColumn'
-import SongItem from './Song'
+import SongColumn from './songColumn';
+import SongItem from './Song';
 
 class DislikedSongForm extends Component {
 
     constructor(props) {
         super(props);
+
         this.state = {
             song1: "",
             song2: "",
@@ -59,11 +59,10 @@ class DislikedSongForm extends Component {
                 {...t}
             />
         ));
-        const dislikeColumn = { title: "Least Favorites", id: "dislikes", taskIds: [] }
+        const dislikeColumn = { title: "Add 5 Songs You Do NOT Want to Hear", id: "dislikes", taskIds: [] }
         return (
-            <div id="favSongs" className="container">
+            <div id="favSongs">
                 <SongColumn key={dislikeColumn.id} column={dislikeColumn} tasks={dislikes} taskIds={[]} />
-                <button onClick={this.handleSubmit}>Submit Song</button>
             </div>
         )
     }

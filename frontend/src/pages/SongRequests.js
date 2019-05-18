@@ -1,23 +1,19 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
+import { Container, Row, Col } from 'reactstrap';
+import { Card, CardTitle, CardBody, CardText, Button } from 'reactstrap';
 import { apiCall } from "../services/api";
 import FavSongForm from "../components/FavSongForm";
-// import SongItem from "../components/SongItem";
 import DislikedSongForm from "../components/DislikedSongForm";
-import ReactDom from "react-dom";
-import { DragDropContext } from 'react-beautiful-dnd'
-import SongItem from  "../components/Song"
-// import SongItem from "./Song.jsx"
-import SongColumn from '../components/songColumn'
-import styled from 'styled-components'
-
-const Container = styled.div`
-    display: flex;
-`;
+import { DragDropContext } from "react-beautiful-dnd";
+import SongItem from  "../components/Song";
+import SongColumn from "../components/songColumn";
+import "../styles/SongRequests.css";
 
 class SongRequests extends Component {
 
   constructor(props) {
     super(props);
+
     this.state = {
       likes: { "song1": "", "song2": "", "song3": "", "song4": "", "song5": "" },
       dislikes: { "song1": "", "song2": "", "song3": "", "song4": "", "song5": ""},
@@ -32,8 +28,7 @@ class SongRequests extends Component {
 
   }
 
-
-  addFavSongs(songs) {
+  addFavSongs() {
     let songJson = {}
     let i = 1
     this.state.likesD.forEach((song)=>{
@@ -42,7 +37,6 @@ class SongRequests extends Component {
       songJson[keyD] = song.song
       i=i+1
     })
-    // var songJson = {likes:songs}
     console.log(songJson)
     var path = `/api/invitation/${this.props.invitation}/SongRequests/${this.props.requestId}`
     return apiCall("put", path, songJson)
@@ -177,29 +171,34 @@ class SongRequests extends Component {
       />
     ));
     console.log("Rendering song requests")
-    const songColumn = { title: "Songs", id: "songs", taskIds: [] }
+    const songColumn = { title: "Song List", id: "songs", taskIds: [] }
     return (
       <DragDropContext onDragEnd={this.onDragEnd}>
-        <div className="container">
-          <div className="row">
-            <div className="col-md">
+        <Container fluid className="songRequestsContainer">
+          <Row>
+            <Col sm="6" className="songList">
+              <Card>
+                <CardBody>
+                  <CardTitle>Instructions</CardTitle>
+                  <CardText>The wedding band has provided us with their songlist so we can work with them to form a setlist for the dance.  We would like your input into what you want and do not want to hear so everyone is on the dance floor all night long!  Look through the song list and when you find one you love or hate, drag the song to the appropriate table.  When finished, submit your requests.</CardText>
+                  <div className="text-center"><Button size="lg" className="text-center" color="primary" onClick={this.addFavSongs}>Submit Requests</Button></div>
+                </CardBody>
+              </Card>
+              <br/>
               <FavSongForm addFavSongs={this.addFavSongs} likedSongs={this.state.likesD}/>
               <br/>
               <DislikedSongForm addLeastFavSongs={this.addLeastFavSongs} dislikedSongs={this.state.dislikesD}/>
-            </div>
-            <div className="col-md">
-              <div style={{height: '500px', width:'400px', overflow:"auto"}}>
-                 <SongColumn key={songColumn.id} column={songColumn} tasks={songList} taskIds={[]} />
+            </Col>
+            <Col sm="6">
+              <div className="songList">
+              <SongColumn key={songColumn.id} column={songColumn} tasks={songList} taskIds={[]} />
               </div>
-            </div>
-          </div>
-        </div>
-      </DragDropContext >
+            </Col>
+          </Row>
+        </Container>
+      </DragDropContext>
     );
   }
-};
+}
 
-
-// export default DragDropContext(TouchBackend)(SongRequests)
-
-export default SongRequests
+export default SongRequests;
