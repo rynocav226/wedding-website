@@ -21,6 +21,9 @@ exports.createSongRequest = async function (req, res, next) {
 
 exports.updateSongRequest = async function (req, res, next) {
     try {
+        console.log("Update song Request")
+        console.log(`Req body is`)
+        console.log(req.body)
         let updateRequest = await db.SongRequests.findByIdAndUpdate(req.params.request_id, req.body, { new: true });
         console.log(updateRequest)
         return res.status(200).json(updateRequest);

@@ -42,16 +42,6 @@ class DislikedSongForm extends Component {
         return true
     }    
 
-    componentDidUpdate() {
-        if (this.jsonIsEmpty(this.state) && !this.jsonIsEmpty(this.props.dislikes)) {
-            this.setState({ song1: this.props.dislikes.song1 })
-            this.setState({ song2: this.props.dislikes.song2 })
-            this.setState({ song3: this.props.dislikes.song3 })
-            this.setState({ song4: this.props.dislikes.song4 })
-            this.setState({ song5: this.props.dislikes.song5 })
-        }
-    }    
-
     render() {
         const dislikes = this.props.dislikedSongs.map((t) => (
             <SongItem

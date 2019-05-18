@@ -34,40 +34,81 @@ class SongRequests extends Component {
 
 
   addFavSongs(songs) {
-    let songJson = {}
-    let i = 1
-    this.state.likesD.forEach((song)=>{
-      let keyD = "song"+i
-      // console.log(song)
-      songJson[keyD] = song.song
-      i=i+1
-    })
-    // var songJson = {likes:songs}
-    console.log(songJson)
+    
     var path = `/api/invitation/${this.props.invitation}/SongRequests/${this.props.requestId}`
-    return apiCall("put", path, songJson)
-      .then(res => {console.log(`Successful response ${res}`) })
+    return apiCall("put", path, {likes:this.state.likesD})
+      .then(res => {console.log(`Successful response`); console.log(res) })
       .catch( err => {console.log(`Error is ${err}`)})
   }
 
   addLeastFavSongs(songs) {
-    var songJson = { dislikes: songs }
     var path = `/api/invitation/${this.props.invitation}/SongRequests/${this.props.requestId}`
-    return apiCall("put", path, songJson)
+    return apiCall("put", path, {dislikes:this.state.dislikesD})
       .then(res => { console.log(`Successful response ${res}`) })
       .catch(err => { console.log(`Error is ${err}`) })
   }
 
+  
+  removeFromSongList(likes, dislikes){
+    let songs = this.state.songList;
+    let i =0
+    let j =0
+    let maxSongs = dislikes.length + likes.length
+    let foundSongs = 0
+    console.log("REMOVE FROM SONG LIST")
+    console.log(songs)
+    console.log(likes)
+    console.log(dislikes)
+    if(maxSongs > 0 ){
+      for(i=0; i<songs.length; i++){
+        for (j = 0; j < dislikes.length; j++){
+          if(songs[i] !== undefined){
+            if(songs[i]._id === dislikes[j]._id){
+              dislikes[j] = songs[i] 
+              songs.splice(i, 1)
+              i= i-1
+
+              foundSongs = foundSongs + 1
+            }
+          } else{
+            console.log(`Index of ${i}`)
+          }
+        }
+        for (j = 0; j < likes.length; j++){
+          if (songs[i] !== undefined) {
+            if(songs[i]._id === likes[j]._id){
+              likes[j] = songs[i]
+              songs.splice(i, 1)
+              i= i-1
+
+              foundSongs = foundSongs + 1
+            }
+          } else {
+            console.log(`Index of ${i}`)
+          }
+        }
+        if(foundSongs === maxSongs){
+          break
+        }
+      }
+      this.setState({ songList: songs })
+      this.setState({ likesD: likes })
+      this.setState({ dislikesD: dislikes })
+      console.log("Set states are ")
+      console.log(this.state.likesD)
+      console.log(this.state.dislikesD)
+    }
+  }
+
   populateSongs() {
-    console.log(this.props)
     var path = `/api/invitation/${this.props.invitation}/SongRequests/${this.props.requestId}`
     return apiCall("get", path)
       .then(res => { 
-        console.log(`Successful response ${res}`)
-        this.setState({likes: res.likes})
-        this.setState({dislikes: res.dislikes})
-        // this.likes = res.likes
-        // this.dislikes = res.dislikes
+        console.log(`Successful response `)
+        console.log(res)
+        
+        this.removeFromSongList( res.likes,  res.dislikes)
+        
        })
       .catch(err => { console.log(`Error is ${err}`) })
   }
@@ -81,6 +122,7 @@ class SongRequests extends Component {
   }
   
   componentWillMount() {
+    console.log("Getting song list")
     var path = "/api/songs"
     return apiCall("get", path)
       .then(songList => this.setState({songList}))
@@ -96,12 +138,13 @@ class SongRequests extends Component {
   }
 
   componentDidUpdate(){
-    if (this.props.invitation && this.jsonIsEmmpty(this.state.dislikes)) {
-      console.log(this.state.dislikes)
-      console.log("updating dislikes")
+    if (this.props.invitation && (this.state.dislikesD.length) === 0 && (this.state.likesD.length === 0)) {
+      // console.log(this.state.dislikes)
+      // console.log("updating dislikes")
       // this.setState({ dislikes: {"song1":"Red","song2":"blue"} })
-      // console.log("POPULATE SONGS")
-      // this.populateSongs() 
+      console.log("POPULATE SONGS")
+      this.populateSongs() 
+      // console.log(this.state.likesD)
     }
     // console.log(this.state.dislikes)
     
@@ -120,8 +163,11 @@ class SongRequests extends Component {
     setStateArray(input, array){
         if (input === "songs")
           this.setState({ songList: array })
-        else if (input === "likes")
+        else if (input === "likes") {
           this.setState({ likesD: array })
+          console.log(this.state.likesD)
+        }
+          
         else if (input === "dislikes")
           this.setState({ dislikesD: array })
     }
@@ -138,8 +184,7 @@ class SongRequests extends Component {
             destination.index === source.index
         ){
             return;
-        }
-       
+        }       
 
         if (source.droppableId === destination.droppableId){
 
@@ -154,15 +199,11 @@ class SongRequests extends Component {
         
         let sourceArray = this.getStateArray(source.droppableId);
         let destinationArray = this.getStateArray(destination.droppableId);
-        console.log(source.droppableId)
-        console.log(destination.droppableId)
         let song = sourceArray[source.index]
         destinationArray.splice(destination.index, 0, song);
         if ((destination.droppableId === 'likes' || destination.droppableId === 'dislikes') && destinationArray.length > 5){
           let retSong = destinationArray.splice(-1, 1)
-          console.log("REmoved")
-          console.log(retSong)
-          // sourceArray.push(retSong)
+          sourceArray.push(retSong[0])
         }           
         sourceArray.splice(source.index,1);
         this.setStateArray(source.droppableId, sourceArray)

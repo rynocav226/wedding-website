@@ -28,10 +28,53 @@ const StyleTh = styled.th`
     min-width: 100px;
 `
 
+function RenderHeader(props) {
+    if (props.headerType === "Songs") {
+        return (
+            <tr>
+                <StyleTh>Artist</StyleTh>
+                <StyleTh>Song</StyleTh>
+                <StyleTh>
+                    <select id="songCategory" onChange={props.handleOnChange}>
+                        <option value={"All"}>All</option>
+                        <option value={"Classics"}>Classics</option>
+                        <option value={"Country"}>Country</option>
+                        <option value={"Pop"}>Pop</option>
+                        <option value={"Rock"}>Rock</option>
+                    </select>
+                </StyleTh>
+            </tr>
+        )
+    } else {
+        return (
+            <tr>
+                <StyleTh>Artist</StyleTh>
+                <StyleTh>Song</StyleTh>
+                <StyleTh>Blank
+                </StyleTh>
+            </tr>
+        )
+    }
+}
 
 
 export default class SongColumn extends React.Component {
+    constructor() {
+        super();
+        this.state = {
+            selectValue: 'All' // use this as default
+        }
+        this.handleOnChange=this.handleOnChange.bind(this)
+    }
+
+    handleOnChange(e) {
+        this.setState({
+        selectValue: e.target.value
+        });
+        this.forceUpdate()
+    }
     render() {
+        const { selectValue } = this.state;
         return (
             <Container>
                 <Title>{this.props.column.title}</Title>
@@ -42,14 +85,12 @@ export default class SongColumn extends React.Component {
                             {...provided.droppableProps}
                             isDraggingOver={snapshot.isDraggingOver}
                         >
-                            <tr>
-                                <StyleTh>Artist</StyleTh> 
-                                <StyleTh>Song</StyleTh> 
-                                <StyleTh>Category</StyleTh> 
-                            </tr>
+                            <RenderHeader headerType={this.props.column.title} handleOnChange={this.handleOnChange.bind(this)}/>
+                            
                             {this.props.tasks.map((task, index) =>
+                                // <Greeting task={task} category={"Rock"} index={index} key={task.props._id} />
+                                <SongDraggable key={task.props._id} task={task} index={index} category={selectValue}/>
                                 
-                                <SongDraggable key={task.props._id} task={task} index={index} />
                             )}
                             {provided.placeholder}
                         </TaskList>
@@ -59,3 +100,5 @@ export default class SongColumn extends React.Component {
         )
     }
 }
+
+

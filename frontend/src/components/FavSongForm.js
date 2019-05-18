@@ -61,26 +61,7 @@ class FavSongForm extends Component {
         return true
     }
 
-    componentDidUpdate() {
-        console.log("Component did update Like form")
-        if (this.jsonIsEmpty(this.state) && !this.jsonIsEmpty(this.props.likes)) {
-            this.setState({ song1: this.props.likes.song1 })
-            this.setState({ song2: this.props.likes.song2 })
-            this.setState({ song3: this.props.likes.song3 })
-            this.setState({ song4: this.props.likes.song4 })
-            this.setState({ song5: this.props.likes.song5 })
-        }
-    }
-
-
     render() {
-        // this.state.song1 = this.props.songs[0]
-        // if(this.props.songs){
-        // this.setState({"song1" : this.props.songs[0]})
-        // console.log("Songs in fav song form hit")
-        // }
-        // console.log("Props")
-        // console.log(this.props)
         
         const likes = this.props.likedSongs.map((t) => (
             <SongItem
@@ -89,8 +70,6 @@ class FavSongForm extends Component {
             />
         ));
         const likeColumn = { title: "Add Your 5 favorites", id: "likes", taskIds: [] }
-        // console.log("FavSong props")
-        // console.log(this.props)
         return(
             <div id="favSongs" className="container">
                 <SongColumn key={likeColumn.id} column={likeColumn} tasks={likes} taskIds={[]} />
