@@ -17,7 +17,7 @@ const SiteNavigation = (props) => {
         <Route exact path="/OurStory" component={OurStory} />
         <Route exact path="/Accommodations" component={Accommodations} />
         <Route exact path="/BreweryCrawl" component={BreweryCrawl} />
-        <Route exact path="/SongRequests" render={(routeProps) => <SongRequests {...routeProps} toggleCode={props.toggleCodeFromSongRequests} invitation={props.invitation} />} />
+      <Route exact path="/SongRequests" render={(routeProps) => <SongRequests {...routeProps} toggleCode={props.toggleCodeFromSongRequests} invitation={props.invitation} requestId={props.requestId} />} />
         <Route exact path="/BridalParty" component={BridalParty} />
         <Route exact path="/WeddingPhotos" component={WeddingPhotos} />
       </Switch>

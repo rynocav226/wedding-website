@@ -132,6 +132,7 @@ class WeddingApp extends Component {
               toggleCodeFromNav={this.toggleCodeFromNav.bind(this)}
               toggleCodeFromSongRequests={this.toggleCodeFromSongRequests.bind(this)}
               invitation={(this.state.invitation) ? this.state.invitation._id : null}
+              requestId={(this.state.invitation) ? this.state.invitation.requests : null}
             />
             <Modal centered autoFocus={false} isOpen={this.state.modalCode} backdrop={"static"} onKeyUp={e => this.codeKeyUp(e)}>
               <ModalHeader toggle={this.codeCancel}>Enter Invitation Code</ModalHeader>
