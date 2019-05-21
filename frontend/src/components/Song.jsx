@@ -1,5 +1,4 @@
 import React from 'react';
-import styled from 'styled-components';
 import { Draggable } from 'react-beautiful-dnd';
 
 const Container = styled.tr`
@@ -80,7 +79,6 @@ export default class SongDraggable extends React.Component {
                         {...provided.draggableProps}
                         {...provided.dragHandleProps}
                         ref={provided.innerRef}
-                        isDragging={snapshot.isDragging}
                     >
                         <RenderArtist artist={this.props.task.props.artist} song={this.props.task.props.song} category={this.props.task.props.category} selectedCategory={this.props.category}/>
                         <RenderSong artist={this.props.task.props.artist} song={this.props.task.props.song} category={this.props.task.props.category} selectedCategory={this.props.category} />

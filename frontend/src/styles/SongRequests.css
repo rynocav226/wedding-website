@@ -1,0 +1,8 @@
+.songList {
+  max-height: 85vh;
+  overflow: auto;
+}
+
+.songRequestsContainer {
+  max-width: 1450px;
+}

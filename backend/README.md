@@ -1,6 +1,6 @@
 Things to do/fix:
 
-Kari invite
+Kari invite - DONE
 put your Dad? - DONE
 michalski-lynch or lynch? - DONE
 remove (jij)? - DONE
@@ -8,7 +8,7 @@ remove 'the train'? - DONE
 Keck have his kid? - DONE
 Ray last name? Hall - DONE
 Kirsten last name to Tschida - DONE
-figure out export of data for book keeping
+figure out export of data for book keeping - DONE
 Kelley Keck to Kelly Keck - DONE
 target sandbox in git - DONE
 
