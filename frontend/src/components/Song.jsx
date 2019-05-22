@@ -1,4 +1,5 @@
 import React from 'react';
+import styled from 'styled-components'
 import { Draggable } from 'react-beautiful-dnd';
 
 const Container = styled.tr`
@@ -9,21 +10,21 @@ const Container = styled.tr`
   background-color: ${props => (props.isDragging ? 'lightgreen' : 'white')};
 `;
 
-const styleTR = styled.tr`
- border: 1px solid lightgrey
-`;
+// const styleTR = styled.tr`
+//  border: 1px solid lightgrey
+// `;
 
-const styleTD = styled.td`
- border: 1px solid lightgrey
-`;
+// const styleTD = styled.td`
+//  border: 1px solid lightgrey
+// `;
 
-const SongContainer = styled.div`
-  border: 1px solid lightgrey;
-  padding: 8px;
-  margin-bottom: 8px;
-  border-radius: 2px;
-  background-color: ${props => (props.isDragging ? 'lightgreen' : 'white')};
-`;
+// const SongContainer = styled.div`
+//   border: 1px solid lightgrey;
+//   padding: 8px;
+//   margin-bottom: 8px;
+//   border-radius: 2px;
+//   background-color: ${props => (props.isDragging ? 'lightgreen' : 'white')};
+// `;
 
 function RenderArtist(props) {    
     if (props.selectedCategory === "All") {
@@ -62,8 +63,7 @@ function RenderCategory(props) {
 
     if (props.selectedCategory === props.category) {
         return (
-           
-                <td className="category">{props.category}</td>
+            <td className="category">{props.category}</td>
         )
     }
     return null
