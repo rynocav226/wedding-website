@@ -66,7 +66,7 @@ class BridalParty extends Component {
                 </CardBody>
               </Card>
               <div className="w-100 d-none d-sm-block d-md-none d-lg-block" />
-              <Card outline color="primary" className="mb-2 bridesmaid4">
+              <Card outline color="primary" className="mb-2">
                 <CardImg className="bridalPartyImage img-fluid" src={require("../assets/bridalParty/lucyTong.jpg")} alt="Lucy Tong" />
                 <CardBody>
                   <CardTitle className="text-primary text-center">Lucy Tong</CardTitle>
@@ -74,11 +74,19 @@ class BridalParty extends Component {
                 </CardBody>
               </Card>
               <div className="w-100 d-none d-sm-block d-lg-none" />
-              <Card outline color="primary" className="mb-2 bridesmaid5">
+              <Card outline color="primary" className="mb-2">
                 <CardImg className="bridalPartyImage img-fluid" src={require("../assets/bridalParty/caitlinSwenson.jpg")} alt="Caitlin Swenson" />
                 <CardBody>
                   <CardTitle className="text-primary text-center">Caitlin Swenson</CardTitle>
                   <CardText>Caitlin and Jorden met in college while interning at Target.  Jorden never stopped talking on the walks to the bus and Caitlin finally gave in and admitted she wanted to be friends.  Caitlin is a founding member of the Rainbow Connection softball team and still puts up with Jorden’s excessive need to talk.  Caitlin currently lives in Minneapolis, MN with her husband Matt and tom cat Charlie.</CardText>
+                </CardBody>
+              </Card>
+              <div className="w-100 d-none d-sm-block d-md-none" />
+              <Card outline color="primary" className="mb-2">
+                <CardImg className="bridalPartyImage img-fluid" src={require("../assets/bridalParty/alexEllingson.jpg")} alt="Callie Taveirne" />
+                <CardBody>
+                  <CardTitle className="text-primary text-center">Callie Taveirne</CardTitle>
+                  <CardText>Callie and Jorden...</CardText>
                 </CardBody>
               </Card>
             </CardDeck>
