@@ -83,10 +83,10 @@ class BridalParty extends Component {
               </Card>
               <div className="w-100 d-none d-sm-block d-md-none" />
               <Card outline color="primary" className="mb-2">
-                <CardImg className="bridalPartyImage img-fluid" src={require("../assets/bridalParty/alexEllingson.jpg")} alt="Callie Taveirne" />
+                <CardImg className="bridalPartyImage img-fluid" src={require("../assets/bridalParty/callieTaveirne.jpg")} alt="Callie Taveirne" />
                 <CardBody>
                   <CardTitle className="text-primary text-center">Callie Taveirne</CardTitle>
-                  <CardText>Callie and Jorden...</CardText>
+                  <CardText>Callie is Jorden's niece.  She is currently a sophomore at Alexandria Area High School where she is on the varsity girls swim and dive team and plays cello in the orchestra.  She is involved in 4-H showing rabbits, training with her dog, and doing lots of projects.  She has even won a few trips to the MN State Fair.  Jorden hopes Callie will be a Gopher in a few years, but until then loves bowling, going to the beach, and hanging out with her.</CardText>
                 </CardBody>
               </Card>
             </CardDeck>

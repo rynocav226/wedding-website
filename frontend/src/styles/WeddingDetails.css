@@ -19,8 +19,18 @@
   display: block;
 }
 
+.splitTitle {
+  margin-bottom: 2px;
+}
+
 @media (max-width: 575px) {
   .scheduleText {
     font-size: 0.78rem;
+  }
+}
+
+@media (max-width: 991px) {
+  .scheduleTitle {
+    font-size: 0.99rem;
   }
 }

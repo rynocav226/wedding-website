@@ -36,7 +36,9 @@ const WeddingDetails = (props) => {
         <Col md="6" lg="7" className="mb-2">
           <Card>
             <CardBody>
-              <CardTitle>Schedule</CardTitle>
+              <CardTitle className="d-none d-sm-block scheduleTitle">Schedule for Saturday, September 28th</CardTitle>
+              <CardTitle className="d-sm-none scheduleTitle splitTitle">Schedule for</CardTitle>
+              <CardTitle className="d-sm-none scheduleTitle">Saturday, September 28th</CardTitle>
               <Table>
                 <colgroup>
                   <col style={{width: '63%'}} />
@@ -64,7 +66,7 @@ const WeddingDetails = (props) => {
                     <td>7:00 PM</td>
                   </tr>
                   <tr>
-                    <th scope="row">Closing Social Hour</th>
+                    <th scope="row">Last Call</th>
                     <td>11:00 PM</td>
                   </tr>
                 </tbody>
