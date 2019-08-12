@@ -4,6 +4,7 @@ PRODUCTION
 
 hide Song Request menu item from NavigationBar and remove from siteNavigation
 hide Sara's travel blog
+after production build, copy _redirects into the root of the build folder
 
 General
 > Change title and icon - DONE
