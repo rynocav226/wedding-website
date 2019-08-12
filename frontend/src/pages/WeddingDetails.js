@@ -138,7 +138,7 @@ const WeddingDetails = (props) => {
           <Card>
             <CardBody>
               <CardTitle>Things To Do</CardTitle>
-              <CardText>We hope you have a great time in Minneapolis and come to love our city as much as we do.  If you are looking for fun things to do, some of our favorites near the venue are the Stone Arch Bridge and the Guthrie Sky Bridge.  We also love trying one of the 35+ breweries in Minneapolis and searching for truly the best Juicy Lucy.  To get more ideas of things to do, check out Minneapolis' <a href="https://www.minneapolis.org/150-things-to-do-in-minneapolis/" target="_blank" rel="noopener noreferrer">website</a> or our good friend Sara's <a href="https://www.minneapolis.org/150-things-to-do-in-minneapolis/" target="_blank" rel="noopener noreferrer">Travel Blog</a>.</CardText>
+              <CardText>We hope you have a great time in Minneapolis and come to love our city as much as we do.  If you are looking for fun things to do, some of our favorites near the venue are the Stone Arch Bridge and the Guthrie Sky Bridge.  We also love trying one of the 35+ breweries in Minneapolis and searching for truly the best Juicy Lucy.  To get more ideas of things to do, check out <a href="https://www.minneapolis.org/150-things-to-do-in-minneapolis/" target="_blank" rel="noopener noreferrer">Minneapolis' website</a> or our good friend Sara's <a href="https://www.minneapolis.org/150-things-to-do-in-minneapolis/" target="_blank" rel="noopener noreferrer">Travel Blog</a>.</CardText>
             </CardBody>
           </Card>
         </Col>

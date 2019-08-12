@@ -2,7 +2,7 @@ Things to do/fix:
 
 PRODUCTION
 
-hide Song Request menu item and remove from siteNavigation
+hide Song Request menu item from NavigationBar and remove from siteNavigation
 hide Sara's travel blog
 
 General
@@ -97,6 +97,6 @@ Wedding Photos
 
 Brewery Crawl
 > change up order on single column so don't have picture back to back - DONE
-> add another groomsman number to contact
+> add another groomsman number to contact - DONE
 > ensure food truck is still accurate
 > first column wider on the stops - DONE
