@@ -74,7 +74,7 @@ const WeddingDetails = (props) => {
             </CardBody>
           </Card>
         </Col>
-        <Col md="5" lg="3" className="mb-2">
+        <Col md="5" lg="3" xl="4" className="mb-2">
           <Card>
             <CardBody>
               <CardTitle>Registry</CardTitle>
@@ -82,11 +82,12 @@ const WeddingDetails = (props) => {
                 <ListGroupItem className="list-group-item-action text-primary" tag="a" href="https://www.amazon.com/wedding/registry/TGP2VO7G4DVG?ref=wr_search_page_result_1" target="_blank" rel="noopener noreferrer">Amazon</ListGroupItem>
                 <ListGroupItem className="list-group-item-action text-primary" tag="a" href="https://www.target.com/gift-registry/giftgiver?registryId=0f58270090e2432f81c982c93c5492ca&type=WEDDING" target="_blank" rel="noopener noreferrer">Target</ListGroupItem>
                 <ListGroupItem className="list-group-item-action text-primary" tag="a" href="https://www.crateandbarrel.com/gift-registry/jorden-taveirne-and-ryan-cavanaugh/r5948856" target="_blank" rel="noopener noreferrer">Crate&Barrel</ListGroupItem>
+                <ListGroupItem className="list-group-item-action text-primary" tag="a" href="https://www.potterybarn.com/registry/2k5lxwnvsh/registry-list.html?cm_Type=gnav" target="_blank" rel="noopener noreferrer">Pottery Barn</ListGroupItem>
               </ListGroup>
             </CardBody>
           </Card>
         </Col>
-        <Col md="7" lg="5" xl="6" className="mb-2">
+        <Col md="7" lg="6" xl="5" className="mb-2">
           <Card>
             <CardBody>
               <CardTitle>Child Care</CardTitle>
@@ -94,7 +95,7 @@ const WeddingDetails = (props) => {
             </CardBody>
           </Card>
         </Col>
-        <Col md="6" lg="4" xl="3" className="mb-2">
+        <Col md="6" lg="3" xl="3" className="mb-2">
           <Card>
             <CardBody>
               <CardTitle>Dress Code</CardTitle>
