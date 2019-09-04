@@ -2,7 +2,7 @@ Things to do/fix:
 
 PRODUCTION
 
-hide Song Request menu item from NavigationBar and remove from siteNavigation
+hide Song Request menu item from NavigationBar (x2) and remove from siteNavigation (including import)
 hide Sara's travel blog
 after production build, copy _redirects into the root of the build folder
 
