@@ -62,7 +62,7 @@
 {"_id":{"$oid":"5c83f60b95f1051f10bd9014"},"song":"Need You Now","artist":"Lady Antebellum","category":"Country"}
 {"_id":{"$oid":"5c83f60b95f1051f10bd9015"},"song":"Pour Me","artist":"Trick Pony","category":"Country"}
 {"_id":{"$oid":"5c83f60b95f1051f10bd9016"},"song":"Redneck Woman","artist":"Gretchen Wilson","category":"Country"}
-{"_id":{"$oid":"5c83f60b95f1051f10bd9017"},"song":"\"Save a Horse","artist":" Ride A Cowboy\"","category":"Big and Rich"}
+{"_id":{"$oid":"5c83f60b95f1051f10bd9017"},"song":"Save a Horse, Ride A Cowboy","artist":" Big and Rich","category":"Country"}
 {"_id":{"$oid":"5c83f60b95f1051f10bd9018"},"song":"Smoke a Little Smoke","artist":"Eric Church","category":"Country"}
 {"_id":{"$oid":"5c83f60b95f1051f10bd9019"},"song":"Smoke Break","artist":"Carrie Underwood","category":"Country"}
 {"_id":{"$oid":"5c83f60b95f1051f10bd901a"},"song":"Something to Talk About","artist":"Bonnie Rait","category":"Country"}
@@ -104,7 +104,7 @@
 {"_id":{"$oid":"5c83f60b95f1051f10bd903e"},"song":"Hot N Cold","artist":"Katy Perry","category":"Pop"}
 {"_id":{"$oid":"5c83f60b95f1051f10bd903f"},"song":"House Party","artist":"Sam Hunt","category":"Pop"}
 {"_id":{"$oid":"5c83f60b95f1051f10bd9040"},"song":"Ice Ice Baby","artist":"Vanilla Ice","category":"Pop"}
-{"_id":{"$oid":"5c83f60b95f1051f10bd9041"},"song":"\"I Don't Care","artist":" I Love It\"","category":"Icona Pop"}
+{"_id":{"$oid":"5c83f60b95f1051f10bd9041"},"song":"I Don't Care, I Love It","artist":" Icona","category":"Pop"}
 {"_id":{"$oid":"5c83f60b95f1051f10bd9042"},"song":"I Got a Feelin'","artist":"Black Eyed Peas","category":"Pop"}
 {"_id":{"$oid":"5c83f60b95f1051f10bd9043"},"song":"I Kissed a Girl","artist":"Katy Perry","category":"Pop"}
 {"_id":{"$oid":"5c83f60b95f1051f10bd9044"},"song":"I Touch Myself","artist":"Divinyls","category":"Pop"}
@@ -144,7 +144,7 @@
 {"_id":{"$oid":"5c83f60b95f1051f10bd9066"},"song":"Thinking Out Loud","artist":"Ed Sheeran","category":"Pop"}
 {"_id":{"$oid":"5c83f60b95f1051f10bd9067"},"song":"Tik Tok","artist":"Kesha","category":"Pop"}
 {"_id":{"$oid":"5c83f60b95f1051f10bd9068"},"song":"Toxic","artist":"Brittany Spears","category":"Pop"}
-{"_id":{"$oid":"5c83f60b95f1051f10bd9069"},"song":"Uptown Funk","artist":"\"Ronson","category":" Mark ft. Bruno Mars\""}
+{"_id":{"$oid":"5c83f60b95f1051f10bd9069"},"song":"Uptown Funk","artist":"Mark Ronson ft. Bruno Mars","category":"Pop"}
 {"_id":{"$oid":"5c83f60b95f1051f10bd906a"},"song":"Walking on Sunshine","artist":"Katrina & the Waves","category":"Pop"}
 {"_id":{"$oid":"5c83f60b95f1051f10bd906b"},"song":"Waiting on the World to Change","artist":"John Mayer","category":"Pop"}
 {"_id":{"$oid":"5c83f60b95f1051f10bd906c"},"song":"Wannabe","artist":"The Spice Girls","category":"Pop"}
@@ -194,7 +194,6 @@
 {"_id":{"$oid":"5c83f60b95f1051f10bd9098"},"song":"Ironic","artist":"Alanis Morisette","category":"Rock"}
 {"_id":{"$oid":"5c83f60b95f1051f10bd9099"},"song":"It Ain't My Fault","artist":"Brothers Osborne","category":"Rock"}
 {"_id":{"$oid":"5c83f60b95f1051f10bd909a"},"song":"It's My Life","artist":"Bon Jovi","category":"Rock"}
-{"_id":{"$oid":"5c83f60b95f1051f10bd909b"},"song":"Jessie's Girl","artist":"\"Springfield","category":" Rick\""}
+{"_id":{"$oid":"5c83f60b95f1051f10bd909b"},"song":"Jessie's Girl","artist":"Springfield","category":" Rock"}
 {"_id":{"$oid":"5c83f60b95f1051f10bd909c"},"song":"The Joker","artist":"Steve Miller Band","category":"Rock"}
 {"_id":{"$oid":"5c83f60b95f1051f10bd909d"},"song":"Keep On Rockin' in the Free World","artist":"Neal Young","category":"Rock"}
-{"_id":{"$oid":"5c83f60b95f1051f10bd909e"},"song":"","artist":null,"category":null}
