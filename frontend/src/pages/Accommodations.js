@@ -56,7 +56,7 @@ const Accommodations = () => {
                   </tr>
                   <tr>
                     <th scope="row">Parking Rate</th>
-                    <td>$15 per day</td>
+                    <td>$25 per day with in/out privileges; first come, first serve</td>
                   </tr>
                   <tr>
                     <th scope="row">Book By</th>
