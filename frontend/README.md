@@ -3,7 +3,6 @@ Things to do/fix:
 PRODUCTION
 
 hide Song Request menu item from NavigationBar (x2) and remove from siteNavigation (including import)
-hide Sara's travel blog
 after production build, copy _redirects into the root of the build folder
 
 General
@@ -43,7 +42,6 @@ Wedding Details Page
 > add links to two other registeries - DONE
 > fix RSVP link fire the modal - DONE
 > finish parking lot details - DONE
-> set sara's travel blog URL
 > remove vikings from things to do - DONE
 > responsive test updated Things To Do section - DONE
 > update amazon wedding registry link - DONE

@@ -67,7 +67,7 @@ const WeddingDetails = (props) => {
                   </tr>
                   <tr>
                     <th scope="row">Last Call</th>
-                    <td>11:00 PM</td>
+                    <td>11:30 PM</td>
                   </tr>
                 </tbody>
               </Table>
@@ -127,7 +127,7 @@ const WeddingDetails = (props) => {
             </CardBody>
           </Card>
         </Col>
-        <Col lg="5" xl="6" className="mb-2">
+        <Col lg="5" className="mb-2">
           <Card>
             <CardBody>
               <CardTitle>Parking</CardTitle>
@@ -135,11 +135,11 @@ const WeddingDetails = (props) => {
             </CardBody>
           </Card>
         </Col>
-        <Col xl="6" className="mb-2">
+        <Col xl="7" className="mb-2">
           <Card>
             <CardBody>
               <CardTitle>Things To Do</CardTitle>
-              <CardText>We hope you have a great time in Minneapolis and come to love our city as much as we do.  If you are looking for fun things to do, some of our favorites near the venue are the Stone Arch Bridge and the Guthrie Sky Bridge.  We also love trying one of the 35+ breweries in Minneapolis and searching for truly the best Juicy Lucy.  To get more ideas of things to do, check out <a href="https://www.minneapolis.org/150-things-to-do-in-minneapolis/" target="_blank" rel="noopener noreferrer">Minneapolis' website</a> or our good friend Sara's <a href="https://www.minneapolis.org/150-things-to-do-in-minneapolis/" target="_blank" rel="noopener noreferrer">Travel Blog</a>.</CardText>
+              <CardText>We hope you have a great time in Minneapolis and come to love our city as much as we do.  If you are looking for fun things to do, some of our favorites near the venue are a walk across the <a href="https://www.google.com/maps/place/Minneapolis+Stone+Arch+Bridge/@44.9807377,-93.2534122,15z/data=!4m5!3m4!1s0x0:0xe33b0324dd98448b!8m2!3d44.9807377!4d-93.2534122" target="_blank" rel="noopener noreferrer">Stone Arch Bridge</a>, taking in the view from the <a href="https://www.google.com/maps/place/Guthrie+Theater/@44.9781059,-93.2559432,15z/data=!4m5!3m4!1s0x0:0xc80c805887cfc373!8m2!3d44.9781059!4d-93.2559432" target="_blank" rel="noopener noreferrer">Guthrie Theater Endless Bridge</a>, and cooling off with a scoop from <a href="https://izzysicecream.com/locations/minneapolis/" target="_blank" rel="noopener noreferrer">Izzy's Ice Cream</a>.  On Saturday morning, you can check out the <a href="https://millcityfarmersmarket.org/" target="_blank" rel="noopener noreferrer">Mill City Farmer's Market</a>, a short walk from the hotels.  We also love trying one of the 35+ breweries in Minneapolis (we recommend Surly and Dangerous Man) and searching for truly the best <a href="http://mspmag.com/eat-and-drink/the-best-juicy-lucy-burgers-in-the-twin-cities/" target="_blank" rel="noopener noreferrer">Juicy Lucy</a>.  To get more ideas of things to do, click <a href="https://www.minneapolis.org/150-things-to-do-in-minneapolis/" target="_blank" rel="noopener noreferrer">here</a>, and for places to eat, click <a href="https://twincities.eater.com/maps/best-restaurants-minneapolis-st-paul-38-map" target="_blank" rel="noopener noreferrer">here</a>.</CardText>
             </CardBody>
           </Card>
         </Col>
