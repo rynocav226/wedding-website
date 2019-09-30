@@ -16,3 +16,4 @@ PRODUCTION
 
 remove the delete all invitations functionality and the others the webpage don't use
 target paid mongodb (MONGOLAB_WHITE_URI)
+production checkout is in Users/Ryan
