@@ -54,7 +54,10 @@ class NavigationBar extends Component {
               <NavLink tag={Link} to="/BridalParty/">Bridal Party</NavLink>
             </NavItem>
             <NavItem className="d-sm-none d-xl-block">
-              <NavLink tag={Link} to="/WeddingPhotos/">Wedding Photos</NavLink>
+              <NavLink tag={Link} to="/WeddingPhotos/">Wedding Photos SC</NavLink>
+            </NavItem>
+            <NavItem className="d-sm-none d-xl-block">
+              <NavLink tag={Link} to="/WeddingPhotosMN/">Wedding Photos MN</NavLink>
             </NavItem>
             <NavItem className="bg-primary font-weight-bold d-sm-none buttonHover">
               <NavLink className="text-light ml-2" onClick={this.props.toggleCode}>RSVP</NavLink>
@@ -72,7 +75,10 @@ class NavigationBar extends Component {
                   <NavLink tag={Link} to="/BridalParty/">Bridal Party</NavLink>
                 </DropdownItem>
                 <DropdownItem className="d-xl-none">
-                  <NavLink tag={Link} to="/WeddingPhotos/">Wedding Photos</NavLink>
+                  <NavLink tag={Link} to="/WeddingPhotos/">Wedding Photos SC</NavLink>
+                </DropdownItem>
+                <DropdownItem className="d-xl-none">
+                  <NavLink tag={Link} to="/WeddingPhotosMN/">Wedding Photos MN</NavLink>
                 </DropdownItem>
               </DropdownMenu>
             </UncontrolledButtonDropdown>

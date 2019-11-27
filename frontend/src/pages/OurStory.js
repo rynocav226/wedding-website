@@ -291,7 +291,7 @@ class OurStory extends Component {
               <CardTitle>Wedding Day</CardTitle>
               <CardSubtitle className="mb-2 cardText">Saying 'I Do' on the Beach</CardSubtitle>
               <CardText>
-                We married each other on a beach in South Carolina.  To see photos from the big day, head to the <Link to="../WeddingPhotos/">'Wedding Photos'</Link> page.<br /><br />Click to read more...
+                We married each other on a beach in South Carolina.  To see photos from the big day, head to the <Link to="../WeddingPhotos/">'Wedding Photos SC'</Link> page.<br /><br />Click to read more...
               </CardText>
             </CardBody>
           </Card>

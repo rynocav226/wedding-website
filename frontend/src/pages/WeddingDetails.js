@@ -123,7 +123,7 @@ const WeddingDetails = (props) => {
           <Card>
             <CardBody>
               <CardTitle>Electronics Request</CardTitle>
-              <CardText>We kindly request that during the "big" moments of the night all phones and tablets remain in pockets, purses, and clutches so that all guests can share fully in the moment and our photographer has uninterupted viewpoints to capture the moments.  If y'all promise to do this, we promise to share some photos on this website in the week that follows.  For the rest of the time, take as many photos as you like; save them, post them, delete them, and if you do post them, please use <strong>#tyingthecavaknot</strong></CardText>
+              <CardText>We kindly request that during the "big" moments of the night all phones and tablets remain in pockets, purses, and clutches so that all guests can share fully in the moment and our photographer has uninterupted viewpoints to capture the moments.  If y'all promise to do this, we promise to share some photos on this website at <Link to="../WeddingPhotosMN/">'Wedding Photos MN'</Link>.  For the rest of the time, take as many photos as you like; save them, post them, delete them, and if you do post them, please use <strong>#tyingthecavaknot</strong></CardText>
             </CardBody>
           </Card>
         </Col>

@@ -8,6 +8,7 @@ import BreweryCrawl from './pages/BreweryCrawl';
 import SongRequests from './pages/SongRequests';
 import BridalParty from './pages/BridalParty';
 import WeddingPhotos from './pages/WeddingPhotos';
+import WeddingPhotosMN from './pages/WeddingPhotosMN';
 
 const SiteNavigation = (props) => {
   return (
@@ -20,6 +21,7 @@ const SiteNavigation = (props) => {
         <Route exact path="/SongRequests" render={(routeProps) => <SongRequests {...routeProps} toggleCode={props.toggleCodeFromSongRequests} invitation={props.invitation} requestId={props.requestId} />} />
         <Route exact path="/BridalParty" component={BridalParty} />
         <Route exact path="/WeddingPhotos" component={WeddingPhotos} />
+        <Route exact path="/WeddingPhotosMN" component={WeddingPhotosMN} />
       </Switch>
   );
 };
